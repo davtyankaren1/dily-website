@@ -1,0 +1,19 @@
+.footer-white__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.footer-white__inner > div:nth-child(1) {
+  display: flex;
+  gap: 48px;
+}
+
+.footer-white__inner > div > span {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: right;
+  color: var(--dark-grey);
+}

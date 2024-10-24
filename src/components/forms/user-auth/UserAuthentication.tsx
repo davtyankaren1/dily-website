@@ -4,12 +4,12 @@ import { validationSchema_Register_withPhone } from "../../../utils/Validations"
 import { useNavigate } from "react-router-dom";
 import { BorderedButton, Button } from "../../customs";
 import { FacebookSvg, OkSvg, VkSvg } from "../../../assets/svgs";
+import { MarketInput } from "../../customs/MarketInput";
 
 import TextFieldHeader from "../../texts/TextFieldHeader";
 import TextFieldParagraph from "../../texts/TextFieldParagraph";
 
 import "../../../styles/UserAuthentication.scss";
-import { MarketInput } from "../../customs/MarketInput";
 
 const iconAnimation = {
   initial: { scale: 0.8, opacity: 0 },

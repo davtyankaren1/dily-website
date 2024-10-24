@@ -1,0 +1,33 @@
+.slider-item {
+  border-radius: 10px;
+  height: 200px;
+  box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
+  display: flex;
+  position: relative;
+  &-info {
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 330px;
+    .slider-item-title {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 150%;
+    }
+
+    .slider-item-desc {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 152%;
+    }
+  }
+
+  .service-item {
+    img {
+      z-index: 2;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

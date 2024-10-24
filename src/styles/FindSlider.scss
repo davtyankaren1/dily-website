@@ -1,0 +1,43 @@
+.find-slider {
+  margin-top: 50px;
+}
+
+.find-slider h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: var(--dark-grey);
+  margin-bottom: 40px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bright-green);
+  border-radius: 50%;
+}
+
+.swiper-button-next {
+  right: -5px;
+  top: 55px;
+}
+
+.swiper-button-prev {
+  left: -5px;
+  top: 55px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.find-slider .slider-wrapper {
+  position: relative;
+}
+
+.find-slider-item-title {
+  margin-top: 15px;
+}

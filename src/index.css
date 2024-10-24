@@ -19,3 +19,12 @@
   box-sizing: border-box;
   font-family: var(--font-family);
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
