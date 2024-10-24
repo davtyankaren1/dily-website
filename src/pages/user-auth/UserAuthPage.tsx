@@ -1,7 +1,11 @@
-import React from "react";
+import UserAuthentication from "../../components/forms/user-auth/UserAuthentication";
 
 const UserAuthPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <UserAuthentication />
+    </div>
+  );
 };
 
 export default UserAuthPage;
