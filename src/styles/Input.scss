@@ -1,0 +1,29 @@
+input {
+  outline: none;
+  border: 1px solid var(--medium-grey);
+  border-radius: 10px;
+  padding: 10px 15px;
+  width: 100%;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--medium-grey);
+  }
+
+  &:focus {
+    border: 1px solid var(--bright-green);
+  }
+
+  &.input-error {
+    border: 1px solid var(--error-color);
+  }
+}
+
+.input-error-message {
+  color: var(--error-color);
+  font-size: 10px;
+  padding-top: 5px;
+  height: 10px;
+}

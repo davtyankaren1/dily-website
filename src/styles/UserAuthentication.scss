@@ -1,0 +1,19 @@
+.register-form {
+  width: 320px;
+  text-align: center;
+  transition: 0.2s;
+
+  &-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .social-media-icon {
+    cursor: pointer;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}

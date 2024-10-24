@@ -1,0 +1,10 @@
+.code-form {
+  width: 320px;
+  text-align: center;
+
+  &-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+}
