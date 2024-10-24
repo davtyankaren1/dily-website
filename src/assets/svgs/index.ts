@@ -6,9 +6,9 @@ import StorefrontSvg from "./StorefrontSvg";
 import WrenchSvg from "./WrenchSvg";
 import HandsSvg from "./HandsSvg";
 
-import FacebookSvg from "./socials/FacebookSvg";
-import OkSvg from "./socials/OkSvg";
-import VkSvg from "./socials/VkSvg";
+import FacebookSvg from "./socials/FacebookSvgCircled";
+import OkSvg from "./socials/OkSvgCircled";
+import VkSvg from "./socials/VkSvgCircled";
 
 export {
   DocumentSvg,

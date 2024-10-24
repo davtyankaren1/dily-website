@@ -1,0 +1,42 @@
+.footer-top {
+  width: 100%;
+  background: var(--medium-grey-2);
+}
+
+.footer-top__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.icon-circle {
+  width: 33px;
+  height: 33px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.footer-top-city a {
+  color: var(--bright-green);
+  text-decoration: none;
+}
+
+.footer-top-city {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.footer-location-address {
+  display: flex;
+  gap: 58px;
+}
