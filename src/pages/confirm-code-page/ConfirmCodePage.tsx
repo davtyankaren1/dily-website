@@ -1,7 +1,11 @@
-import React from "react";
+import ConfirmCode from "../../components/forms/confirm-code/ConfirmCode";
 
 const ConfirmCodePage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <ConfirmCode />
+    </div>
+  );
 };
 
 export default ConfirmCodePage;

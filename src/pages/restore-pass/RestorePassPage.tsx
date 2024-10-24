@@ -1,7 +1,11 @@
-import React from "react";
+import RestorePassword from "../../components/forms/restore-pass/RestorePassword";
 
 const RestorePassPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <RestorePassword />
+    </div>
+  );
 };
 
 export default RestorePassPage;

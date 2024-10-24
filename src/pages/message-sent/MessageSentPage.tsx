@@ -1,7 +1,11 @@
-import React from "react";
+import MessageSent from "../../components/forms/message-sent/MessageSent";
 
 const MessageSentPage = () => {
-  return <div></div>;
+  return (
+    <div>
+      <MessageSent />
+    </div>
+  );
 };
 
 export default MessageSentPage;
