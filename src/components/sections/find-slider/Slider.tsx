@@ -1,14 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
-import ArrowLeftSliderSvg from "../../assets/svgs/ArrowLeftSliderSvg";
-import ArrowRightSliderSvg from "../../assets/svgs/ArrowRightSliderSvg";
+import ArrowLeftSliderSvg from "../../../assets/svgs/ArrowLeftSliderSvg";
+import ArrowRightSliderSvg from "../../../assets/svgs/ArrowRightSliderSvg";
 import { motion } from "framer-motion";
 import { mockData } from "./mockData";
 import SliderItem from "./components/SliderItem";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "../../styles/FindSlider.scss";
+import "../../../styles/FindSlider.scss";
 
 const Slider = () => {
   return (

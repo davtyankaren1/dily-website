@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "../../../styles/SliderItem.scss";
+import "../../../../styles/SliderItem.scss";
 
 interface ISliderItem {
   id: number;

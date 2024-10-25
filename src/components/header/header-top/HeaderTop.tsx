@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import HeaderLogoSvg from "../../../assets/svgs/HeaderLogoSvg";
 import LocationSvg from "../../../assets/svgs/LocationSvg";
 import ArrowDownSvg from "../../../assets/svgs/ArrowDownSvg";
@@ -11,7 +11,7 @@ const HeaderTop = () => {
   const [activeIndex, setActiveIndex] = useState(2);
   const [isModalOpen, setModalOpen] = useState(false);
 
-  const handleMenuItemClick = (index) => {
+  const handleMenuItemClick = (index: any) => {
     setActiveIndex(index);
   };
 

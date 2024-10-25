@@ -4,7 +4,7 @@ import { Autoplay } from "swiper";
 import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
-import "../../styles/Slider.scss";
+import "../../../styles/Slider.scss";
 import { mockData } from "./mockData";
 
 const Slider = () => {

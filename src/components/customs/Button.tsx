@@ -5,7 +5,7 @@ interface IButtonProps {
   type?: "submit" | "button";
   onClick?: () => void;
   children?: React.ReactNode;
-  disabled: boolean;
+  disabled?: boolean;
   bgColor?: string;
   color?: string;
 }

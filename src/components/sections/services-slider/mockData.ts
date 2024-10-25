@@ -1,5 +1,5 @@
-import Img1 from "../../assets/images/slider-image1.png";
-import Img2 from "../../assets/images/slider-image2.png";
+import Img1 from "../../../assets/images/slider-image1.png";
+import Img2 from "../../../assets/images/slider-image2.png";
 
 export const mockData = [
   {

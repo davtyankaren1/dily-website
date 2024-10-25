@@ -1,0 +1,9 @@
+.cards-items {
+  // margin-top: 80px;
+  .cards-list_inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

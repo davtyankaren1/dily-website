@@ -1,0 +1,54 @@
+.sales-section {
+  margin-top: 80px;
+  .sales__content {
+    display: flex;
+    justify-content: space-between;
+    .sales__item {
+      padding: 30px;
+      border-radius: 10px;
+      width: 558px;
+      height: 170px;
+      box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
+      position: relative;
+      .sales__text {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        .sales__title {
+          font-family: var(--font-family);
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 150%;
+          letter-spacing: 0.02em;
+          color: black;
+        }
+
+        .sales__subtitle {
+          font-family: var(--font-family);
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 150%;
+          letter-spacing: 0.02em;
+          color: var(--dark-grey);
+          max-width: 380px;
+        }
+      }
+
+      .sales__image {
+        width: 322px;
+        position: absolute;
+        right: 0;
+        top: 13px;
+        z-index: 1;
+      }
+
+      .sales__image--full {
+        top: 0;
+        width: 100%;
+        border-radius: 10px;
+        z-index: 1;
+      }
+    }
+  }
+}
