@@ -24,6 +24,8 @@ import SellToUs from "./components/sections/sell-to-us/SellToUs";
 import HomeDescription from "./components/description/HomeDescription";
 import PhonesPage from "./pages/phones-page/PhonesPage";
 import HomePage from "./pages/home-page/HomePage";
+import SinglePhone from "./components/phones/components/SinglePhone";
+import ImageSlider from "./components/image-slider/ImageSlider";
 
 const App: React.FC = () => {
   return (
@@ -50,12 +52,19 @@ const App: React.FC = () => {
       <PopularStores />
       <SellToUs /> */}
       {/* <HomeDescription /> */}
-      <Header />
+
+      {/* <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/phones' element={<PhonesPage />} />
       </Routes>
+      <Footer /> */}
+
+      <Header />
+      <SinglePhone />
       <Footer />
+
+      {/* <ImageSlider images={images} /> */}
     </div>
   );
 };
