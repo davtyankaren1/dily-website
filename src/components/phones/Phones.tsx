@@ -166,85 +166,90 @@ const Phones = () => {
   return (
     <div className='phones'>
       <div className='container'>
-        <div className='phone-filter'>
-          <div className='filter-component'></div>
-
-          <div className='phone-content-container'>
-            <div className='recent-added'>
-              <div>
-                <TextFieldHeader text='Телефоны и аксессуары' />
-                <TextFieldTitle text='Недавние объявления' />
-              </div>
-              <div className='phones-content'>
-                <div className='phones-content-header'>
-                  <span>1200 объявлений</span>
-                  <div className='phones-content-header-card-structures'>
-                    <div className='phones-content-header-sorting'>
-                      <span>Сортировать по</span>
-                      <div className='phones-sorting-dropdown'>
-                        <span>Новизне</span>
-                        <ArrowDownSvg />
+        <div className='phones_inner'>
+          <div className='phone-filter'>
+            <div className='filter-component'></div>
+            <div className='phone-content-container'>
+              <div className='recent-added'>
+                <div>
+                  <TextFieldHeader text='Телефоны и аксессуары' />
+                  <TextFieldTitle text='Недавние объявления' />
+                </div>
+                <div className='phones-content'>
+                  <div className='phones-content-header'>
+                    <span>1200 объявлений</span>
+                    <div className='phones-content-header-card-structures'>
+                      <div className='phones-content-header-sorting'>
+                        <span>Сортировать по</span>
+                        <div className='phones-sorting-dropdown'>
+                          <span>Новизне</span>
+                          <ArrowDownSvg />
+                        </div>
                       </div>
-                    </div>
 
-                    <div className='card-structure-variants'>
-                      <div onClick={() => setIsListView(false)}>
-                        <GridSvg selected={!isListView} />
-                      </div>
-                      <div onClick={() => setIsListView(true)}>
-                        <ListSvg selected={isListView} />
+                      <div className='card-structure-variants'>
+                        <div onClick={() => setIsListView(false)}>
+                          <GridSvg selected={!isListView} />
+                        </div>
+                        <div onClick={() => setIsListView(true)}>
+                          <ListSvg selected={isListView} />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div
-                  className={`phones-list ${isListView ? "list-variant" : ""}`}
-                >
-                  {mockData.splice(0, 4).map((item) => (
-                    <div key={item.id} className='phones-list-item'>
-                      <CardItem item={item} />
-                    </div>
-                  ))}
+                  <div
+                    className={`phones-list ${
+                      isListView ? "list-variant" : ""
+                    }`}
+                  >
+                    {mockData.splice(0, 4).map((item) => (
+                      <div key={item.id} className='phones-list-item'>
+                        <CardItem item={item} />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className='top-products'>
-              <div>
-                <TextFieldTitle text='Топ товаров' />
-              </div>
-              <div className='phones-content'>
-                <div className='phones-content-header'>
-                  <span>1200 объявлений</span>
-                  <div className='phones-content-header-card-structures'>
-                    <div className='phones-content-header-sorting'>
-                      <span>Сортировать по</span>
-                      <div className='phones-sorting-dropdown'>
-                        <span>Новизне</span>
-                        <ArrowDownSvg />
+              <div className='top-products'>
+                <div>
+                  <TextFieldTitle text='Топ товаров' />
+                </div>
+                <div className='phones-content'>
+                  <div className='phones-content-header'>
+                    <span>1200 объявлений</span>
+                    <div className='phones-content-header-card-structures'>
+                      <div className='phones-content-header-sorting'>
+                        <span>Сортировать по</span>
+                        <div className='phones-sorting-dropdown'>
+                          <span>Новизне</span>
+                          <ArrowDownSvg />
+                        </div>
                       </div>
-                    </div>
 
-                    <div className='card-structure-variants'>
-                      <div onClick={() => setIsListView2(false)}>
-                        <GridSvg selected={!isListView2} />
-                      </div>
-                      <div onClick={() => setIsListView2(true)}>
-                        <ListSvg selected={isListView2} />
+                      <div className='card-structure-variants'>
+                        <div onClick={() => setIsListView2(false)}>
+                          <GridSvg selected={!isListView2} />
+                        </div>
+                        <div onClick={() => setIsListView2(true)}>
+                          <ListSvg selected={isListView2} />
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div
-                  className={`phones-list ${isListView2 ? "list-variant" : ""}`}
-                >
-                  {mockData.map((item) => (
-                    <div key={item.id}>
-                      <CardItem item={item} />
-                    </div>
-                  ))}
+                  <div
+                    className={`phones-list ${
+                      isListView2 ? "list-variant" : ""
+                    }`}
+                  >
+                    {mockData.map((item) => (
+                      <div key={item.id}>
+                        <CardItem item={item} />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
