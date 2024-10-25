@@ -23,6 +23,14 @@
   padding: 0;
 }
 
+.footer-column h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--dark-grey);
+}
+
 .footer-second-column ul {
   width: 120px;
 }

@@ -1,0 +1,52 @@
+.dont-miss-cards {
+  margin: 80px 0;
+  .dont-miss_inner {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    .dont-miss-card {
+      position: relative;
+      border-radius: 10px;
+      width: 850px;
+      height: 330px;
+      display: flex;
+      padding: 45px 40px;
+      box-shadow: 0 4px 28px 7px rgba(54, 58, 69, 0.09);
+      .dont-miss-card-texts {
+        max-width: 370px;
+        display: flex;
+        flex-direction: column;
+
+        .details_btn {
+          margin-top: 39px;
+        }
+
+        h2 {
+          font-family: var(--font-family);
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 150%;
+          letter-spacing: 0.01em;
+          color: var(--dark-grey);
+          margin-bottom: 23px;
+        }
+
+        span {
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 150%;
+          letter-spacing: 0.02em;
+          color: var(--dark-grey);
+        }
+      }
+
+      .dont-miss-card-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 10px;
+      }
+    }
+  }
+}

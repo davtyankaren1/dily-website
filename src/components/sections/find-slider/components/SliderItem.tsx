@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "../../../styles/FindSliderItem.scss";
+import "../../../../styles/FindSliderItem.scss";
 
 const SliderItem = ({ item }: any) => {
   const SvgComponent = item.svg;

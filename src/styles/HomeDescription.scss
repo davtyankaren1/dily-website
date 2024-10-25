@@ -1,0 +1,33 @@
+.home-description {
+  &-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #818187;
+  }
+
+  &-body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #818187;
+    margin-top: 8px;
+  }
+
+  .expand-description {
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #818187;
+    gap: 28px;
+    margin-top: 17px;
+  }
+}

@@ -1,18 +1,18 @@
-import PhoneSvg from "../../assets/svgs/PhoneSvg";
-import ElectronicSvg from "../../assets/svgs/ElectronicSvg";
-import TexnikaSvg from "../../assets/svgs/TexnikaSvg";
-import AcuariumSvg from "../../assets/svgs/AcuariumSvg";
-import SoskaSvg from "../../assets/svgs/SoskaSvg";
-import SneackersSvg from "../../assets/svgs/SneackersSvg";
-import CarSvg from "../../assets/svgs/CarSvg";
-import JobSvg from "../../assets/svgs/JobSvg";
-import AvtoThings from "../../assets/svgs/AvtoThingsSvg";
-import BusinessFor from "../../assets/svgs/BusinessForSvg";
-import FromHeartSvg from "../../assets/svgs/FromHeartSvg";
-import SservicesSvg from "../../assets/svgs/SservicesSvg";
-import GrossHome from "../../assets/svgs/GrossHome";
-import EstateSvg from "../../assets/svgs/EstateSvg";
-import TshirtSvg from "../../assets/svgs/TshirtSvg";
+import PhoneSvg from "../../../assets/svgs/PhoneSvg";
+import ElectronicSvg from "../../../assets/svgs/ElectronicSvg";
+import TexnikaSvg from "../../../assets/svgs/TexnikaSvg";
+import AcuariumSvg from "../../../assets/svgs/AcuariumSvg";
+import SoskaSvg from "../../../assets/svgs/SoskaSvg";
+import SneackersSvg from "../../../assets/svgs/SneackersSvg";
+import CarSvg from "../../../assets/svgs/CarSvg";
+import JobSvg from "../../../assets/svgs/JobSvg";
+import AvtoThings from "../../../assets/svgs/AvtoThingsSvg";
+import BusinessFor from "../../../assets/svgs/BusinessForSvg";
+import FromHeartSvg from "../../../assets/svgs/FromHeartSvg";
+import SservicesSvg from "../../../assets/svgs/SservicesSvg";
+import GrossHome from "../../../assets/svgs/GrossHome";
+import EstateSvg from "../../../assets/svgs/EstateSvg";
+import TshirtSvg from "../../../assets/svgs/TshirtSvg";
 
 export const mockData = [
   { id: 1, title: "Личные вещи", svg: TshirtSvg },
