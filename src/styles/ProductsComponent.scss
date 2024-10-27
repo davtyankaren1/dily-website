@@ -66,9 +66,12 @@
 
 .list-variant {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+  border: 1px solid red;
   .card-item {
     display: flex;
     align-items: center;
+    width: 100%;
+
     &-image {
       width: 25%;
       padding: 20px;

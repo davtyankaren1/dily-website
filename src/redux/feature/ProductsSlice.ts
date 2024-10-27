@@ -1,107 +1,170 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fetchPhones = createAsyncThunk(
+interface Phone {
+  id: string;
+  imageUrl: string;
+  title: string;
+  price: string;
+  category?: string;
+  city?: string;
+  images?: string[];
+}
+
+interface Notebook {
+  id: string;
+  imageUrl: string;
+  title: string;
+  price: string;
+  category?: string;
+  city?: string;
+  images?: string[];
+}
+
+interface Technique {
+  id: string;
+  imageUrl: string;
+  title: string;
+  price: string;
+  category?: string;
+  city?: string;
+  images?: string[];
+}
+
+type Product = Phone | Notebook | Technique;
+
+interface ProductsState {
+  isLoading: boolean;
+  isError: string | null;
+  phones: Phone[];
+  notebooks: Notebook[];
+  techniques: Technique[];
+  selectedProduct: Product | null;
+}
+
+const initialState: ProductsState = {
+  isLoading: false,
+  isError: null,
+  phones: [],
+  notebooks: [],
+  techniques: [],
+  selectedProduct: null
+};
+
+export const fetchPhones = createAsyncThunk<Phone[]>(
   "products/fetchPhones",
   async () => {
     try {
       const res = await axios.get("http://localhost:5050/phones");
       return res.data;
     } catch (error) {
-      console.log(error);
+      console.error(error);
+      throw new Error("Failed to fetch phones");
     }
   }
 );
 
-export const fetchNotebooks = createAsyncThunk(
+export const fetchNotebooks = createAsyncThunk<Notebook[]>(
   "products/fetchNotebooks",
   async () => {
     try {
       const res = await axios.get("http://localhost:5050/notebooks");
       return res.data;
     } catch (error) {
-      console.log(error);
+      console.error(error);
+      throw new Error("Failed to fetch notebooks");
     }
   }
 );
 
-export const fetchTechniques = createAsyncThunk(
+export const fetchTechniques = createAsyncThunk<Technique[]>(
   "products/fetchTechniques",
   async () => {
     try {
       const res = await axios.get("http://localhost:5050/techniques");
-      console.log(res.data, "techniques+++++++++++");
       return res.data;
     } catch (error) {
-      console.log(error);
+      console.error(error);
+      throw new Error("Failed to fetch techniques");
     }
   }
 );
 
-export const fetchProductById = createAsyncThunk(
-  "products/fetchProductById",
-  async ({ id, category }: any) => {
-    try {
-      const res = await axios.get(`http://localhost:5050/${category}/${id}`);
-      return res.data;
-    } catch (error) {
-      console.log(error);
-    }
+export const fetchProductById = createAsyncThunk<
+  Product,
+  { id: number | string; category: string }
+>("products/fetchProductById", async ({ id, category }) => {
+  try {
+    const res = await axios.get(`http://localhost:5050/${category}/${id}`);
+    return res.data;
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to fetch product by ID");
   }
-);
+});
 
+// Products slice with typed state and action
 const ProductsSlice = createSlice({
   name: "products",
-  initialState: {
-    isLoading: false,
-    isError: null,
-    phones: [],
-    notebooks: [],
-    techniques: [],
-    selectedProduct: null
-  },
+  initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchPhones.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(fetchPhones.fulfilled, (state, action) => {
+      .addCase(
+        fetchPhones.fulfilled,
+        (state, action: PayloadAction<Phone[]>) => {
+          state.isLoading = false;
+          state.phones = action.payload;
+        }
+      )
+      .addCase(fetchPhones.rejected, (state, action) => {
         state.isLoading = false;
-        state.phones = action.payload;
-      })
-      .addCase(fetchPhones.rejected, (state) => {
-        state.isLoading = false;
+        state.isError = action.error.message || "Failed to fetch phones";
       })
       .addCase(fetchNotebooks.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(fetchNotebooks.fulfilled, (state, action) => {
+      .addCase(
+        fetchNotebooks.fulfilled,
+        (state, action: PayloadAction<Notebook[]>) => {
+          state.isLoading = false;
+          state.notebooks = action.payload;
+        }
+      )
+      .addCase(fetchNotebooks.rejected, (state, action) => {
         state.isLoading = false;
-        state.notebooks = action.payload;
-      })
-      .addCase(fetchNotebooks.rejected, (state) => {
-        state.isLoading = false;
+        state.isError = action.error.message || "Failed to fetch notebooks";
       })
       .addCase(fetchTechniques.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(fetchTechniques.fulfilled, (state, action) => {
+      .addCase(
+        fetchTechniques.fulfilled,
+        (state, action: PayloadAction<Technique[]>) => {
+          state.isLoading = false;
+          state.techniques = action.payload;
+        }
+      )
+      .addCase(fetchTechniques.rejected, (state, action) => {
         state.isLoading = false;
-        state.techniques = action.payload;
-      })
-      .addCase(fetchTechniques.rejected, (state) => {
-        state.isLoading = false;
+        state.isError = action.error.message || "Failed to fetch techniques";
       })
       .addCase(fetchProductById.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(fetchProductById.fulfilled, (state, action) => {
+      .addCase(
+        fetchProductById.fulfilled,
+        (state, action: PayloadAction<Product>) => {
+          state.isLoading = false;
+          state.selectedProduct = action.payload;
+        }
+      )
+      .addCase(fetchProductById.rejected, (state, action) => {
         state.isLoading = false;
-        state.selectedProduct = action.payload;
-      })
-      .addCase(fetchProductById.rejected, (state) => {
-        state.isLoading = false;
+        state.isError = action.error.message || "Failed to fetch product by ID";
       });
   }
 });

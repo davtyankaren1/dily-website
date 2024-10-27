@@ -33,19 +33,14 @@ const menuItems = [
   { label: "Отдам даром", icon: <WillGiveFreeSvg /> }
 ];
 
-const Menu = ({ setHoveredItem }: any) => {
+const Menu = () => {
   return (
     <div className='menu'>
       <div className='container'>
         <nav className='navbar'>
           <ul>
             {menuItems.map((item, index) => (
-              <li
-                key={index}
-                onMouseEnter={() => setHoveredItem(index)}
-                onMouseLeave={() => setHoveredItem(null)}
-                className='menu-item'
-              >
+              <li key={index} className='menu-item'>
                 <a href='#'>
                   {item.icon}
                   {item.label}

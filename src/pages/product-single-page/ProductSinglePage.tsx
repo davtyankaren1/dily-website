@@ -7,7 +7,7 @@ import { fetchProductById } from "../../redux/feature/ProductsSlice";
 const ProductSinglePage = () => {
   const dispatch = useAppDispatch();
   const { id } = useParams();
-  const { selectedProduct, loading, error } = useAppSelector(
+  const { selectedProduct, isLoading, isError } = useAppSelector(
     (state) => state.products
   );
 
@@ -25,8 +25,8 @@ const ProductSinglePage = () => {
     }
   }, [dispatch, id, path]);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error loading product: {error}</div>;
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>Error loading product: {isError}</div>;
   if (!selectedProduct) return <div>Product not found</div>;
 
   return (

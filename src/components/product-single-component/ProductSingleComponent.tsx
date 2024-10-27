@@ -7,8 +7,13 @@ import Avatar from "../../assets/images/Avatar.png";
 import RecomentProducts from "../sections/recoment-products/RecomentProducts";
 import StarFilled from "../../assets/svgs/StarFilled";
 import "../../styles/SinglePhone.scss";
+import { IProduct } from "../products/components/ProductsTopProducts";
 
-const ProductSingleComponent = ({ product }: any) => {
+interface IsingleProductProps {
+  product: IProduct;
+}
+
+const ProductSingleComponent = ({ product }: IsingleProductProps) => {
   const images = [
     "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg",
     "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
