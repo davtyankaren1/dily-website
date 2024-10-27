@@ -7,8 +7,9 @@
     .slider-image {
       width: 600px;
       height: 460px;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 10px;
+      padding: 33px;
     }
   }
 

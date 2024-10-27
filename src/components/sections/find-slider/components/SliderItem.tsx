@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
 import "../../../../styles/FindSliderItem.scss";
 
-const SliderItem = ({ item }: any) => {
+interface ISliderItemProps {
+  item: {
+    id: number;
+    svg: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+    title: string;
+  };
+}
+
+const SliderItem = ({ item }: ISliderItemProps) => {
   const SvgComponent = item.svg;
 
   return (

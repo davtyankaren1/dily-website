@@ -31,13 +31,13 @@ const App: React.FC = () => {
   return (
     <div className='App'>
       {!hideHeaderFooter && <Header />}
-
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/phones' element={<ProductsPage />} />
         <Route path='/notebooks' element={<ProductsPage />} />
         <Route path='/techniques' element={<ProductsPage />} />
+
         <Route path='/phones/:id' element={<ProductSinglePage />} />
         <Route path='/notebooks/:id' element={<ProductSinglePage />} />
         <Route path='/techniques/:id' element={<ProductSinglePage />} />

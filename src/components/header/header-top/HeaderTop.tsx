@@ -11,7 +11,7 @@ const HeaderTop = () => {
   const [activeIndex, setActiveIndex] = useState(2);
   const [isModalOpen, setModalOpen] = useState(false);
 
-  const handleMenuItemClick = (index: any) => {
+  const handleMenuItemClick = (index: number) => {
     setActiveIndex(index);
   };
 

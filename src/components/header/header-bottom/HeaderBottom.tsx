@@ -8,7 +8,12 @@ import CloseSvg from "../../../assets/svgs/CloseSvg";
 import Menu from "../../menu/Menu";
 import "../../../styles/HeaderBottom.scss";
 
-const HeaderBottom = ({ toggleModal, isModalOpen }: any) => {
+interface IHeaderBottomProps {
+  toggleModal: () => {};
+  isModalOpen: boolean;
+}
+
+const HeaderBottom = ({ toggleModal, isModalOpen }: IHeaderBottomProps) => {
   return (
     <div className='header-bottom'>
       <div className='container'>
