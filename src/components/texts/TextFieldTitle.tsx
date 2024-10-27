@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
+import { ITextFieldTitleProps } from "../../types/types";
 import "../../styles/TextFieldTitle.scss";
-
-interface ITextFieldTitleProps {
-  text: string;
-  color?: string;
-}
 
 const TextFieldTitle = ({ text, color = "#363a45" }: ITextFieldTitleProps) => {
   return (

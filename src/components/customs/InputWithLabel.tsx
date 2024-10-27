@@ -1,17 +1,8 @@
 import React, { useState } from "react";
-import { FieldProps } from "formik";
 import InputEyeSvg from "../../assets/svgs/InputEyeSvg"; // Ensure this is implemented correctly
 import { motion } from "framer-motion";
 import "../../styles/InputWithLabel.scss";
-
-interface IInputWithLabelProps extends FieldProps {
-  label: string;
-  placeholder?: string;
-  type?: "text" | "number" | "password";
-  isRequired?: boolean;
-  text: string;
-  index: number;
-}
+import { IInputWithLabelProps } from "../../types/types";
 
 export const InputWithLabel: React.FC<IInputWithLabelProps> = ({
   field,

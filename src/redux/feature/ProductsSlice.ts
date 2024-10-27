@@ -1,46 +1,12 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
-
-interface Phone {
-  id: string;
-  imageUrl: string;
-  title: string;
-  price: string;
-  category?: string;
-  city?: string;
-  images?: string[];
-}
-
-interface Notebook {
-  id: string;
-  imageUrl: string;
-  title: string;
-  price: string;
-  category?: string;
-  city?: string;
-  images?: string[];
-}
-
-interface Technique {
-  id: string;
-  imageUrl: string;
-  title: string;
-  price: string;
-  category?: string;
-  city?: string;
-  images?: string[];
-}
-
-type Product = Phone | Notebook | Technique;
-
-interface ProductsState {
-  isLoading: boolean;
-  isError: string | null;
-  phones: Phone[];
-  notebooks: Notebook[];
-  techniques: Technique[];
-  selectedProduct: Product | null;
-}
+import {
+  Notebook,
+  Phone,
+  Product,
+  ProductsState,
+  Technique
+} from "../../types/types";
 
 const initialState: ProductsState = {
   isLoading: false,
@@ -103,7 +69,6 @@ export const fetchProductById = createAsyncThunk<
   }
 });
 
-// Products slice with typed state and action
 const ProductsSlice = createSlice({
   name: "products",
   initialState,

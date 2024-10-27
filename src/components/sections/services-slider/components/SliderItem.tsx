@@ -1,18 +1,6 @@
 import { motion } from "framer-motion";
+import { ISliderItemProps } from "../../../../types/types";
 import "../../../../styles/SliderItem.scss";
-
-interface ISliderItem {
-  id: number;
-  title: string;
-  desc: string;
-  imageUrl: string;
-  bgColor: string;
-  color: string;
-}
-
-interface ISliderItemProps {
-  item: ISliderItem;
-}
 
 const SliderItem = ({ item }: ISliderItemProps) => {
   return (

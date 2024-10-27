@@ -1,13 +1,6 @@
 import { motion } from "framer-motion";
 import "../../styles/BorderedButton.scss";
-
-interface IBorderedButtonProps {
-  type?: "submit" | "button";
-  onClick?: () => void;
-  children?: React.ReactNode;
-  disabled: boolean;
-  color?: string;
-}
+import { IBorderedButtonProps } from "../../types/types";
 
 export const BorderedButton = ({
   type,

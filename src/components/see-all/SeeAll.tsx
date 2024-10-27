@@ -1,9 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "../../styles/SeeAll.scss";
-
-interface ISeeAllProps {
-  path: string;
-}
+import { ISeeAllProps } from "../../types/types";
 
 const SeeAll = ({ path }: ISeeAllProps) => {
   const navigate = useNavigate();

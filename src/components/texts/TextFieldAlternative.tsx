@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
+import { ITextFieldAlternativeProps } from "../../types/types";
 import "../../styles/TextFieldAlternative.scss";
-
-interface ITextFieldAlternativeProps {
-  text: string;
-  color?: string;
-}
 
 const TextFieldAlternative = ({
   text,

@@ -1,12 +1,8 @@
 import Cards from "../../card/components/Cards";
-import { IProduct } from "../../products/components/ProductsTopProducts";
 import LogoTextSvg from "../../../assets/svgs/LogoTextSvg";
-import "../../../styles/Technique.scss";
 import SeeAll from "../../see-all/SeeAll";
-
-interface ITeqhniques {
-  techniques: IProduct[];
-}
+import { ITeqhniques } from "../../../types/types";
+import "../../../styles/Technique.scss";
 
 const Technique = ({ techniques }: ITeqhniques) => {
   return (

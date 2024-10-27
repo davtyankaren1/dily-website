@@ -1,12 +1,7 @@
 import React from "react";
-import { FieldProps } from "formik";
 import InputMask from "react-input-mask";
+import { IInputProps } from "../../types/types";
 import "../../styles/Input.scss";
-
-interface IInputProps extends FieldProps {
-  placeholder?: string;
-  type?: "text" | "number" | "password";
-}
 
 export const MarketInput: React.FC<IInputProps> = ({
   field,

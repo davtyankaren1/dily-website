@@ -1,11 +1,6 @@
 import React from "react";
-import { FieldProps } from "formik";
+import { IInputProps } from "../../types/types";
 import "../../styles/Input.scss";
-
-interface IInputProps extends FieldProps {
-  placeholder?: string;
-  type?: "text" | "number" | "password";
-}
 
 export const Input: React.FC<IInputProps> = ({
   field,

@@ -1,6 +1,4 @@
-interface ISelected {
-  selected: boolean;
-}
+import { ISelected } from "../../types/types";
 
 const ListSvg = ({ selected }: ISelected) => {
   return (

@@ -3,21 +3,10 @@ import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import HeartIconSvg from "../../assets/svgs/HeartIconSvg";
 import Img1 from "../../assets/images/Avatar.png";
+import { ICardItemProps } from "../../types/types";
 import "../../styles/CardItem.scss";
 
-export interface ICardItem {
-  item: {
-    id: string;
-    imageUrl: string;
-    title: string;
-    price: string;
-    category?: string;
-    city?: string;
-    images?: string[];
-  };
-}
-
-const CardItem = ({ item }: ICardItem) => {
+const CardItem = ({ item }: ICardItemProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const navigate = useNavigate();
