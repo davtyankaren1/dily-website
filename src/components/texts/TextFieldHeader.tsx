@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
+import { ITextFieldHeaderProps } from "../../types/types";
 import "../../styles/TextFieldHeader.scss";
-
-interface ITextFieldHeaderProps {
-  text: string;
-  color?: string;
-}
 
 const TextFieldHeader = ({
   text,

@@ -13,16 +13,7 @@ import GridSvg from "../../assets/svgs/GridSvg";
 import ListSvg from "../../assets/svgs/ListSvg";
 import CardItem from "../card/CardItem";
 import ProductsTopProducts from "./components/ProductsTopProducts";
-
-interface IProduct {
-  id: string;
-  imageUrl: string;
-  title: string;
-  price: string;
-  category: string;
-  city: string;
-  images: string[];
-}
+import { IProduct } from "../../types/types";
 
 const ProductsComponent = () => {
   const [isListView, setIsListView] = useState(false);

@@ -1,12 +1,6 @@
 import { motion } from "framer-motion";
+import { ITextFieldParagraphProps } from "../../types/types";
 import "../../styles/TextFieldParagraph.scss";
-
-interface ITextFieldParagraphProps {
-  text: string;
-  color?: string;
-  underline?: boolean;
-  weight?: string;
-}
 
 const TextFieldParagraph = ({
   text,

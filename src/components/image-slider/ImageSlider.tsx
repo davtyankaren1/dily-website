@@ -8,10 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
 import "../../styles/ImageSlider.scss";
-
-export interface ImageSliderProps {
-  images: string[];
-}
+import { ImageSliderProps } from "../../types/types";
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   const [activeThumb, setActiveThumb] = useState(null);

@@ -7,11 +7,7 @@ import PlusIconSvg from "../../../assets/svgs/PlusIconSvg";
 import CloseSvg from "../../../assets/svgs/CloseSvg";
 import Menu from "../../menu/Menu";
 import "../../../styles/HeaderBottom.scss";
-
-interface IHeaderBottomProps {
-  toggleModal: () => {};
-  isModalOpen: boolean;
-}
+import { IHeaderBottomProps } from "../../../types/types";
 
 const HeaderBottom = ({ toggleModal, isModalOpen }: IHeaderBottomProps) => {
   return (

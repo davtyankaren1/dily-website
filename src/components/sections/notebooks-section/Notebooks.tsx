@@ -1,12 +1,8 @@
 import Cards from "../../card/components/Cards";
 import SeeAll from "../../see-all/SeeAll";
 import LogoTextSvg from "../../../assets/svgs/LogoTextSvg";
-import { IProduct } from "../../products/components/ProductsTopProducts";
+import { IOfferFromDilyProps } from "../../../types/types";
 import "../../../styles/Notebooks-section.scss";
-
-interface IOfferFromDilyProps {
-  notebooks: IProduct[];
-}
 
 const Notebooks = ({ notebooks }: IOfferFromDilyProps) => {
   return (

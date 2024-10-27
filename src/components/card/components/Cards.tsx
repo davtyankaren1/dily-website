@@ -1,10 +1,6 @@
 import CardItem from "../CardItem";
-import { IProduct } from "../../products/components/ProductsTopProducts";
 import "../../../styles/Cards.scss";
-
-export interface ICards {
-  mockData: IProduct[];
-}
+import { ICards } from "../../../types/types";
 
 const Cards = ({ mockData }: ICards) => {
   return (

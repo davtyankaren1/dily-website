@@ -1,12 +1,8 @@
 import Cards from "../../card/components/Cards";
 import SeeAll from "../../see-all/SeeAll";
-import { IProduct } from "../../products/components/ProductsTopProducts";
 import LogoTextSvg from "../../../assets/svgs/LogoTextSvg";
+import { IPhoneProps } from "../../../types/types";
 import "../../../styles/Phones-section.scss";
-
-interface IPhoneProps {
-  phones: IProduct[];
-}
 
 const Phones = ({ phones }: IPhoneProps) => {
   return (

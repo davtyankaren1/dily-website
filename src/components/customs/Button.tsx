@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
 import "../../styles/Button.scss";
-
-interface IButtonProps {
-  type?: "submit" | "button";
-  onClick?: () => void;
-  children?: React.ReactNode;
-  disabled?: boolean;
-  bgColor?: string;
-  color?: string;
-}
+import { IButtonProps } from "../../types/types";
 
 export const Button = ({
   type,

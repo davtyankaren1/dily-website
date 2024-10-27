@@ -6,12 +6,8 @@ import BreadCrumbs from "../breadcrumb/BreadCrumbs";
 import Avatar from "../../assets/images/Avatar.png";
 import RecomentProducts from "../sections/recoment-products/RecomentProducts";
 import StarFilled from "../../assets/svgs/StarFilled";
+import { IsingleProductProps } from "../../types/types";
 import "../../styles/SinglePhone.scss";
-import { IProduct } from "../products/components/ProductsTopProducts";
-
-interface IsingleProductProps {
-  product: IProduct;
-}
 
 const ProductSingleComponent = ({ product }: IsingleProductProps) => {
   const images = [

@@ -3,23 +3,8 @@ import ArrowDownSvg from "../../../assets/svgs/ArrowDownSvg";
 import GridSvg from "../../../assets/svgs/GridSvg";
 import ListSvg from "../../../assets/svgs/ListSvg";
 import CardItem from "../../card/CardItem";
+import { HeaderProps, IProductsTopProducts } from "../../../types/types";
 import "../../../styles/ProductsComponent.scss";
-
-export interface IProduct {
-  id: string;
-  imageUrl: string;
-  title: string;
-  price: string;
-  category?: string;
-  city?: string;
-  images?: string[];
-}
-
-interface IProductsTopProducts {
-  currentData: IProduct[];
-  isListView2: boolean;
-  setIsListView2: React.Dispatch<React.SetStateAction<boolean>>;
-}
 
 const ProductsTopProducts = ({
   currentData,
@@ -50,12 +35,6 @@ const ProductsTopProducts = ({
     </div>
   );
 };
-
-interface HeaderProps {
-  currentData: IProduct[];
-  isListView2: boolean;
-  setIsListView2: React.Dispatch<React.SetStateAction<boolean>>;
-}
 
 const Header = ({ currentData, isListView2, setIsListView2 }: HeaderProps) => (
   <div className='phones-content-header'>
