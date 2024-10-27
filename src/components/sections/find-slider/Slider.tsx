@@ -26,8 +26,8 @@ const Slider = () => {
             loop={true}
             slidesPerView={8}
             navigation={{
-              nextEl: ".find-slider .swiper-button-next",
-              prevEl: ".find-slider .swiper-button-prev"
+              nextEl: ".find-slider .find-slider-button-next",
+              prevEl: ".find-slider .find-slider-button-prev"
             }}
           >
             {mockData.map((item) => (
@@ -36,10 +36,10 @@ const Slider = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className='swiper-button-prev'>
+          <div className='find-slider-button-prev'>
             <ArrowLeftSliderSvg />
           </div>
-          <div className='swiper-button-next'>
+          <div className='find-slider-button-next'>
             <ArrowRightSliderSvg />
           </div>
         </div>

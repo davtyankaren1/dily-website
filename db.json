@@ -1,3 +1,424 @@
 {
-  "users": []
+  "phones": [
+    {
+      "id": 1,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Samsung Galaxy S21",
+      "price": "30 000 ₽",
+      "category": "phones",
+      "city": "Москва",
+      "images": [
+        "https://www.refurbished.nl/cache/images/samsung-galaxy-s21-grijs-frontandback_600x600_BGresize_16777215-tj.png",
+        "https://tiendazero.com.uy/wp-content/uploads/Samsung-Galaxy-S21-5G_2.webp",
+        "https://m.media-amazon.com/images/I/618nXc9a7gL.jpg",
+        "https://cdn.alloallo.media/catalog/product/samsung/galaxy-s/galaxy-s21/galaxy-s21-phantom-pink.jpg",
+        "https://tiendazero.com.uy/wp-content/uploads/Samsung-Galaxy-S21-5G_2.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Apple iPhone 12",
+      "price": "50 000 ₽",
+      "category": "phones",
+      "city": "Москва",
+      "images": [
+        "https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-12/iphone-12-purple.jpg",
+        "https://http2.mlstatic.com/D_NQ_NP_864889-MLA45729915884_042021-O.webp",
+        "https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-12/iphone-12-white.jpg",
+        "https://www.digimap.co.id/cdn/shop/files/0788-APPMGJ93ID-A-1.jpg?v=1721637128",
+        "https://cdn.idealo.com/folder/Product/200743/9/200743972/s11_produktbild_gross/apple-iphone-12-64-gb-azul.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "OnePlus 9",
+      "price": "40 000 ₽",
+      "category": "phones",
+      "city": "Москва",
+      "images": [
+        "https://static.androidplanet.nl/orca/products/21829/oneplus-9-5g.png",
+        "https://technolove.ru/upload/iblock/851/Oneplus_8_green.jpg",
+        "https://www.refurbished.nl/cache/images/oneplus-9-pro-zwart-frontandback_600x600_BGresize_16777215-tj.png",
+        "https://static.androidplanet.nl/orca/products/21815/oneplus-9-pro.png",
+        "https://rakistan.pk/wp-content/uploads/2022/12/oneplus-9-pakistan-priceoye-mzj58.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Google Pixel 5",
+      "price": "35 000 ₽",
+      "category": "phones",
+      "city": "Москва",
+      "images": [
+        "https://m.media-amazon.com/images/I/81-fNmQqlLL.jpg",
+        "https://s3.amazonaws.com/cdn.wingalpha.com/images/products/google_pixel_5_black@750.jpg",
+        "https://vest.in.ua/image/cache/data/vse_dlya_telepfoniv/stekla/google/pixel-5/full-screen/zashchitnoe-steklo-full-screen-google-pixel-5-black-1-1000x1000.jpg",
+        "https://m-cdn.phonearena.com/images/review/4878-wide-two_1200/Google-Pixel-5-Review-Brilliant-but-outshined.jpg",
+        "https://www.tradeinn.com/f/14028/140281094/google-pixel-5-8gb-128gb-6-%D0%BE%D1%82%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D1%8B.webp"
+      ]
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Xiaomi Mi 11",
+      "price": "28 000 ₽",
+      "category": "phones",
+      "city": "Москва",
+      "images": [
+        "https://www.refurbished.nl/cache/images/xiaomi-mi-11-grijs-duo_600x600_BGresize_16777215-tj.png",
+        "https://img.gkbcdn.com/s3/p/2020-12-30/Xiaomi-Mi-11-5G-Smartphone-6-81-Inch-12GB-256GB-Blue-427113-0.jpg",
+        "https://img.gkbcdn.com/s3/p/2020-12-30/Xiaomi-Mi-11-5G-Smartphone-6-81-Inch-8GB-256GB-White-427118-0.jpg",
+        "https://d2e6ccujb3mkqf.cloudfront.net/32472c21-c588-4aee-9347-74c6c63188dd-1_9cc9f61c-46fa-4453-b520-4ec5397e7040.jpg",
+        "https://gadgetsuite.net/wp-content/uploads/2024/04/Xiaomi-Mi-11-front-and-back-image.webp"
+      ]
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Sony Xperia 1 II",
+      "price": "55 000 ₽",
+      "category": "phones",
+      "city": "Москва",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUfJcYXvcGZQQ62h011wL6Q39-FS-1Wx7EQ&s",
+        "https://www.refurbished.nl/cache/images/sony-xperia-1-2-paars-multi_600x600_BGresize_16777215-tj.png",
+        "https://www.alezay.com/wp-content/uploads/2020/08/Sony-Xperia-1-ii-5G-Dual-White-e1596555287886-500x500.jpg",
+        "https://main-cdn.sbermegamarket.ru/big1/hlr-system/-20/833/493/378/413/14/100033353171b0.jpg",
+        "https://www.alezay.com/wp-content/uploads/2020/08/Sony-Xperia-1-ii-5G-Dual-White-e1596555287886-500x500.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Oppo Reno 5",
+      "price": "25 000 ₽",
+      "category": "phones",
+      "city": "Москва",
+      "images": [
+        "https://www.androidplanet.nl/wp-content/uploads/2020/12/oppo-reno-5.jpg",
+        "https://www.phone-x.co.ke/wp-content/uploads/2021/05/Oppo-Reno-5-Black-250x250.jpg",
+        "https://www.phone-x.co.ke/wp-content/uploads/2021/05/Oppo-Reno-5.jpg",
+        "https://cdn.new-brz.net/app/public/models/RENO54G-128SL/large/w/220909120010751238.webp",
+        "https://mobile-review.com/review/image/oppo/reno-5-lite/pic/1.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Huawei P40",
+      "price": "45 000 ₽",
+      "category": "phones",
+      "city": "Москва",
+      "images": [
+        "https://www.refurbished.nl/cache/images/huawei-p40-pro-multi_600x600_BGresize_16777215-tj.png",
+        "https://www.refurbished.nl/cache/images/huawei-p40-lite-pink-backfront_600x600_BGresize_16777215-tj.png",
+        "https://m.media-amazon.com/images/I/517x4ivEwwL.jpg",
+        "https://m.media-amazon.com/images/I/61Kpvde4fkL._AC_UF894,1000_QL80_.jpg",
+        "https://cdn.new-brz.net/app/public/models/ART-L28464ABL/large/w/210616160020065340.webp"
+      ]
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Nokia 1600",
+      "price": "22 000 ₽",
+      "category": "phones",
+      "city": "Москва",
+      "images": [
+        "https://tweakers.net/i/LEV8g-Gm9DoZJmn8lTnOu8tIvO8=/i/1223297372.jpg",
+        "https://tweakers.net/i/KK5tAYZE3AOamaba3gQjbijjtzA=/i/1223297541.jpg",
+        "https://static-mpm-optimized.s3.eu-west-2.amazonaws.com/2ead1026-c09d-4e7e-be8f-348196f82b84_large.png",
+        "https://media.mobile.news/mobile/Nokia-1600-1647819052.jpg",
+        "https://thedealsguru.com/wp-content/uploads/2019/04/1600-1.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Nokia 8.3",
+      "price": "20 000 ₽",
+      "category": "phones",
+      "city": "Москва",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoSBCbFLn3q4Bpv8FQr4pLcKcR10QHoM7zow&s",
+        "https://www.tweek.nl/app/uploads/2024/01/Nokia-8.3-Zwart-2-M-1024x1024.jpg",
+        "https://www.ixbt.com/img/r30/00/02/35/18/IMG6678.jpg",
+        "https://www.lostelecom.ru/image/cache/catalog/smartfony-folder/5/840984016-smartfon-nokia-8-3-5g-128gb-blue-ta-1243-1000x1000.jpg",
+        "https://lux-case.com/media/catalog/product/cache/965bbcd6c6cae1507b3b01d081a9dcc8/l/c/lc04-94-1005-2.jpg"
+      ]
+    }
+  ],
+  "notebooks": [
+    {
+      "id": 1,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Apple MacBook Air M1",
+      "price": "85 000 ₽",
+      "category": "notebooks",
+      "city": "Москва",
+      "images": [
+        "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-macbook-air-silver-m1-202010?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1634145618000",
+        "https://www.argonex.nl/img-agn/macbooks/macbook-air-m1.jpg",
+        "https://files.refurbed.com/ii/apple-macbook-air-m1-2020-1626677621.jpg?t=resize&h=630&w=1200",
+        "https://www.macvoorminder.nl/wp-content/uploads/2022/11/macbook-air-13-space-gray-2022@2x.jpg",
+        "https://mobistore.by/files/products/43/apple-macbook-air-13-2020-m1-8256gb-pr12942.400x400.jpg?7450f319dea0d4a5a113c315929c209e"
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Dell XPS 13",
+      "price": "70 000 ₽",
+      "category": "notebooks",
+      "city": "Москва",
+      "images": [
+        "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/13-9340/media-gallery/silver/touch/notebook-xps-13-9340-t-sl-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3509&hei=2082&qlt=100,1&resMode=sharp2&size=3509,2082&chrss=full&imwidth=5000",
+        "https://images-cdn.ubuy.ae/635f8ad9afed8b54834faff3-dell-xps-13-plus-9320-13-4.jpg",
+        "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9350/media-gallery/platinum/notebook-xps-13-9350-t-oled-sl-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&wid=3594&hei=2290&qlt=100,1&resMode=sharp2&size=3594,2290&chrss=full&imwidth=5000",
+        "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/9345/spi/platinum/touch-oled/notebook-xps-13-9345-oled-silver-campaign-hero-504x350-ng.psd?fmt=jpg&wid=570&hei=400",
+        "https://www.laptopsatcost.co.za/wp-content/uploads/2023/06/dell-xps-9320.png"
+      ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "HP Spectre x360",
+      "price": "90 000 ₽",
+      "category": "notebooks",
+      "city": "Москва",
+      "images": [
+        "https://files.refurbed.com/ii/hp-spectre-x360-2-1-16-f-11390h-1672742329.jpg",
+        "https://www.hp.com/nl-nl/shop/media/catalog/product/c/0/c08799334.png?store=nl-nl&image-type=image&auto=webp&format=jpg&bg-color=ffffff&width=640&height=800&fit=bounds&dpr=2.625",
+        "https://microless.com/cdn/products/6ac7af203a01cb709f81ac3655874fc9-hi.jpg",
+        "https://m.media-amazon.com/images/I/71PUZ9o9U6L.jpg",
+        "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08777449.png"
+      ]
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Lenovo ThinkPad X1 Carbon",
+      "price": "95 000 ₽",
+      "category": "notebooks",
+      "city": "Москва",
+      "images": [
+        "https://p1-ofp.static.pub/medias/bWFzdGVyfHJvb3R8MzM4MDg3fGltYWdlL3BuZ3xoMGYvaGY3LzE0MDcwNjc0NzE4NzUwLnBuZ3xiMDUwZmMyMGMxODkxY2JkNTdhMjZmMWM1YWY1NWZmYTllMTg4Y2E1NGFjMjMzMjRkZjQ1YjA1ZjA3YTFjMThi/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png",
+        "https://files.refurbed.com/pi/lenovo-tp-x1-carbon-g3-5200u-1644940890.jpg",
+        "https://p2-ofp.static.pub/fes/cms/2022/08/12/c0930tuc1yytgw3yt8m94fz91kunue061389.png",
+        "https://m.media-amazon.com/images/I/61nm3dwXAmL._AC_UF894,1000_QL80_.jpg",
+        "https://www.backmarket.nl/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D260/https://d2e6ccujb3mkqf.cloudfront.net/b2fe11dd-d2b1-4b3c-9206-e8d5808998a5-1_c44cad42-407d-4d7b-8224-5e2f6925aae6.jpg",
+        "https://files.refurbed.com/pi/lenovo-tp-x1-carbon-8650u-1642076333.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Asus ZenBook 14",
+      "price": "65 000 ₽",
+      "category": "notebooks",
+      "city": "Москва",
+      "images": [
+        "https://dlcdnwebimgs.asus.com/gain/8051bbcf-7796-40a1-8f94-9fe94cd55454/",
+        "https://www.notebookcheck.nl/uploads/tx_nbc2/AsusZenbook14UX3402__1__03.jpg",
+        "https://dlcdnwebimgs.asus.com/gain/98e97646-638e-4172-a126-7ad1972fc941/",
+        "https://www.notebookcheck.nl/typo3temp/_processed_/0/d/csm_LD0005429249_2_02_47a513fa77.jpg",
+        "https://dlcdnwebimgs.asus.com/gain/8b2f6d00-c179-416f-af9f-6e7ba536743a/"
+      ]
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Acer Swift 3",
+      "price": "55 000 ₽",
+      "category": "notebooks",
+      "city": "Москва",
+      "images": [
+        "https://www.notebookcheck.nl/fileadmin/Notebooks/Acer/Swift_3_SF314-42-R4XJ/4zu3_Acer_Swift3_SF314_42.jpg",
+        "https://m.media-amazon.com/images/I/71yfiDM5VJL._AC_UF1000,1000_QL80_.jpg",
+        "https://static2-ecemea.acer.com/media/catalog/product/_/_/___a__acer-swift-3_sf314-59_fp-backlit_melon-pink_1000main_nx.a5seh.002.png?quality=80&bg-color=255,255,255&fit=bounds&height=500&width=500&canvas=500:500&format=jpeg",
+        "https://www.expert.nl//cdn/resize/597/media/frontend/catalog/products/911/372634911/1260x1260/372634911-12655556.jpg",
+        "https://ants.kz/upload/resize_cache/webp/iblock/c0c/450_450_1/tgee0n9oafqix3m06wod2ar2gbdwwajk.webp"
+      ]
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Microsoft Surface Laptop 4",
+      "price": "80 000 ₽",
+      "category": "notebooks",
+      "city": "Москва",
+      "images": [
+        "https://gobytes.nl/wp-content/uploads/2024/08/Refurbished-Microsoft-Surface-Laptop-4.png",
+        "https://cdn.webshopapp.com/shops/330589/files/459509950/microsoft-surface-laptop-4-i7-1185g7-16gb-256gb-ss.jpg",
+        "https://files.refurbed.com/ii/ms-surface-laptop-4-1145g7-13-1695381140.jpg",
+        "https://files.refurbed.com/ii/ms-surface-laptop-4-1145g7-13-1695381141.jpg",
+        "https://www.estunt.nl/wp-content/uploads/2022/09/Estunt-Microsoft-Surface-Laptop-4-4.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Razer Blade Stealth 13",
+      "price": "100 000 ₽",
+      "category": "notebooks",
+      "city": "Москва",
+      "images": [
+        "https://www.notebookcheck.nl/uploads/tx_nbc2/RazerBladeStealth13-2019__1_.jpg",
+        "https://media.s-bol.com/72m8EYOl8nM1/prxvL6/1200x853.jpg",
+        "https://cdelec.com.au/cdn/shop/products/blade20stealth201320late20201920render207_8b71bfab-6abf-4122-acd9-d853e94166df_800x.png?v=1619443451",
+        "https://tweakers.net/i/xtcNNUUDPQtTPit0rDCCCvMXwE8=/i/2002359895.png",
+        "https://cdn11.bigcommerce.com/s-o9pppsyjzh/images/stencil/original/products/394282/12163213/N6232705__1__02927.1690000765.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Samsung Galaxy Book Pro",
+      "price": "75 000 ₽",
+      "category": "notebooks",
+      "city": "Москва",
+      "images": [
+        "https://www.notebookcheck.nl/uploads/tx_nbc2/SamsungGalaxyBookPro360-15-2021__1_.JPG",
+        "https://m.media-amazon.com/images/I/71FvcxBlqRL.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlMVg_i4rR8cmPMTE8kd17lHm7vIihAD69Sg&s",
+        "https://www.levix.nl/media/80/34/69/1726735793/23ca1656547c59711ddc2e521b87af8e.jpeg",
+        "https://m.media-amazon.com/images/I/61ioaRGoCKL._AC_UF894,1000_QL80_.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "LG Gram 14",
+      "price": "85 000 ₽",
+      "category": "notebooks",
+      "city": "Москва",
+      "images": [
+        "https://www.notebookcheck.nl/uploads/tx_nbc2/4_zu_3_gram.jpg",
+        "https://www.notebookcheck.nl/uploads/tx_nbc2/LG-Gram14-14T990__1_.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfdteeNDolVvPk6o8UjkJ5y4mWMewYCBRMCNLo9DDu_z-B9Zs63NVsWArt-K6nWS238Xw&usqp=CAU",
+        "https://i0.wp.com/www.smartelectronicsqld.com/wp-content/uploads/2024/09/Screenshot-2024-09-02-at-4.06.01%E2%80%AFPM.png?fit=2518%2C1236&ssl=1",
+        "https://img.tehnomaks.ru/img/prod/full/16779115142965.png"
+      ]
+    }
+  ],
+  "techniques": [
+    {
+      "id": 1,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Samsung 55-Inch Smart TV",
+      "price": "50 000 ₽",
+      "category": "techniques",
+      "city": "Москва",
+      "images": [
+        "https://mrspeazy.nl/wp-content/uploads/2023/03/nl-crystal-uhd-cu7000-452093-452093-ue55cu7100kxxn-535744284.png",
+        "https://media.s-bol.com/xrR03vG8NOB3/31KoxLx/1200x1098.jpg",
+        "https://i0.wp.com/mrspeazy.nl/wp-content/uploads/2023/05/samsung_q60c_left.png?fit=1400%2C760&ssl=1",
+        "https://i0.wp.com/mrspeazy.nl/wp-content/uploads/2024/04/samsung-q70d-rechts.png?fit=1400%2C760&ssl=1",
+        "https://images.samsung.com/is/image/samsung/p6pim/in/ua55du7700klxl/gallery/in-crystal-uhd-du7000-502838-ua55du7700klxl-thumb-540822322?$344_344_PNG$"
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "LG Double Door Refrigerator",
+      "price": "70 000 ₽",
+      "category": "techniques",
+      "city": "Москва",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREaq3lrLK3HzOCCnJ_RkiEdGCz3LkmUcrH-w&s",
+        "https://www.lg.com/content/dam/channel/wcms/in/images/refrigerators/gl-t262tesx_deszebn_eail_in_c/gallery/GL-T262TESX-Refrigerators-Left-Low-Perspective-View-DZ-11.jpg",
+        "https://lgbyunilet.com/wp-content/uploads/2023/09/GL-T412VPZX-Refrigerators-Front-1.webp",
+        "https://lgbyunilet.com/wp-content/uploads/2023/09/GL-N412SDSY-Refrigerators-Back-V.webp",
+        "https://tvpoint.com.np/wp-content/uploads/2020/12/lg-Refrigerator-310-Ltrs.side-view-600x602.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Daikin Air Conditioner",
+      "price": "60 000 ₽",
+      "category": "techniques",
+      "city": "Москва",
+      "images": [
+        "https://www.condizionati.nl/5688-home_default/daikin-35-kw-mono-split-fha35a9-rxm35r9-air-conditioner-fha-a9-wit-12000-btu-r-32-plafond-a-a-met-draadcommando-madoka.jpg",
+        "https://www.condizionati.nl/5135-large_default/daikin-20-kw-mono-split-ftxa20bs-rxa20a9-air-conditioner-stylish-total-silver-zilvernen-7000-btu-r-32-muur-wifi-a-a.jpg",
+        "https://wholesaleaircon.com.au/cdn/shop/files/Daikin-Cora_1ed4502a-413f-409a-a934-165db39d9671_600x600_crop_center.png?v=1696689252",
+        "https://backend.daikincomfort.com/images/default-source/default-album/fit-3rdgen.png?sfvrsn=26b82026_4",
+        "https://www.condizionati.nl/5301-large_default/daikin-duo-split-2042-kw-2mxm50a-ftxa20bt-ftxa42bt-air-conditioner-stylish-blackwood-700015000-btu-r-32-wifi-a-a.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Sony 65-Inch OLED TV",
+      "price": "120 000 ₽",
+      "category": "techniques",
+      "city": "Москва",
+      "images": [
+        "https://webcdn.hellotv.nl/resize?type=auto&stripmeta=true&url=https%3A%2F%2Fpimcore.hellotv.nl%2F%2F_default_upload_bucket%2FSony-KE-A8-goed-1.jpg&width=871&height=473&extend=white",
+        "https://webcdn.hellotv.nl/resize?type=auto&stripmeta=true&url=https%3A%2F%2Fpimcore.hellotv.nl%2F%2FPlatteTV%2F_default_upload_bucket%2FSony-XR-65A90J-8.png&width=871&height=473&extend=white",
+        "https://m.media-amazon.com/images/I/71R1ZcAYlRL.jpg",
+        "https://hwimages.beslist.net/beslist-images/pim/4548736150683/394/F300/ca7a2233bcc1dafe9fd2d0f5875228b1/OLED-TV%27s/Sony-Bravia-XR-65A80L-4K-UHD-OLED-TV-(2023).jpg",
+        "https://www.expert.nl//cdn/resize/597/media/frontend/catalog/products/016/372639016/1260x1260/372639016-14420575.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Whirlpool French Door Refrigerator",
+      "price": "85 000 ₽",
+      "category": "techniques",
+      "city": "Москва",
+      "images": [
+        "https://images.webfronts.com/cache/mexlccjkcuqp.jpg?imgeng=/w_500/h_500/m_letterbox_ffffff_100",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnK8_WCe4LGe_uShiVLWZLK1_V531C4IOR4g&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-neb1KA6GhMgghpm9V77A20k7EMqCX33ukA&s",
+        "https://static.3d-baza.com/models/0/e1b9a6d3413849c8b3741347.jpg",
+        "https://images.webfronts.com/cache/meykjephddba.jpg?imgeng=/w_500/h_500/m_letterbox_ffffff_100"
+      ]
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Panasonic Split Air Conditioner",
+      "price": "55 000 ₽",
+      "category": "techniques",
+      "city": "Москва"
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Philips 43-Inch LED TV",
+      "price": "35 000 ₽",
+      "category": "techniques",
+      "city": "Москва"
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Haier Bottom-Freezer Refrigerator",
+      "price": "60 000 ₽",
+      "category": "techniques",
+      "city": "Москва"
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Hitachi Inverter Air Conditioner",
+      "price": "65 000 ₽",
+      "category": "techniques",
+      "city": "Москва"
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Toshiba 4K Smart TV",
+      "price": "45 000 ₽",
+      "category": "techniques",
+      "city": "Москва"
+    }
+  ]
 }
