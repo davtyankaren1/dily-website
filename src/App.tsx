@@ -1,70 +1,57 @@
 import React from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import FindSlider from "./components/sections/find-slider/Slider";
-import FormLayout from "./components/form-layout/FormLayout";
-import { Route, Routes } from "react-router-dom";
-import LoginWithPassPage from "./pages/login-with-pass/LoginWithPassPage";
-import ConfirmCodePage from "./pages/confirm-code-page/ConfirmCodePage";
-import LoginFormPage from "./pages/login-form/LoginFormPage";
-import MessageSentPage from "./pages/message-sent/MessageSentPage";
-import UserAuthPage from "./pages/user-auth/UserAuthPage";
-import RestorePassPage from "./pages/restore-pass/RestorePassPage";
-import Card from "./components/card/CardItem";
-import CardItem from "./components/card/CardItem";
-import Selection from "./components/sections/selection/Selection";
-import ServiceSlider from "./components/sections/services-slider/Slider";
-import OfferFromDily from "./components/sections/offer-from-dily/OfferFromDily";
-import ActualOffers from "./components/sections/actual-offers/ActualOffers";
-import WillGiveFree from "./components/sections/will-give-free/WillGiveFree";
-import DontMiss from "./components/sections/dont-miss/DontMiss";
-import PopularStores from "./components/popular-stores/PopularStores";
-import SalesSection from "./components/sections/sales-section/SalesSection";
-import SellToUs from "./components/sections/sell-to-us/SellToUs";
-import HomeDescription from "./components/description/HomeDescription";
-import PhonesPage from "./pages/phones-page/PhonesPage";
 import HomePage from "./pages/home-page/HomePage";
-import SinglePhone from "./components/phones/components/SinglePhone";
-import ImageSlider from "./components/image-slider/ImageSlider";
+import ProductsPage from "./pages/products-page/ProductsPage";
+import ProductSinglePage from "./pages/product-single-page/ProductSinglePage";
+import ScrollToTop from "./components/scroll-top/ScrollToTop";
+import UserAuthPage from "./pages/user-auth/UserAuthPage";
+import LoginWithPassPage from "./pages/login-with-pass/LoginWithPassPage";
+import RestorePassPage from "./pages/restore-pass/RestorePassPage";
+import MessageSentPage from "./pages/message-sent/MessageSentPage";
+import LoginFormPage from "./pages/login-form/LoginFormPage";
+import ConfirmCodePage from "./pages/confirm-code-page/ConfirmCodePage";
+import FormLayout from "./components/form-layout/FormLayout";
 
 const App: React.FC = () => {
+  const location = useLocation();
+
+  const hideHeaderFooterRoutes = [
+    "/auth",
+    "/login-with-pass",
+    "/restore-password",
+    "/message-sent",
+    "/login-form",
+    "/confirm-code"
+  ];
+
+  const hideHeaderFooter = hideHeaderFooterRoutes.includes(location.pathname);
+
   return (
     <div className='App'>
-      {/* <FormLayout>
-        <Routes>
-          <Route path='/' element={<UserAuthPage />} />
+      {!hideHeaderFooter && <Header />}
+
+      <ScrollToTop />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/phones' element={<ProductsPage />} />
+        <Route path='/notebooks' element={<ProductsPage />} />
+        <Route path='/techniques' element={<ProductsPage />} />
+        <Route path='/phones/:id' element={<ProductSinglePage />} />
+        <Route path='/notebooks/:id' element={<ProductSinglePage />} />
+        <Route path='/techniques/:id' element={<ProductSinglePage />} />
+
+        <Route element={<FormLayout />}>
+          <Route path='/auth' element={<UserAuthPage />} />
           <Route path='/login-with-pass' element={<LoginWithPassPage />} />
           <Route path='/restore-password' element={<RestorePassPage />} />
           <Route path='/message-sent' element={<MessageSentPage />} />
           <Route path='/login-form' element={<LoginFormPage />} />
           <Route path='/confirm-code' element={<ConfirmCodePage />} />
-        </Routes>
-      </FormLayout> */}
-      {/* <Header />
-      <ServiceSlider />
-      <FindSlider />
-      <Selection />
-      <OfferFromDily />
-      <DontMiss />
-      <ActualOffers />
-      <WillGiveFree />
-      <SalesSection />
-      <PopularStores />
-      <SellToUs /> */}
-      {/* <HomeDescription /> */}
-
-      {/* <Header />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/phones' element={<PhonesPage />} />
+        </Route>
       </Routes>
-      <Footer /> */}
-
-      <Header />
-      <SinglePhone />
-      <Footer />
-
-      {/* <ImageSlider images={images} /> */}
+      {!hideHeaderFooter && <Footer />}
     </div>
   );
 };

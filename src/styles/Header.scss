@@ -1,5 +1,11 @@
 .header {
-  position: relative;
+  position: sticky;
+  background-color: white;
+  z-index: 5555;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+
   &:before {
     position: absolute;
     content: "";
@@ -12,5 +18,9 @@
     height: 6px;
     top: 0;
     z-index: 10;
+  }
+
+  &.scrolled {
+    background-color: rgba(255, 255, 255, 0.7); // Slightly transparent white
   }
 }

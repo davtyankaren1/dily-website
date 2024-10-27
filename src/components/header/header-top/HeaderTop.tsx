@@ -4,8 +4,8 @@ import LocationSvg from "../../../assets/svgs/LocationSvg";
 import ArrowDownSvg from "../../../assets/svgs/ArrowDownSvg";
 import AvatarSvg from "../../../assets/svgs/AvatarSvg";
 import { motion } from "framer-motion";
-import Modal from "../../modal/Modal";
 import "../../../styles/HeaderTop.scss";
+import { useNavigate } from "react-router-dom";
 
 const HeaderTop = () => {
   const [activeIndex, setActiveIndex] = useState(2);
@@ -19,12 +19,19 @@ const HeaderTop = () => {
     setModalOpen(!isModalOpen);
   };
 
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/auth");
+  };
+
   return (
     <div className='header-top'>
       <div className='container'>
         <div className='header-content'>
           <div className='header-left'>
-            <HeaderLogoSvg />
+            <div className='header-logo-svg' onClick={() => navigate("/")}>
+              <HeaderLogoSvg />
+            </div>
             <ul className='nav-menu'>
               {[
                 "Доска объявлений",
@@ -67,7 +74,8 @@ const HeaderTop = () => {
             <div className='login'>
               <AvatarSvg />
               <motion.div
-                href=''
+                style={{ cursor: "pointer" }}
+                onClick={handleLogin}
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
@@ -78,11 +86,6 @@ const HeaderTop = () => {
           </div>
         </div>
       </div>
-
-      <Modal isOpen={isModalOpen} onClose={toggleModal} title='Выбор города'>
-        <p>Здесь будет содержимое для выбора города.</p>
-        <p>Выберите ваш город из списка.</p>
-      </Modal>
     </div>
   );
 };

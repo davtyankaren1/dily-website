@@ -1,24 +1,26 @@
 .single-page {
   &-inner {
-    margin-top: 60px;
     border-radius: 10px;
     height: 1459px;
     box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
     background: var(--standart-white);
     padding: 30px 70px;
+
     &-content {
-      justify-content: space-between;
       display: flex;
+      justify-content: space-between;
+
       &-left {
         width: 600px;
         display: flex;
         flex-direction: column;
         gap: 30px;
+
         .single-page-slider {
           width: 600px;
           height: 570px;
-          border: 1px solid black;
         }
+
         .product-title {
           padding: 25px 20px;
           border-radius: 10px;
@@ -28,6 +30,7 @@
           background: var(--standart-white);
           display: flex;
           flex-direction: column;
+
           &-sub {
             font-family: var(--font-family);
             font-weight: 700;
@@ -46,13 +49,73 @@
           }
         }
 
-        .products-charachter {
-          width: 600px;
-          height: 506px;
-          box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
-          background: var(--standart-white);
+        .product-character {
+          background-color: #fff;
+          border-radius: 8px;
+          padding: 20px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          font-family: Arial, sans-serif;
+          color: #333;
+          font-size: 14px;
+          line-height: 1.6;
+          max-width: 600px;
+        }
+
+        .product-character__section {
+          padding-bottom: 15px;
+          border-bottom: 1px solid #eaeaea;
+
+          &--location,
+          &--details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+
+        .product-character__title {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          color: #333;
+        }
+
+        .product-character__characteristics {
+          justify-content: space-between;
+        }
+
+        .product-character__characteristics,
+        .product-character__location-info,
+        .product-character__details-info {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 20px;
+        }
+
+        .product-character__item {
+          display: flex;
+          justify-content: space-between;
+          width: 45%;
+
+          .product-character__label {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: rgba(54, 58, 69, 0.7);
+          }
+
+          .product-character__value {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 150%;
+            color: var(--dark-grey);
+          }
         }
       }
+
       &-right {
         width: 400px;
         display: flex;
@@ -64,6 +127,7 @@
           margin-top: 20px;
           align-items: start;
           gap: 20px;
+
           .single-page-delivery-icon {
             display: flex;
             flex-direction: column;
@@ -85,19 +149,21 @@
           box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
           background: var(--standart-white);
           padding: 25px 20px;
+
           .right-content-price {
-            align-items: baseline;
             display: flex;
             justify-content: space-between;
+            align-items: baseline;
+
             &-texts {
               display: flex;
               gap: 10px;
+
               .single-item-price {
                 font-family: var(--font-family);
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 150%;
-                text-align: center;
                 color: var(--dark-grey);
                 margin-top: -5px;
               }
@@ -109,14 +175,154 @@
             }
           }
         }
+
         &-user-profile {
           border-radius: 5px;
           width: 400px;
-          height: 253px;
           box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
           background: var(--standart-white);
+          padding: 25px 20px;
+          display: flex;
+          gap: 20px;
         }
       }
     }
+  }
+
+  .single-page-breadcrubmbs {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.single-page-breadcrumbs {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.single-page-inner-name {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: var(--dark-grey);
+}
+
+.avatar-container {
+  img {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 234px;
+}
+
+.user-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  .user-name {
+    font-weight: bold;
+  }
+
+  .user-rating {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px;
+
+    .rating-value {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--bright-green);
+    }
+
+    .stars {
+      display: flex;
+    }
+  }
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .detail {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--dark-grey);
+  }
+}
+
+.user-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .user-rating-footer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--dark-grey);
+    }
+  }
+}
+
+.user-profile-rating_btn {
+  border: 1px solid var(--medium-grey);
+  border-radius: 10px;
+  padding: 11px 13px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.product-info-card {
+  color: #333;
+
+  &__section {
+    margin-bottom: 0.5rem;
+
+    p {
+      margin-top: 10px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--dark-grey);
+
+      span {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: rgba(54, 58, 69, 0.7);
+      }
+    }
+  }
+
+  &__divider {
+    margin-top: 5px;
+    border: 1px solid var(--medium-grey-2);
+    width: 600px;
+    height: 0px;
   }
 }

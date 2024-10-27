@@ -1,0 +1,21 @@
+.recoment {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  &-cards-title {
+    margin-bottom: 30px;
+    text-align: center;
+    .recoment-cards-title-with-text {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .recoment-cards-text {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+      color: var(--dark-grey);
+    }
+  }
+}
