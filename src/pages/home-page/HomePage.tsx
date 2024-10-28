@@ -18,6 +18,9 @@ import {
 } from "../../redux/feature/ProductsSlice";
 import Notebooks from "../../components/sections/notebooks-section/Notebooks";
 import Technique from "../../components/sections/technique/Technique";
+import { mockData } from "../../components/popular-stores/mockData";
+import SalesImg1 from "../../assets/images/image.png";
+import SalesImg2 from "../../assets/images/A0r95y5Q598.jpg";
 
 const HomePage = () => {
   const { phones, notebooks, techniques } = useAppSelector(
@@ -40,8 +43,15 @@ const HomePage = () => {
       <DontMiss />
       <Technique techniques={techniques} />
       <WillGiveFree />
-      <SalesSection />
-      <PopularStores />
+      <SalesSection
+        firstBannerFirstText='Магазины'
+        firstBannerSecondText='Легко откройте свой интернет-магазин'
+        secondBannerFirstText='Подключить тариф'
+        secondBannerSecondText='Разнообразные опции для вашего бизнеса'
+        salesBannerImg1={SalesImg1}
+        salesBannerImg2={SalesImg2}
+      />
+      <PopularStores mockData={mockData} />
       <SellToUs />
       <HomeDescription />
     </div>

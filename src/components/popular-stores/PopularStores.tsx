@@ -1,59 +1,11 @@
 import { useRef } from "react";
-import DetskiMir from "../../assets/images/popular-stores/detski-mir.png";
-import DivaniTut from "../../assets/images/popular-stores/divani-tut.png";
-import KotObormot from "../../assets/images/popular-stores/kot-obormot.png";
-import XiamoImg from "../../assets/images/popular-stores/xiaomi.png";
-import Mvideo from "../../assets/images/popular-stores/mvideo.png";
 import StarFilled from "../../assets/svgs/StarFilled";
 import EmptyStar from "../../assets/svgs/EmptyStar";
 import { motion, useInView } from "framer-motion";
 import SeeAll from "../see-all/SeeAll";
 import "../../styles/PopularStores.scss";
 
-const PopularStores = () => {
-  const mockData = [
-    {
-      id: 1,
-      title: "М-ВИДЕО",
-      storeLogo: Mvideo,
-      city: "Москва",
-      rating: 5,
-      bgColor: "#f5253a"
-    },
-    {
-      id: 2,
-      title: "КОТ-ОБОРМОТ",
-      storeLogo: KotObormot,
-      city: "Москва",
-      rating: 5,
-      bgColor: "#fc9024"
-    },
-    {
-      id: 3,
-      title: "XIAOMI",
-      storeLogo: XiamoImg,
-      city: "Москва",
-      rating: 4,
-      bgColor: "#00c65e"
-    },
-    {
-      id: 4,
-      title: "ДИВАНЫ ТУТ",
-      storeLogo: DivaniTut,
-      city: "Москва",
-      rating: 3,
-      bgColor: "#1eae8b"
-    },
-    {
-      id: 5,
-      title: "ДЕТСКИЙ МИР",
-      storeLogo: DetskiMir,
-      city: "Москва",
-      rating: 5,
-      bgColor: "#01c1fb"
-    }
-  ];
-
+const PopularStores = ({ mockData }) => {
   const renderStars = (rating: number) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {

@@ -1,34 +1,33 @@
-import SalesImg1 from "../../../assets/images/image.png";
-import SalesImg2 from "../../../assets/images/A0r95y5Q598.jpg";
 import "../../../styles/SalesSection.scss";
 
-const SalesSection = () => {
+const SalesSection = ({
+  firstBannerFirstText,
+  firstBannerSecondText,
+  secondBannerFirstText,
+  secondBannerSecondText,
+  salesBannerImg1,
+  salesBannerImg2
+}: any) => {
   return (
     <div className='sales-section'>
       <div className='container'>
         <div className='sales__content'>
           <div className='sales__item'>
             <div className='sales__text'>
-              <span className='sales__title'>Скидки от Dily.ru</span>
-              <span className='sales__subtitle'>Горячие цены сезона</span>
+              <span className='sales__title'>{firstBannerFirstText}</span>
+              <span className='sales__subtitle'>{firstBannerSecondText}</span>
             </div>
-            <img
-              className='sales__image'
-              src={SalesImg1}
-              alt='Скидки от Dily.ru'
-            />
+            <img className='sales__image' src={salesBannerImg1} />
           </div>
 
           <div className='sales__item'>
             <div className='sales__text'>
-              <span className='sales__subtitle'>
-                Подборка товаров для идеального рабочего места
-              </span>
+              <span className='sales__title'>{secondBannerFirstText}</span>
+              <span className='sales__subtitle'>{secondBannerSecondText}</span>
             </div>
             <img
               className='sales__image sales__image--full'
-              src={SalesImg2}
-              alt='Подборка товаров'
+              src={salesBannerImg2}
             />
           </div>
         </div>

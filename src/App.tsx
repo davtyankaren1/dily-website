@@ -13,6 +13,7 @@ import MessageSentPage from "./pages/message-sent/MessageSentPage";
 import LoginFormPage from "./pages/login-form/LoginFormPage";
 import ConfirmCodePage from "./pages/confirm-code-page/ConfirmCodePage";
 import FormLayout from "./components/form-layout/FormLayout";
+import StoresPage from "./pages/stores-page/StoresPage";
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -41,6 +42,8 @@ const App: React.FC = () => {
         <Route path='/phones/:id' element={<ProductSinglePage />} />
         <Route path='/notebooks/:id' element={<ProductSinglePage />} />
         <Route path='/techniques/:id' element={<ProductSinglePage />} />
+
+        <Route path='/stores' element={<StoresPage />} />
 
         <Route element={<FormLayout />}>
           <Route path='/auth' element={<UserAuthPage />} />

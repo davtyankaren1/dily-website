@@ -53,6 +53,21 @@ const ProductsComponent = () => {
     ? techniques
     : [];
 
+  const getHeaderText = () => {
+    if (path.includes("/phones")) {
+      return { text: "Телефоны", path: "/phones" };
+    }
+    if (path.includes("/notebooks")) {
+      return { text: "Ноутбуки", path: "/notebooks" };
+    }
+    if (path.includes("/techniques")) {
+      return { text: "Техника", path: "/techniques" };
+    }
+    return { text: "", path: "" };
+  };
+
+  const { text } = getHeaderText();
+
   return (
     <div className='phones'>
       <div className='container'>
@@ -62,7 +77,7 @@ const ProductsComponent = () => {
             <div className='phone-content-container'>
               <div className='recent-added'>
                 <div>
-                  <TextFieldHeader text='Телефоны и аксессуары' />
+                  <TextFieldHeader text={text} />
                   <TextFieldTitle text='Недавние объявления' />
                 </div>
                 <div className='phones-content'>
