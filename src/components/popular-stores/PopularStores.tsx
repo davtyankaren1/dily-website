@@ -28,7 +28,7 @@ const PopularStores = ({ mockData }) => {
           >
             Популярные магазины
           </motion.h2>
-          <SeeAll />
+          <SeeAll path='/' />
         </div>
         <div className='popular-stores__inner'>
           {mockData.map((item, index) => (
@@ -43,6 +43,7 @@ const PopularStores = ({ mockData }) => {
               <div className='store-item-header'>
                 <img src={item.storeLogo} alt={item.title} />
                 <motion.span
+                  style={{ color: item.textColor }}
                   initial={{ y: -10, opacity: 0 }}
                   animate={inView ? { y: 0, opacity: 1 } : {}}
                   transition={{ duration: 0.5, delay: index * 0.1 }}

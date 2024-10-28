@@ -3,6 +3,11 @@ import DivaniTut from "../../assets/images/popular-stores/divani-tut.png";
 import KotObormot from "../../assets/images/popular-stores/kot-obormot.png";
 import XiamoImg from "../../assets/images/popular-stores/xiaomi.png";
 import Mvideo from "../../assets/images/popular-stores/mvideo.png";
+import AvtoMir from "../../assets/images/popular-stores/avtomir.png";
+import Volt from "../../assets/images/popular-stores/222-volt.png";
+import Ekolayf from "../../assets/images/popular-stores/ekolayf.png";
+import Velomir from "../../assets/images/popular-stores/Velomir.png";
+import Avrora from "../../assets/images/popular-stores/avtora.png";
 
 const mockData = [
   {
@@ -11,7 +16,8 @@ const mockData = [
     storeLogo: Mvideo,
     city: "Москва",
     rating: 5,
-    bgColor: "#f5253a"
+    bgColor: "#f5253a",
+    textColor: "#fff"
   },
   {
     id: 2,
@@ -19,7 +25,8 @@ const mockData = [
     storeLogo: KotObormot,
     city: "Москва",
     rating: 5,
-    bgColor: "#fc9024"
+    bgColor: "#fc9024",
+    textColor: "#fff"
   },
   {
     id: 3,
@@ -27,7 +34,8 @@ const mockData = [
     storeLogo: XiamoImg,
     city: "Москва",
     rating: 4,
-    bgColor: "#00c65e"
+    bgColor: "#00c65e",
+    textColor: "#fff"
   },
   {
     id: 4,
@@ -35,7 +43,8 @@ const mockData = [
     storeLogo: DivaniTut,
     city: "Москва",
     rating: 3,
-    bgColor: "#1eae8b"
+    bgColor: "#1eae8b",
+    textColor: "#fff"
   },
   {
     id: 5,
@@ -43,128 +52,53 @@ const mockData = [
     storeLogo: DetskiMir,
     city: "Москва",
     rating: 5,
-    bgColor: "#01c1fb"
+    bgColor: "#01c1fb",
+    textColor: "#fff"
   },
   {
-    id: 1,
-    title: "М-ВИДЕО",
-    storeLogo: Mvideo,
+    id: 6,
+    title: "АВТОМИР",
+    storeLogo: AvtoMir,
     city: "Москва",
     rating: 5,
-    bgColor: "#f5253a"
+    bgColor: "gray",
+    textColor: "black"
   },
   {
-    id: 2,
-    title: "КОТ-ОБОРМОТ",
-    storeLogo: KotObormot,
+    id: 7,
+    title: "222 ВОЛТ",
+    storeLogo: Volt,
     city: "Москва",
     rating: 5,
-    bgColor: "#fc9024"
+    bgColor: "orange",
+    textColor: "black"
   },
   {
-    id: 3,
-    title: "XIAOMI",
-    storeLogo: XiamoImg,
-    city: "Москва",
-    rating: 4,
-    bgColor: "#00c65e"
-  },
-  {
-    id: 4,
-    title: "ДИВАНЫ ТУТ",
-    storeLogo: DivaniTut,
-    city: "Москва",
-    rating: 3,
-    bgColor: "#1eae8b"
-  },
-  {
-    id: 2,
-    title: "КОТ-ОБОРМОТ",
-    storeLogo: KotObormot,
+    id: 8,
+    title: "Эколайф",
+    storeLogo: Ekolayf,
     city: "Москва",
     rating: 5,
-    bgColor: "#fc9024"
+    bgColor: "#00C65E",
+    textColor: "#fff"
   },
   {
-    id: 5,
-    title: "ДЕТСКИЙ МИР",
-    storeLogo: DetskiMir,
+    id: 9,
+    title: "ВЕЛОМИР",
+    storeLogo: Velomir,
     city: "Москва",
     rating: 5,
-    bgColor: "#01c1fb"
+    bgColor: "#FFEE53",
+    textColor: "black"
   },
   {
-    id: 1,
-    title: "М-ВИДЕО",
-    storeLogo: Mvideo,
+    id: 9,
+    title: "АВРОРА",
+    storeLogo: Avrora,
     city: "Москва",
     rating: 5,
-    bgColor: "#f5253a"
-  },
-
-  {
-    id: 3,
-    title: "XIAOMI",
-    storeLogo: XiamoImg,
-    city: "Москва",
-    rating: 4,
-    bgColor: "#00c65e"
-  },
-  {
-    id: 4,
-    title: "ДИВАНЫ ТУТ",
-    storeLogo: DivaniTut,
-    city: "Москва",
-    rating: 3,
-    bgColor: "#1eae8b"
-  },
-  {
-    id: 5,
-    title: "ДЕТСКИЙ МИР",
-    storeLogo: DetskiMir,
-    city: "Москва",
-    rating: 5,
-    bgColor: "#01c1fb"
-  },
-  {
-    id: 1,
-    title: "М-ВИДЕО",
-    storeLogo: Mvideo,
-    city: "Москва",
-    rating: 5,
-    bgColor: "#f5253a"
-  },
-  {
-    id: 2,
-    title: "КОТ-ОБОРМОТ",
-    storeLogo: KotObormot,
-    city: "Москва",
-    rating: 5,
-    bgColor: "#fc9024"
-  },
-  {
-    id: 3,
-    title: "XIAOMI",
-    storeLogo: XiamoImg,
-    city: "Москва",
-    rating: 4,
-    bgColor: "#00c65e"
-  },
-  {
-    id: 4,
-    title: "ДИВАНЫ ТУТ",
-    storeLogo: DivaniTut,
-    city: "Москва",
-    rating: 3,
-    bgColor: "#1eae8b"
-  },
-  {
-    id: 5,
-    title: "ДЕТСКИЙ МИР",
-    storeLogo: DetskiMir,
-    city: "Москва",
-    rating: 5,
-    bgColor: "#01c1fb"
+    bgColor: "#01C1FB",
+    textColor: "#fff"
   }
 ];
 

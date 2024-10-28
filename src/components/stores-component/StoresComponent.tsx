@@ -4,8 +4,6 @@ import { mockData } from "../popular-stores/mockData";
 import allStoresData from "./mockData";
 import HomeDescription from "../description/HomeDescription";
 import SalesSection from "../sections/sales-section/SalesSection";
-import StoresImg1 from "../../assets/images/stores-slider-img1.jpg";
-import StoresImg2 from "../../assets/images/stores-slider-img2.jpg";
 import "../../styles/StoresComponent.scss";
 
 const StoresComponent = () => {
