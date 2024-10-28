@@ -1,0 +1,27 @@
+.how-can-we-help {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  &-items {
+    display: flex;
+    gap: 150px;
+    &-item {
+      max-width: 250px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 152%;
+        text-align: center;
+        color: var(--dark-grey);
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

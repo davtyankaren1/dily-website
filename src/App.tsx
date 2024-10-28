@@ -14,6 +14,7 @@ import LoginFormPage from "./pages/login-form/LoginFormPage";
 import ConfirmCodePage from "./pages/confirm-code-page/ConfirmCodePage";
 import FormLayout from "./components/form-layout/FormLayout";
 import StoresPage from "./pages/stores-page/StoresPage";
+import CharityPage from "./pages/charity-page/CharityPage";
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -44,6 +45,7 @@ const App: React.FC = () => {
         <Route path='/techniques/:id' element={<ProductSinglePage />} />
 
         <Route path='/stores' element={<StoresPage />} />
+        <Route path='/charity' element={<CharityPage />} />
 
         <Route element={<FormLayout />}>
           <Route path='/auth' element={<UserAuthPage />} />

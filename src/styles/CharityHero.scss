@@ -1,0 +1,32 @@
+.charity-hero {
+  background-color: #ffb66231;
+  .charity-hero__inner {
+    display: flex;
+    &-texts {
+      margin-top: 40px;
+      margin-left: 202px;
+      max-width: 440px;
+      h1 {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: var(--bright-orange);
+      }
+      p {
+        margin-top: 71px;
+        margin-bottom: 45px;
+
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        color: var(--dark-grey);
+      }
+      .charity-hero-button {
+        width: 51%;
+      }
+    }
+  }
+}
