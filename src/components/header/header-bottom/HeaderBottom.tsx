@@ -6,8 +6,10 @@ import SearchIconSvg from "../../../assets/svgs/SearchIconSvg";
 import PlusIconSvg from "../../../assets/svgs/PlusIconSvg";
 import CloseSvg from "../../../assets/svgs/CloseSvg";
 import Menu from "../../menu/Menu";
-import "../../../styles/HeaderBottom.scss";
 import { IHeaderBottomProps } from "../../../types/types";
+import { NavLink } from "react-router-dom";
+
+import "../../../styles/HeaderBottom.scss";
 
 const HeaderBottom = ({ toggleModal, isModalOpen }: IHeaderBottomProps) => {
   return (
@@ -19,17 +21,17 @@ const HeaderBottom = ({ toggleModal, isModalOpen }: IHeaderBottomProps) => {
               {isModalOpen ? <CloseSvg /> : <MenuSvg />}
             </div>
             <ul className='header-bottom__menu-list'>
-              <li className='header-bottom__menu-item'>
+              <li activeClassName='active' className='header-bottom__menu-item'>
                 <UpdatesSvg />
-                <a href=''>Объявления</a>
+                <NavLink to={""}>Объявления</NavLink>
               </li>
-              <li className='header-bottom__menu-item'>
+              <li activeClassName='active' className='header-bottom__menu-item'>
                 <StoreSvg />
-                <a href=''>Магазины</a>
+                <NavLink to={"/stores"}>Магазины</NavLink>
               </li>
-              <li className='header-bottom__menu-item'>
+              <li activeClassName='active' className='header-bottom__menu-item'>
                 <CharitySvg />
-                <a href=''>Благотворительность</a>
+                <NavLink to={""}>Благотворительность</NavLink>
               </li>
             </ul>
           </div>
