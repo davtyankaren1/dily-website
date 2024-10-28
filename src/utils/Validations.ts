@@ -3,7 +3,7 @@ import * as Yup from "yup";
 export const validationSchema_ConfirmCode = Yup.object({
   logincode: Yup.string()
     .matches(/^[0-9]+$/, "Logincode must be a number")
-    .required("Logincode is required")
+    .required("Login code is required")
 });
 
 export const validationSchema_RestorePassword = Yup.object({
