@@ -31,7 +31,7 @@ const HeaderBottom = ({ toggleModal, isModalOpen }: IHeaderBottomProps) => {
               </li>
               <li activeClassName='active' className='header-bottom__menu-item'>
                 <CharitySvg />
-                <NavLink to={""}>Благотворительность</NavLink>
+                <NavLink to={"/charity"}>Благотворительность</NavLink>
               </li>
             </ul>
           </div>
