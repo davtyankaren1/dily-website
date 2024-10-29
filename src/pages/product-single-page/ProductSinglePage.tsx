@@ -20,8 +20,17 @@ const ProductSinglePage = () => {
         ? "phones"
         : path.includes("notebooks")
         ? "notebooks"
-        : "techniques";
-      dispatch(fetchProductById({ id, category }));
+        : path.includes("techniques")
+        ? "techniques"
+        : path.includes("toys")
+        ? "toys"
+        : path.includes("home-and-yard")
+        ? "home-and-yard"
+        : null;
+
+      if (category) {
+        dispatch(fetchProductById({ id, category }));
+      }
     }
   }, [dispatch, id, path]);
 

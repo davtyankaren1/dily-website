@@ -7,6 +7,12 @@
       "price": "30 000 ₽",
       "category": "phones",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The Samsung Galaxy S21 features a stunning Dynamic AMOLED display, a versatile triple-camera system, and powerful performance with the Exynos 2100 chip. Enjoy a sleek design and 5G connectivity for ultra-fast internet speeds.",
+      "diagonal": "6.2 inches",
+      "memory": "128 GB",
+      "date": "2021-01-14",
+      "quantity": 10,
       "images": [
         "https://www.refurbished.nl/cache/images/samsung-galaxy-s21-grijs-frontandback_600x600_BGresize_16777215-tj.png",
         "https://tiendazero.com.uy/wp-content/uploads/Samsung-Galaxy-S21-5G_2.webp",
@@ -22,6 +28,12 @@
       "price": "50 000 ₽",
       "category": "phones",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The iPhone 12 offers an exceptional camera experience with its dual 12MP cameras, including Night mode. The A14 Bionic chip ensures fast performance, and the Super Retina XDR display brings vibrant colors and clarity.",
+      "diagonal": "6.1 inches",
+      "memory": "64 GB",
+      "date": "2020-10-23",
+      "quantity": 5,
       "images": [
         "https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-12/iphone-12-purple.jpg",
         "https://http2.mlstatic.com/D_NQ_NP_864889-MLA45729915884_042021-O.webp",
@@ -37,6 +49,12 @@
       "price": "40 000 ₽",
       "category": "phones",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "OnePlus 9 features a Fluid AMOLED display and Hasselblad partnership for superior camera quality. Powered by Snapdragon 888, it delivers high performance, fast charging, and a beautiful design.",
+      "diagonal": "6.55 inches",
+      "memory": "128 GB",
+      "date": "2021-03-23",
+      "quantity": 8,
       "images": [
         "https://static.androidplanet.nl/orca/products/21829/oneplus-9-5g.png",
         "https://technolove.ru/upload/iblock/851/Oneplus_8_green.jpg",
@@ -52,6 +70,12 @@
       "price": "35 000 ₽",
       "category": "phones",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "Google Pixel 5 offers a pure Android experience with a fantastic camera, featuring Night Sight and astrophotography modes. It has a 90Hz display and excellent battery life, making it a great choice for photography enthusiasts.",
+      "diagonal": "6.0 inches",
+      "memory": "128 GB",
+      "date": "2020-10-15",
+      "quantity": 12,
       "images": [
         "https://m.media-amazon.com/images/I/81-fNmQqlLL.jpg",
         "https://s3.amazonaws.com/cdn.wingalpha.com/images/products/google_pixel_5_black@750.jpg",
@@ -67,6 +91,12 @@
       "price": "28 000 ₽",
       "category": "phones",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "Xiaomi Mi 11 combines a stunning AMOLED display with powerful hardware. The Snapdragon 888 ensures smooth performance, while its triple-camera setup captures stunning photos in various conditions.",
+      "diagonal": "6.81 inches",
+      "memory": "256 GB",
+      "date": "2020-12-28",
+      "quantity": 15,
       "images": [
         "https://www.refurbished.nl/cache/images/xiaomi-mi-11-grijs-duo_600x600_BGresize_16777215-tj.png",
         "https://img.gkbcdn.com/s3/p/2020-12-30/Xiaomi-Mi-11-5G-Smartphone-6-81-Inch-12GB-256GB-Blue-427113-0.jpg",
@@ -82,75 +112,106 @@
       "price": "55 000 ₽",
       "category": "phones",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The Sony Xperia 1 II boasts a cinematic 4K HDR OLED display and a professional-grade camera system. It’s designed for multimedia consumption and photography, with powerful performance and a unique design.",
+      "diagonal": "6.5 inches",
+      "memory": "256 GB",
+      "date": "2020-07-08",
+      "quantity": 6,
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUfJcYXvcGZQQ62h011wL6Q39-FS-1Wx7EQ&s",
-        "https://www.refurbished.nl/cache/images/sony-xperia-1-2-paars-multi_600x600_BGresize_16777215-tj.png",
-        "https://www.alezay.com/wp-content/uploads/2020/08/Sony-Xperia-1-ii-5G-Dual-White-e1596555287886-500x500.jpg",
-        "https://main-cdn.sbermegamarket.ru/big1/hlr-system/-20/833/493/378/413/14/100033353171b0.jpg",
-        "https://www.alezay.com/wp-content/uploads/2020/08/Sony-Xperia-1-ii-5G-Dual-White-e1596555287886-500x500.jpg"
+        "https://www.refurbished.nl/cache/images/sonyxperia-1-ii-black-frontandback_600x600_BGresize_16777215-tj.png",
+        "https://www.gizbot.com/img/2020/02/sony-xperia-1-ii-1581597315.jpg",
+        "https://www.digitaltrends.com/wp-content/uploads/2020/03/sony-xperia-1-ii-front.jpg",
+        "https://cdn.vox-cdn.com/thumbor/UL2JLn2wi1T3Fc7Fmv9G9rfYmRY=/0x0:3000x2000/1200x628/filters:focal(1260x328:1740x808)/cdn.vox-cdn.com/uploads/chorus_image/image/67075674/DSC03844.0.jpg"
       ]
     },
     {
       "id": 7,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
-      "title": "Oppo Reno 5",
-      "price": "25 000 ₽",
+      "title": "Nokia 8.3 5G",
+      "price": "45 000 ₽",
       "category": "phones",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "Nokia 8.3 5G features a large display, versatile quad-camera system, and stock Android experience. The Snapdragon 765G ensures 5G connectivity and smooth performance for everyday tasks.",
+      "diagonal": "6.81 inches",
+      "memory": "128 GB",
+      "date": "2020-12-15",
+      "quantity": 9,
       "images": [
-        "https://www.androidplanet.nl/wp-content/uploads/2020/12/oppo-reno-5.jpg",
-        "https://www.phone-x.co.ke/wp-content/uploads/2021/05/Oppo-Reno-5-Black-250x250.jpg",
-        "https://www.phone-x.co.ke/wp-content/uploads/2021/05/Oppo-Reno-5.jpg",
-        "https://cdn.new-brz.net/app/public/models/RENO54G-128SL/large/w/220909120010751238.webp",
-        "https://mobile-review.com/review/image/oppo/reno-5-lite/pic/1.jpg"
+        "https://www.vedanta.com/wp-content/uploads/2020/05/Nokia-8.3-5G.jpg",
+        "https://i02.appmifile.com/118_appmifile.com/app/cdn/23909505121604922138/20200409105542/cqwwh/1500px/nokia_8_3_5g_2.png",
+        "https://cdn.vox-cdn.com/thumbor/pY3RkKt3WjT_8qZSVkUk7Fvkh5E=/0x0:2040x1360/1200x628/filters:focal(850x624:1190x964)/cdn.vox-cdn.com/uploads/chorus_image/image/69330784/nnok_8_3_5g_4.0.jpg",
+        "https://www.gizmochina.com/wp-content/uploads/2021/02/Nokia-8.3-5G-2.jpg",
+        "https://www.hindustantimes.com/ht-img/img/2021/09/08/550x309/nokia_8_3_5g_1631106313030_1631106313030_1631106313030.jpg"
       ]
     },
     {
       "id": 8,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
-      "title": "Huawei P40",
-      "price": "45 000 ₽",
+      "title": "Realme GT",
+      "price": "32 000 ₽",
       "category": "phones",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "Realme GT combines high performance with a vibrant AMOLED display. Powered by Snapdragon 888, it supports fast charging and offers a solid camera experience.",
+      "diagonal": "6.43 inches",
+      "memory": "128 GB",
+      "date": "2021-03-04",
+      "quantity": 11,
       "images": [
-        "https://www.refurbished.nl/cache/images/huawei-p40-pro-multi_600x600_BGresize_16777215-tj.png",
-        "https://www.refurbished.nl/cache/images/huawei-p40-lite-pink-backfront_600x600_BGresize_16777215-tj.png",
-        "https://m.media-amazon.com/images/I/517x4ivEwwL.jpg",
-        "https://m.media-amazon.com/images/I/61Kpvde4fkL._AC_UF894,1000_QL80_.jpg",
-        "https://cdn.new-brz.net/app/public/models/ART-L28464ABL/large/w/210616160020065340.webp"
+        "https://image-us.samsung.com/SamsungUS/home/2021/realme-gt-5g.png",
+        "https://cdn.vox-cdn.com/thumbor/5vopqD_ih-2T6eS7KbT9k8c0wRg=/0x0:1600x900/1200x628/filters:focal(672x333:928x589)/cdn.vox-cdn.com/uploads/chorus_image/image/68816108/realme_gt_hero.0.jpg",
+        "https://m.media-amazon.com/images/I/81-8T9OebBL.jpg",
+        "https://www.gizmochina.com/wp-content/uploads/2021/04/Realme-GT-3.jpg",
+        "https://www.reviewsphere.com/wp-content/uploads/2021/03/Realme-GT-hero.jpg"
       ]
     },
     {
       "id": 9,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
-      "title": "Nokia 1600",
-      "price": "22 000 ₽",
+      "title": "Vivo X60 Pro",
+      "price": "38 000 ₽",
       "category": "phones",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "Vivo X60 Pro features a sleek design, impressive camera capabilities with gimbal stabilization, and a vibrant AMOLED display. It's powered by Exynos 1080 for high performance.",
+      "diagonal": "6.56 inches",
+      "memory": "256 GB",
+      "date": "2021-01-25",
+      "quantity": 7,
       "images": [
-        "https://tweakers.net/i/LEV8g-Gm9DoZJmn8lTnOu8tIvO8=/i/1223297372.jpg",
-        "https://tweakers.net/i/KK5tAYZE3AOamaba3gQjbijjtzA=/i/1223297541.jpg",
-        "https://static-mpm-optimized.s3.eu-west-2.amazonaws.com/2ead1026-c09d-4e7e-be8f-348196f82b84_large.png",
-        "https://media.mobile.news/mobile/Nokia-1600-1647819052.jpg",
-        "https://thedealsguru.com/wp-content/uploads/2019/04/1600-1.jpg"
+        "https://www.gizmochina.com/wp-content/uploads/2021/01/Vivo-X60-Pro-1.jpg",
+        "https://static.thehansindia.com/content/2021/jan/23/1192959-vivo-x60-pro-main.jpg",
+        "https://m.media-amazon.com/images/I/71Y1RYk2qOL.jpg",
+        "https://www.phonearena.com/images/phone/32257/large/vivo-x60-pro.jpg",
+        "https://www.techradar.com/benri/images/2021/02/Vivo_X60_Pro_main.jpg"
       ]
     },
     {
       "id": 10,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
-      "title": "Nokia 8.3",
-      "price": "20 000 ₽",
+      "title": "Huawei P40 Pro",
+      "price": "42 000 ₽",
       "category": "phones",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "Huawei P40 Pro excels in photography with its quad-camera setup and advanced AI features. The OLED display and Kirin 990 5G chipset provide a premium experience for users.",
+      "diagonal": "6.58 inches",
+      "memory": "256 GB",
+      "date": "2020-04-08",
+      "quantity": 5,
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoSBCbFLn3q4Bpv8FQr4pLcKcR10QHoM7zow&s",
-        "https://www.tweek.nl/app/uploads/2024/01/Nokia-8.3-Zwart-2-M-1024x1024.jpg",
-        "https://www.ixbt.com/img/r30/00/02/35/18/IMG6678.jpg",
-        "https://www.lostelecom.ru/image/cache/catalog/smartfony-folder/5/840984016-smartfon-nokia-8-3-5g-128gb-blue-ta-1243-1000x1000.jpg",
-        "https://lux-case.com/media/catalog/product/cache/965bbcd6c6cae1507b3b01d081a9dcc8/l/c/lc04-94-1005-2.jpg"
+        "https://m.media-amazon.com/images/I/71bZ3Sv8CIL._AC_SX679_.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUK6SPhuU2gbgiHhrf7p63Xcl_Wp1Jtc1BHA&usqp=CAU",
+        "https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/2020/03/huawei-p40-pro-review-6.jpg",
+        "https://cdn.vox-cdn.com/thumbor/Tw2b1aLSJ2Zf1SjOtSoC3uVmL1s=/0x0:1024x576/1200x628/filters:focal(430x224:590x384)/cdn.vox-cdn.com/uploads/chorus_image/image/61734549/Huawei_P40_Pro_Preview.0.png",
+        "https://www.phonearena.com/images/phone/101800/large/huawei-p40-pro.jpg"
       ]
     }
   ],
+
   "notebooks": [
     {
       "id": 1,
@@ -159,6 +220,12 @@
       "price": "85 000 ₽",
       "category": "notebooks",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The Apple MacBook Air M1 features a sleek design and powerful performance, powered by the M1 chip. With a stunning Retina display and exceptional battery life, it's perfect for both work and play.",
+      "diagonal": "13.3 inches",
+      "memory": "8 GB",
+      "date": "2024-10-01",
+      "quantity": 5,
       "images": [
         "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-macbook-air-silver-m1-202010?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1634145618000",
         "https://www.argonex.nl/img-agn/macbooks/macbook-air-m1.jpg",
@@ -174,6 +241,12 @@
       "price": "70 000 ₽",
       "category": "notebooks",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The Dell XPS 13 is a premium ultraportable laptop known for its stunning InfinityEdge display and powerful performance. It’s lightweight, making it perfect for on-the-go productivity.",
+      "diagonal": "13.4 inches",
+      "memory": "16 GB",
+      "date": "2024-10-02",
+      "quantity": 3,
       "images": [
         "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/13-9340/media-gallery/silver/touch/notebook-xps-13-9340-t-sl-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=3509&hei=2082&qlt=100,1&resMode=sharp2&size=3509,2082&chrss=full&imwidth=5000",
         "https://images-cdn.ubuy.ae/635f8ad9afed8b54834faff3-dell-xps-13-plus-9320-13-4.jpg",
@@ -189,6 +262,12 @@
       "price": "90 000 ₽",
       "category": "notebooks",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The HP Spectre x360 is a versatile 2-in-1 laptop with a stunning design and powerful performance. Its flexible hinge allows you to use it as a laptop or tablet, perfect for any situation.",
+      "diagonal": "13.3 inches",
+      "memory": "16 GB",
+      "date": "2024-10-03",
+      "quantity": 4,
       "images": [
         "https://files.refurbed.com/ii/hp-spectre-x360-2-1-16-f-11390h-1672742329.jpg",
         "https://www.hp.com/nl-nl/shop/media/catalog/product/c/0/c08799334.png?store=nl-nl&image-type=image&auto=webp&format=jpg&bg-color=ffffff&width=640&height=800&fit=bounds&dpr=2.625",
@@ -204,6 +283,12 @@
       "price": "95 000 ₽",
       "category": "notebooks",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The Lenovo ThinkPad X1 Carbon is known for its durability and enterprise-grade security features. It offers a comfortable keyboard and long battery life, making it ideal for professionals.",
+      "diagonal": "14 inches",
+      "memory": "16 GB",
+      "date": "2024-10-04",
+      "quantity": 2,
       "images": [
         "https://p1-ofp.static.pub/medias/bWFzdGVyfHJvb3R8MzM4MDg3fGltYWdlL3BuZ3xoMGYvaGY3LzE0MDcwNjc0NzE4NzUwLnBuZ3xiMDUwZmMyMGMxODkxY2JkNTdhMjZmMWM1YWY1NWZmYTllMTg4Y2E1NGFjMjMzMjRkZjQ1YjA1ZjA3YTFjMThi/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png",
         "https://files.refurbed.com/pi/lenovo-tp-x1-carbon-g3-5200u-1644940890.jpg",
@@ -220,90 +305,330 @@
       "price": "65 000 ₽",
       "category": "notebooks",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The Asus ZenBook 14 combines a slim profile with powerful hardware. Its vibrant display and excellent battery life make it a great choice for students and professionals alike.",
+      "diagonal": "14 inches",
+      "memory": "16 GB",
+      "date": "2024-10-05",
+      "quantity": 6,
       "images": [
-        "https://dlcdnwebimgs.asus.com/gain/8051bbcf-7796-40a1-8f94-9fe94cd55454/",
-        "https://www.notebookcheck.nl/uploads/tx_nbc2/AsusZenbook14UX3402__1__03.jpg",
-        "https://dlcdnwebimgs.asus.com/gain/98e97646-638e-4172-a126-7ad1972fc941/",
-        "https://www.notebookcheck.nl/typo3temp/_processed_/0/d/csm_LD0005429249_2_02_47a513fa77.jpg",
-        "https://dlcdnwebimgs.asus.com/gain/8b2f6d00-c179-416f-af9f-6e7ba536743a/"
+        "https://rog.asus.com/media/global/products/aA58Y8M9HCSYyJvc/20200929/product-zenbook-14-ux425-aero1.jpg",
+        "https://rog.asus.com/media/global/products/aA58Y8M9HCSYyJvc/20200929/product-zenbook-14-ux425-aero2.jpg",
+        "https://www.igp.com/images/product/large/asus-zenbook-14.jpg",
+        "https://m.media-amazon.com/images/I/71nW2I-JGhL._AC_SL1500_.jpg",
+        "https://cdn11.bigcommerce.com/s-6mj1sy3z/images/stencil/1280x1280/products/1478/6594/ujb2tzh__52430.1600817944.jpg?c=2"
       ]
     },
     {
       "id": 6,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
-      "title": "Acer Swift 3",
-      "price": "55 000 ₽",
+      "title": "Microsoft Surface Laptop 4",
+      "price": "80 000 ₽",
       "category": "notebooks",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The Microsoft Surface Laptop 4 offers a premium design with a touchscreen display and powerful Intel processors. It's perfect for creative professionals and everyday tasks.",
+      "diagonal": "13.5 inches",
+      "memory": "16 GB",
+      "date": "2024-10-06",
+      "quantity": 3,
       "images": [
-        "https://www.notebookcheck.nl/fileadmin/Notebooks/Acer/Swift_3_SF314-42-R4XJ/4zu3_Acer_Swift3_SF314_42.jpg",
-        "https://m.media-amazon.com/images/I/71yfiDM5VJL._AC_UF1000,1000_QL80_.jpg",
-        "https://static2-ecemea.acer.com/media/catalog/product/_/_/___a__acer-swift-3_sf314-59_fp-backlit_melon-pink_1000main_nx.a5seh.002.png?quality=80&bg-color=255,255,255&fit=bounds&height=500&width=500&canvas=500:500&format=jpeg",
-        "https://www.expert.nl//cdn/resize/597/media/frontend/catalog/products/911/372634911/1260x1260/372634911-12655556.jpg",
-        "https://ants.kz/upload/resize_cache/webp/iblock/c0c/450_450_1/tgee0n9oafqix3m06wod2ar2gbdwwajk.webp"
+        "https://www.microsoft.com/store/product/images/c7ef2996-4cfc-4bba-9a7c-bb1c7fd4ef66/600x600?format=jpg",
+        "https://files.refurbed.com/ii/microsoft-surface-laptop-4-10300h-16-gb-1658304600.jpg",
+        "https://m.media-amazon.com/images/I/71XheLY3eSL._AC_SL1500_.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS48wB2B6VoQZ0cQ0oKQzL1AzZ9S29bCekD8w&usqp=CAU",
+        "https://www.electroshop.am/uploads/images/ms_laptop.jpg"
       ]
     },
     {
       "id": 7,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
-      "title": "Microsoft Surface Laptop 4",
-      "price": "80 000 ₽",
+      "title": "Acer Swift 3",
+      "price": "60 000 ₽",
       "category": "notebooks",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The Acer Swift 3 is a lightweight laptop with a great balance of performance and portability. It features a stylish design and a long battery life for on-the-go use.",
+      "diagonal": "14 inches",
+      "memory": "8 GB",
+      "date": "2024-10-07",
+      "quantity": 5,
       "images": [
-        "https://gobytes.nl/wp-content/uploads/2024/08/Refurbished-Microsoft-Surface-Laptop-4.png",
-        "https://cdn.webshopapp.com/shops/330589/files/459509950/microsoft-surface-laptop-4-i7-1185g7-16gb-256gb-ss.jpg",
-        "https://files.refurbed.com/ii/ms-surface-laptop-4-1145g7-13-1695381140.jpg",
-        "https://files.refurbed.com/ii/ms-surface-laptop-4-1145g7-13-1695381141.jpg",
-        "https://www.estunt.nl/wp-content/uploads/2022/09/Estunt-Microsoft-Surface-Laptop-4-4.jpg"
+        "https://cdn.vox-cdn.com/thumbor/qcG4C7tIHldKnFnTr0fzcnT2E7g=/1400x1400/filters:format(jpg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22183573/Acer_Swift_3_Front.jpg",
+        "https://m.media-amazon.com/images/I/71PG9yaBR1L._AC_SL1500_.jpg",
+        "https://static.giantbomb.com/uploads/original/0/8891/2358989-acer_swift_3_5.jpg",
+        "https://www.xda-developers.com/files/2020/05/Acer-Swift-3-SF314-55-3.jpg",
+        "https://cnet4.cbsistatic.com/img/5KQDL3JtAz5H4nXDoH1qH_FHq5E=/940x0/2020/10/29/4e431748-4f66-4903-93e2-1d22f39163e1/acer-swift-3-2020-review-01.jpg"
       ]
     },
     {
       "id": 8,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Razer Blade Stealth 13",
-      "price": "100 000 ₽",
+      "price": "120 000 ₽",
       "category": "notebooks",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The Razer Blade Stealth 13 combines gaming performance with portability. It features a high-refresh-rate display and powerful graphics, making it perfect for gamers on the go.",
+      "diagonal": "13.3 inches",
+      "memory": "16 GB",
+      "date": "2024-10-08",
+      "quantity": 2,
       "images": [
-        "https://www.notebookcheck.nl/uploads/tx_nbc2/RazerBladeStealth13-2019__1_.jpg",
-        "https://media.s-bol.com/72m8EYOl8nM1/prxvL6/1200x853.jpg",
-        "https://cdelec.com.au/cdn/shop/products/blade20stealth201320late20201920render207_8b71bfab-6abf-4122-acd9-d853e94166df_800x.png?v=1619443451",
-        "https://tweakers.net/i/xtcNNUUDPQtTPit0rDCCCvMXwE8=/i/2002359895.png",
-        "https://cdn11.bigcommerce.com/s-o9pppsyjzh/images/stencil/original/products/394282/12163213/N6232705__1__02927.1690000765.jpg"
+        "https://cdn11.bigcommerce.com/s-wzzfzy8iw6/images/stencil/1280x1280/products/150240/255735/004_razor_blade_stealth_13_2021__95884.1622474511.jpg?c=1",
+        "https://www.hdqwalls.com/download/razer-blade-stealth-13-4k-4k-1920x1080.jpg",
+        "https://www.razerzone.com.au/dynamic/474x278/2A5148AE/FC4B2588/f5bb1a99e351df870d037fa44e3b40d3.jpeg",
+        "https://m.media-amazon.com/images/I/71Z-0cn65pL._AC_SL1500_.jpg",
+        "https://cdn.vox-cdn.com/thumbor/WD1gsrAHgU--0zjbbqA6oDFo6zY=/1400x1400/filters:format(jpg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22432861/Screen_Shot_2020_07_30_at_2.09.59_PM.png"
       ]
     },
     {
       "id": 9,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Samsung Galaxy Book Pro",
-      "price": "75 000 ₽",
+      "price": "85 000 ₽",
       "category": "notebooks",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The Samsung Galaxy Book Pro features an ultra-slim design and high-resolution AMOLED display. It offers great performance for productivity and entertainment.",
+      "diagonal": "13.3 inches",
+      "memory": "16 GB",
+      "date": "2024-10-09",
+      "quantity": 3,
       "images": [
-        "https://www.notebookcheck.nl/uploads/tx_nbc2/SamsungGalaxyBookPro360-15-2021__1_.JPG",
-        "https://m.media-amazon.com/images/I/71FvcxBlqRL.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlMVg_i4rR8cmPMTE8kd17lHm7vIihAD69Sg&s",
-        "https://www.levix.nl/media/80/34/69/1726735793/23ca1656547c59711ddc2e521b87af8e.jpeg",
-        "https://m.media-amazon.com/images/I/61ioaRGoCKL._AC_UF894,1000_QL80_.jpg"
+        "https://www.samsung.com/global/galaxy/galaxy-book-pro/images/home/gallery1.jpg",
+        "https://cdn.samsung.com/sa/smartphones/galaxy-book-pro/galaxy-book-pro--layout.jpg",
+        "https://www.samsung.com/global/galaxy/galaxy-book-pro/images/home/gallery2.jpg",
+        "https://cdn.mos.cms.futurecdn.net/jN2RUF3TqFvRgD9y88rzg2.jpg",
+        "https://cdn.vox-cdn.com/thumbor/Z_vtSmTwxHquXSoxxkM4w0dxFKA=/1400x1400/filters:format(jpg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22439889/Samsung_Galaxy_Book_Pro_1.png"
       ]
     },
     {
       "id": 10,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "LG Gram 14",
-      "price": "85 000 ₽",
+      "price": "95 000 ₽",
       "category": "notebooks",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "The LG Gram 14 is known for its lightweight design and long battery life. It features a full HD display and a solid performance for everyday tasks.",
+      "diagonal": "14 inches",
+      "memory": "16 GB",
+      "date": "2024-10-10",
+      "quantity": 4,
       "images": [
-        "https://www.notebookcheck.nl/uploads/tx_nbc2/4_zu_3_gram.jpg",
-        "https://www.notebookcheck.nl/uploads/tx_nbc2/LG-Gram14-14T990__1_.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfdteeNDolVvPk6o8UjkJ5y4mWMewYCBRMCNLo9DDu_z-B9Zs63NVsWArt-K6nWS238Xw&usqp=CAU",
-        "https://i0.wp.com/www.smartelectronicsqld.com/wp-content/uploads/2024/09/Screenshot-2024-09-02-at-4.06.01%E2%80%AFPM.png?fit=2518%2C1236&ssl=1",
-        "https://img.tehnomaks.ru/img/prod/full/16779115142965.png"
+        "https://www.lg.com/us/images/laptops/md06213230/gallery/desktop-gs-07.jpg",
+        "https://cdn.vox-cdn.com/thumbor/Vh1QgUPqI_OrFQHSI1qIkZ6lYQY=/1400x1400/filters:format(jpg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22367867/IMG_2053.jpg",
+        "https://images.samsung.com/us/galaxy-book-pro/pc-videos/gallery/Samsung_Galaxy_Book_Pro_2.jpg",
+        "https://m.media-amazon.com/images/I/81vF3FfFJgL._AC_SL1500_.jpg",
+        "https://m.media-amazon"
       ]
     }
   ],
+
+  "toys": [
+    {
+      "id": 1,
+      "imageUrl": "https://example.com/images/toy-truck.jpg",
+      "title": "Toy Truck",
+      "price": "1,500 ₽",
+      "category": "toys",
+      "city": "Москва",
+      "isFavorite": false,
+      "images": [
+        "https://atlas-content-cdn.pixelsquid.com/stock-images/truck-toy-construction-vehicle-lX0XzM8-600.jpg",
+        "https://img.pikbest.com/png-images/qianku/yellow-dump-truck-toy_2286990.png!sw800",
+        "https://www.pngitem.com/pimgs/m/212-2126548_dump-truck-car-euclidean-vector-dumptruck-png-transparent.png",
+        "https://m.media-amazon.com/images/I/611Vy9BskwL._AC_UF894,1000_QL80_.jpg",
+        "https://m.media-amazon.com/images/I/61HkKdvjT1L._AC_UF1000,1000_QL80_.jpg"
+      ],
+      "description": "A sturdy toy truck for imaginative play, perfect for outdoor adventures.",
+      "quantity": 10,
+      "targetGender": "boys",
+      "date": "2024-10-29"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://example.com/images/toy-airplane.jpg",
+      "title": "Toy Airplane",
+      "price": "2,000 ₽",
+      "category": "toys",
+      "city": "Санкт-Петербург",
+      "isFavorite": false,
+      "images": [
+        "https://atlas-content-cdn.pixelsquid.com/stock-images/wooden-aircraft-toy-airplane-Q9lRQx0-600.jpg",
+        "https://atlas-content-cdn.pixelsquid.com/stock-images/toy-airplane-WyV4Nn4-600.jpg",
+        "https://www.greentoys.co.uk/cdn/shop/products/gtairb1027-1_1.jpg?v=1648543498",
+        "https://shop.nmrn.org.uk/wp-content/uploads/2023/05/toy-eco-plane.png",
+        "https://www.babycharlotte.com/cdn/shop/products/greentoyscargoplane02_2000x.jpg?v=1631118752"
+      ],
+      "description": "A colorful toy airplane, perfect for aspiring pilots and airplane enthusiasts.",
+      "quantity": 15,
+      "targetGender": "boys",
+      "date": "2024-10-29"
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://example.com/images/barbie-doll.jpg",
+      "title": "Barbie Doll",
+      "price": "3,500 ₽",
+      "category": "toys",
+      "city": "Москва",
+      "isFavorite": false,
+      "images": [
+        "https://pngimg.com/d/barbie_PNG32.png",
+        "https://stylecaster.com/wp-content/uploads/2014/02/barbie-doll-body1.jpg",
+        "https://purepng.com/public/uploads/thumbnail//purepng.com-barbie-dollbarbiefashion-dolltoybusinesswomanbild-lilli-17015285270469scdg.png",
+        "https://img.freepik.com/premium-psd/barbie-doll-transparent-background_1149757-32112.jpg",
+        "https://cdn.hepsiglobal.com/prod/media/13483/20240316/59b977e6-51e9-41b2-becb-879b554c96f2.jpg"
+      ],
+      "description": "A classic Barbie doll with fashionable outfits and accessories.",
+      "quantity": 20,
+      "targetGender": "girls",
+      "date": "2024-10-29"
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://example.com/images/toy-robot.jpg",
+      "title": "Toy Robot",
+      "price": "4,000 ₽",
+      "category": "toys",
+      "city": "Казань",
+      "isFavorite": false,
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIuoUQhseeGC8Ofopnx85RsvRp6_fgeNptlD6p0V3K57A1F0AXTKm84LQrTH_IDBfdOvM&usqp=CAU",
+        "https://atlas-content-cdn.pixelsquid.com/stock-images/toy-robot-AEDr4k6-600.jpg",
+        "https://www.freepnglogos.com/uploads/robot-png/robot-home-secured-virtual-1.png",
+        "https://www.kindpng.com/picc/m/110-1101043_robot-png-background-image-robot-png-transparent.png",
+        "https://www.seekpng.com/png/detail/17-175597_robot-png-hd-robot-transparent.png"
+      ],
+      "description": "A fun toy robot that lights up and moves, perfect for tech enthusiasts.",
+      "quantity": 8,
+      "targetGender": "boys",
+      "date": "2024-10-29"
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://example.com/images/toy-train.jpg",
+      "title": "Toy Train",
+      "price": "2,200 ₽",
+      "category": "toys",
+      "city": "Екатеринбург",
+      "isFavorite": false,
+      "images": [
+        "https://m.media-amazon.com/images/I/61gN52NTYjL.jpg",
+        "https://i5.walmartimages.com/asr/f5381b94-8168-4910-a550-9f0e62ca7704.007298bcb1f53cc7c98e56035fe26c2f.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+        "https://i5.walmartimages.com/seo/Thomas-Friends-Toy-Train-Thomas-Diecast-Metal-Engine-Push-Along-Vehicle-for-Preschool-Kids_b26c5fe1-cee4-4304-a62e-37af9903e833.375e59c4c8aaaf2dd88c83781ca9ee87.jpeg",
+        "https://m.media-amazon.com/images/I/71Z344q2jcL._AC_UF894,1000_QL80_.jpg",
+        "https://www.maqio.com/cdn/shop/products/323366dd-d119-44ad-824e-b5aa0c238610.jpg?v=1655895507"
+      ],
+      "description": "A colorful toy train set that sparks creativity and imagination.",
+      "quantity": 12,
+      "targetGender": "boys",
+      "date": "2024-10-29"
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://example.com/images/toy-dinosaur.jpg",
+      "title": "Toy Dinosaur",
+      "price": "1,800 ₽",
+      "category": "toys",
+      "city": "Новосибирск",
+      "isFavorite": false,
+      "images": [
+        "https://i5.walmartimages.com/seo/CifToys-Trex-Dinosaur-Toys-for-Kids-3-5-T-Rex-Toy-Realistic-Tyrannosaurus-Rex_847a91dd-8df3-4fae-a2a5-1b266bdfd870.c0bc20b87ca2e6ad8246979ab17342dd.jpeg",
+        "https://i5.walmartimages.com/asr/8cadc1b6-5124-46ab-bc90-ae1c30c38a39.e1734f50c117c9de1037edbea20aac5e.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+        "https://m.media-amazon.com/images/I/81S-XoGZm5L._AC_UF350,350_QL50_.jpg",
+        "https://i.ebayimg.com/images/g/BlMAAOSwdVhjxwC~/s-l1200.jpg",
+        "https://img.fruugo.com/product/0/98/388921980_0340_0340.jpg"
+      ],
+      "description": "A realistic toy dinosaur that encourages imaginative play and exploration.",
+      "quantity": 25,
+      "targetGender": "boys",
+      "date": "2024-10-29"
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://example.com/images/toy-boat.jpg",
+      "title": "Toy Boat",
+      "price": "1,200 ₽",
+      "category": "toys",
+      "city": "Краснодар",
+      "isFavorite": false,
+      "images": [
+        "https://www.creativefabrica.com/wp-content/uploads/2018/05/Toy-Boat-2-by-fray06100-580x516.png",
+        "https://m.media-amazon.com/images/I/61tb4ZrT6aL.jpg",
+        "https://img.freepik.com/premium-psd/3d-toy-boat-vector-png-transparent-background_1125087-281.jpg",
+        "https://media.istockphoto.com/id/180657612/vector/colorful-toy-boat-in-water.jpg?s=612x612&w=0&k=20&c=7W2dfAqts_hG1PRP9C6Lh1e7LZwtyW4bu_sA7xTVVRM=",
+        "https://img.freepik.com/free-vector/flat-design-toy-boat-set_23-2149017023.jpg"
+      ],
+      "description": "A floating toy boat for bath time fun and adventure.",
+      "quantity": 18,
+      "targetGender": "girls",
+      "date": "2024-10-29"
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://example.com/images/puzzle.jpg",
+      "title": "Wooden Puzzle",
+      "price": "800 ₽",
+      "category": "toys",
+      "city": "Тула",
+      "isFavorite": false,
+      "images": [
+        "https://www.kidsgardening.org/wp-content/uploads/2020/04/Arctic-Puzzle-1-1024x683.jpg",
+        "https://media.istockphoto.com/id/1293371057/vector/wooden-puzzle-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=qv3_b9ZOHMkfxOEqz3DZAxTQhUR9F3u5AlOU8XifShY=",
+        "https://img.freepik.com/premium-photo/wooden-puzzle-colorful-toys-children_572888-419.jpg",
+        "https://www.shutterstock.com/image-vector/cute-puzzle-wooden-toy-cartoon-illustration-260nw-2042359771.jpg",
+        "https://cdn.shopify.com/s/files/1/0280/5974/3454/products/NakedButterscotch_MyFirstWoodenPuzzle-01_grande.jpg?v=1617250430"
+      ],
+      "description": "A colorful wooden puzzle that helps develop problem-solving skills.",
+      "quantity": 30,
+      "targetGender": "girls",
+      "date": "2024-10-29"
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://example.com/images/toy-cars.jpg",
+      "title": "Toy Cars Set",
+      "price": "1,500 ₽",
+      "category": "toys",
+      "city": "Воронеж",
+      "isFavorite": false,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1393/0561/products/54_8c85a362-40f2-4862-8995-09de1da0cd8b_1800x1800.jpg?v=1596149790",
+        "https://m.media-amazon.com/images/I/71yHIAPM-L._AC_UL320_.jpg",
+        "https://cdn.shopify.com/s/files/1/0784/1087/products/d7960c4a72c73b8fae95c301cc1fd9c5.jpg?v=1600901344",
+        "https://m.media-amazon.com/images/I/81F4pE4XU9L._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/81F4pE4XU9L._AC_SX679_.jpg"
+      ],
+      "description": "A set of colorful toy cars for endless racing fun.",
+      "quantity": 20,
+      "targetGender": "boys",
+      "date": "2024-10-29"
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://example.com/images/stuffed-animal.jpg",
+      "title": "Stuffed Animal",
+      "price": "1,000 ₽",
+      "category": "toys",
+      "city": "Сочи",
+      "isFavorite": false,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/1393/0561/products/Bear.jpg?v=1596149790",
+        "https://m.media-amazon.com/images/I/71qlNKjZrIL._AC_UL320_.jpg",
+        "https://m.media-amazon.com/images/I/71qO1yR0OcL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/81dH0t5MRwL._AC_SX679_.jpg",
+        "https://cdn.shopify.com/s/files/1/1393/0561/products/d7960c4a72c73b8fae95c301cc1fd9c5.jpg?v=1600901344"
+      ],
+      "description": "A soft and cuddly stuffed animal, perfect for snuggling.",
+      "quantity": 35,
+      "targetGender": "girls",
+      "date": "2024-10-29"
+    }
+  ],
+
   "techniques": [
     {
       "id": 1,
@@ -311,59 +636,79 @@
       "title": "Samsung 55-Inch Smart TV",
       "price": "50 000 ₽",
       "category": "techniques",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "city": "Москва",
+      "isFavorite": false,
       "images": [
         "https://mrspeazy.nl/wp-content/uploads/2023/03/nl-crystal-uhd-cu7000-452093-452093-ue55cu7100kxxn-535744284.png",
         "https://media.s-bol.com/xrR03vG8NOB3/31KoxLx/1200x1098.jpg",
         "https://i0.wp.com/mrspeazy.nl/wp-content/uploads/2023/05/samsung_q60c_left.png?fit=1400%2C760&ssl=1",
         "https://i0.wp.com/mrspeazy.nl/wp-content/uploads/2024/04/samsung-q70d-rechts.png?fit=1400%2C760&ssl=1",
         "https://images.samsung.com/is/image/samsung/p6pim/in/ua55du7700klxl/gallery/in-crystal-uhd-du7000-502838-ua55du7700klxl-thumb-540822322?$344_344_PNG$"
-      ]
+      ],
+      "date": "2022-02-29",
+      "guarantee": "2 years",
+      "quantity": 8
     },
     {
       "id": 2,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "LG Double Door Refrigerator",
       "price": "70 000 ₽",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "category": "techniques",
       "city": "Москва",
+      "isFavorite": false,
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREaq3lrLK3HzOCCnJ_RkiEdGCz3LkmUcrH-w&s",
         "https://www.lg.com/content/dam/channel/wcms/in/images/refrigerators/gl-t262tesx_deszebn_eail_in_c/gallery/GL-T262TESX-Refrigerators-Left-Low-Perspective-View-DZ-11.jpg",
         "https://lgbyunilet.com/wp-content/uploads/2023/09/GL-T412VPZX-Refrigerators-Front-1.webp",
         "https://lgbyunilet.com/wp-content/uploads/2023/09/GL-N412SDSY-Refrigerators-Back-V.webp",
         "https://tvpoint.com.np/wp-content/uploads/2020/12/lg-Refrigerator-310-Ltrs.side-view-600x602.jpg"
-      ]
+      ],
+      "date": "2022-10-29",
+      "guarantee": "1 years",
+      "quantity": 50
     },
     {
       "id": 3,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Daikin Air Conditioner",
       "price": "60 000 ₽",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "category": "techniques",
       "city": "Москва",
+      "isFavorite": false,
       "images": [
         "https://www.condizionati.nl/5688-home_default/daikin-35-kw-mono-split-fha35a9-rxm35r9-air-conditioner-fha-a9-wit-12000-btu-r-32-plafond-a-a-met-draadcommando-madoka.jpg",
         "https://www.condizionati.nl/5135-large_default/daikin-20-kw-mono-split-ftxa20bs-rxa20a9-air-conditioner-stylish-total-silver-zilvernen-7000-btu-r-32-muur-wifi-a-a.jpg",
         "https://wholesaleaircon.com.au/cdn/shop/files/Daikin-Cora_1ed4502a-413f-409a-a934-165db39d9671_600x600_crop_center.png?v=1696689252",
         "https://backend.daikincomfort.com/images/default-source/default-album/fit-3rdgen.png?sfvrsn=26b82026_4",
         "https://www.condizionati.nl/5301-large_default/daikin-duo-split-2042-kw-2mxm50a-ftxa20bt-ftxa42bt-air-conditioner-stylish-blackwood-700015000-btu-r-32-wifi-a-a.jpg"
-      ]
+      ],
+      "date": "2024-11-30",
+      "guarantee": "11 months",
+      "quantity": 14
     },
     {
       "id": 4,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Sony 65-Inch OLED TV",
       "price": "120 000 ₽",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "category": "techniques",
       "city": "Москва",
+      "isFavorite": false,
       "images": [
         "https://webcdn.hellotv.nl/resize?type=auto&stripmeta=true&url=https%3A%2F%2Fpimcore.hellotv.nl%2F%2F_default_upload_bucket%2FSony-KE-A8-goed-1.jpg&width=871&height=473&extend=white",
         "https://webcdn.hellotv.nl/resize?type=auto&stripmeta=true&url=https%3A%2F%2Fpimcore.hellotv.nl%2F%2FPlatteTV%2F_default_upload_bucket%2FSony-XR-65A90J-8.png&width=871&height=473&extend=white",
         "https://m.media-amazon.com/images/I/71R1ZcAYlRL.jpg",
         "https://hwimages.beslist.net/beslist-images/pim/4548736150683/394/F300/ca7a2233bcc1dafe9fd2d0f5875228b1/OLED-TV%27s/Sony-Bravia-XR-65A80L-4K-UHD-OLED-TV-(2023).jpg",
         "https://www.expert.nl//cdn/resize/597/media/frontend/catalog/products/016/372639016/1260x1260/372639016-14420575.jpg"
-      ]
+      ],
+      "date": "2020-01-01",
+      "guarantee": "1 year",
+      "quantity": 2
     },
     {
       "id": 5,
@@ -371,29 +716,39 @@
       "title": "Whirlpool French Door Refrigerator",
       "price": "85 000 ₽",
       "category": "techniques",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "city": "Москва",
+      "isFavorite": false,
       "images": [
         "https://images.webfronts.com/cache/mexlccjkcuqp.jpg?imgeng=/w_500/h_500/m_letterbox_ffffff_100",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnK8_WCe4LGe_uShiVLWZLK1_V531C4IOR4g&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-neb1KA6GhMgghpm9V77A20k7EMqCX33ukA&s",
         "https://static.3d-baza.com/models/0/e1b9a6d3413849c8b3741347.jpg",
         "https://images.webfronts.com/cache/meykjephddba.jpg?imgeng=/w_500/h_500/m_letterbox_ffffff_100"
-      ]
+      ],
+      "date": "2022-08-15",
+      "guarantee": "6 years",
+      "quantity": 5
     },
     {
       "id": 6,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Panasonic Split Air Conditioner",
       "price": "55 000 ₽",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "category": "techniques",
       "city": "Москва",
+      "isFavorite": false,
       "images": [
         "https://gd-mart.com/storage/2024/01/SKU-2134535000018_AIRE-SPLIT_PANASONIC-1200-X-1200-6-600x600.jpg",
         "https://www.maxi-trade.nl/wp-content/uploads/2022/07/Panasonic-BZ-buitenunit-R32.jpg",
         "https://cdn.mafrservices.com/pim-content/KWT/media/product/889996/1725530405/889996_main.jpg?im=Resize=1700",
         "https://cdn.electronyat.qa/_next/image?url=https%3A%2F%2Fbackend.electronyat.qa%2Fmedia%2Fcatalog%2Fproduct%2F0%2F0%2F0018357_panasonic-25-ton-split-ac-cu-uv30xkf-6_1.jpeg&w=3840&q=90",
         "https://www.condizionati.nl/7587-large_default/panasonic-2025-kw-duo-split-cu-2z41tbe-cs-xz20zkew-h-cs-xz25zkew-h-air-conditioner-xz-h-etherea-grafiet-70009000-btu-wifi.jpg"
-      ]
+      ],
+      "date": "2018-12-12",
+      "guarantee": "6 months",
+      "quantity": 22
     },
     {
       "id": 7,
@@ -402,13 +757,18 @@
       "price": "35 000 ₽",
       "category": "techniques",
       "city": "Москва",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+      "isFavorite": false,
       "images": [
         "https://images.philips.com/is/image/philipsconsumer/a2bee98466304a038e23afbf00779ab7?wid=700&hei=700&$pnglarge$",
         "https://cdn.webshopapp.com/shops/308127/files/428260061/image.jpg",
         "https://cdn.webshopapp.com/shops/300598/files/457730959/image.jpg",
         "https://www.proshop.nl/Images/915x900/3247337_fed5b0cfdc72.jpg",
         "https://i0.wp.com/mrspeazy.nl/wp-content/uploads/2023/01/55PUS7607_12-Angle-2.png?fit=1400%2C760&ssl=1"
-      ]
+      ],
+      "date": "2024-10-22",
+      "guarantee": "2 years",
+      "quantity": 5
     },
     {
       "id": 8,
@@ -417,13 +777,18 @@
       "price": "60 000 ₽",
       "category": "techniques",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "images": [
         "https://www.kab-fam.com/web/image/product.template/13455/image_1024?unique=e907a9f",
         "https://www.heathcotes.co.nz/spree/products/65908/large/HRF420BHC_-_Haier_Bottom_Mount_Fridge_Freezer_431L_With_Non-Plumbed_Water_Dispenser_Black_%284%29.png?1691725493",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7oQR7pzmHt4hlhDsq8Kw0sLRozqS6EZwEw&s",
         "https://www.khoslaonline.com/wp-content/uploads/2023/07/41cyi4i7ciS.jpg",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI6peoSB7G7x_1Mw97UaOHHZs5w7uHh7PIKQ&s"
-      ]
+      ],
+      "date": "2024-10-29",
+      "guarantee": "3 years",
+      "quantity": 44
     },
     {
       "id": 9,
@@ -432,38 +797,53 @@
       "price": "65 000 ₽",
       "category": "techniques",
       "city": "Москва",
+      "isFavorite": false,
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGgatvH4bcp9aar4stjVcNvTDIxwkKAceZnw&s",
         "https://www.hitachiaircon.com/in/storage/images/product_header_images/thumbs_952x743/product_header_image_image_8d50dc368346a2936500a33ca26df1c9.jpg",
         "https://www.climamarket.eu/18581-large_default/wall-split-ac-hitachi-lorai-25-white.jpg",
         "https://www.matyco.com/33018-large_default/hitachi-dodai-35kw-12000btu-inverter-air-conditioner.jpg",
         "https://5.imimg.com/data5/NZ/XC/AN/GLADMIN-53464781/1-500x500.png"
-      ]
+      ],
+      "date": "2020-06-02",
+      "guarantee": "5 years",
+      "quantity": 14
     },
     {
       "id": 10,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
       "title": "Toshiba 4K Smart TV",
       "price": "45 000 ₽",
       "category": "techniques",
       "city": "Москва",
+      "isFavorite": false,
       "images": [
         "https://media.s-bol.com/m9OVvo02XB2r/R6LMDmY/550x349.jpg",
         "https://tvoutlet.tv/wp-content/uploads/2023/11/smart-tv-toshiba-55uv3363dg-4k-ultra-hd-55-led_719194.jpg",
         "https://www.lidl.nl/assets/22afb28e35360764e9d1e96ca15c1541.jpeg",
         "https://www.bargainsonline.co.za/wp-content/uploads/2024/01/Toshiba-75-UHD-Smart-TV-75C350MN.webp",
         "https://images.tcdn.com.br/img/img_prod/777993/smart_tv_toshiba_dled_43_full_hd_43tb021m_com_conversor_digital_integrado_wi_fi_hdmi_usb_preto_129717_1_ac7e9ce7acffc2afaf9a23b818c2da90.jpg"
-      ]
+      ],
+      "date": "2024-11-18",
+      "guarantee": "8 years",
+      "quantity": 30
     }
   ],
-  "homeYardItems": [
+
+  "home-and-yard": [
     {
       "id": 1,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Oak Wood Dining Table",
       "price": "25 000 ₽",
-      "category": "home_furniture",
+      "category": "home-and-yard",
       "city": "Москва",
+      "isFavorite": false,
+      "quantity": 10,
+      "date": "2024-10-29",
+      "description": "A sturdy oak wood dining table, perfect for family gatherings and adding a rustic charm to your dining area.",
       "images": [
         "https://cdn.webshopapp.com/shops/336719/files/444447195/450x450x1/julma-oak.jpg",
         "https://qualityfurniturenwt.com/wp-content/uploads/2024/04/DAL010_1800x1800.webp",
@@ -477,8 +857,12 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Solar Lantern Outdoor",
       "price": "45 000 ₽",
-      "category": "yard_furniture",
+      "category": "home-and-yard",
       "city": "Москва",
+      "isFavorite": false,
+      "quantity": 20,
+      "date": "2024-10-29",
+      "description": "Eco-friendly solar lantern for outdoor lighting, suitable for garden or patio decoration.",
       "images": [
         "https://m.media-amazon.com/images/I/81A0XR7XltL._AC_SX679_.jpg",
         "https://m.media-amazon.com/images/I/71NpPAmritL._AC_SX679_.jpg",
@@ -492,8 +876,12 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "INDUSTRIEEL METALEN PLANTENBAK",
       "price": "15 000 ₽",
-      "category": "yard_decor",
+      "category": "home-and-yard",
       "city": "Москва",
+      "isFavorite": false,
+      "quantity": 15,
+      "date": "2024-10-29",
+      "description": "Industrial metal planter, ideal for indoor plants and giving a modern touch to your space.",
       "images": [
         "https://barrelkings.com/wp-content/uploads/2023/11/barrelkings-industrieel-metalen-plantenbak-60-lite-3.webp",
         "https://barrelkings.com/wp-content/uploads/2023/11/barrelkings-industrieel-metalen-plantenbak-60-lite-2.webp",
@@ -507,8 +895,12 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Plant Rack, Wooden Corner",
       "price": "5 000 ₽",
-      "category": "yard_lighting",
+      "category": "home-and-yard",
       "city": "Москва",
+      "isFavorite": false,
+      "quantity": 30,
+      "date": "2024-10-29",
+      "description": "Elegant wooden plant rack for displaying multiple plants, perfect for indoor corners.",
       "images": [
         "https://m.media-amazon.com/images/I/71EarOYxDIL._AC_SL1500_.jpg",
         "https://m.media-amazon.com/images/I/71iJ2SMRenL._AC_SL1500_.jpg",
@@ -522,8 +914,12 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Indoor Fly Zapper Plug",
       "price": "30 000 ₽",
-      "category": "home_furniture",
+      "category": "home-and-yard",
       "city": "Москва",
+      "isFavorite": false,
+      "quantity": 5,
+      "date": "2024-10-29",
+      "description": "Efficient indoor fly zapper plug to keep your home free from insects and pests.",
       "images": [
         "https://m.media-amazon.com/images/I/711jeVBB8ZL._AC_SX679_.jpg",
         "https://m.media-amazon.com/images/I/71yUxSw-VNL._AC_SX679_.jpg",
@@ -537,8 +933,12 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Outdoor Fire Pit",
       "price": "20 000 ₽",
-      "category": "yard_decor",
+      "category": "home-and-yard",
       "city": "Москва",
+      "isFavorite": false,
+      "quantity": 7,
+      "date": "2024-10-29",
+      "description": "A stylish and functional fire pit for outdoor spaces, providing warmth and a cozy atmosphere.",
       "images": [
         "https://example.com/fire_pit1.png",
         "https://example.com/fire_pit2.png",
@@ -550,8 +950,12 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Modern Sofa Set",
       "price": "55 000 ₽",
-      "category": "home_furniture",
+      "category": "home-and-yard",
       "city": "Москва",
+      "isFavorite": false,
+      "quantity": 3,
+      "date": "2024-10-29",
+      "description": "Modern sofa set with plush seating, designed for living rooms or office spaces.",
       "images": [
         "https://example.com/sofa_set1.png",
         "https://example.com/sofa_set2.png",
@@ -563,25 +967,16 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
       "title": "Automatic Lawn Mower",
       "price": "35 000 ₽",
-      "category": "yard_tools",
+      "category": "home-and-yard",
       "city": "Москва",
+      "isFavorite": false,
+      "quantity": 12,
+      "date": "2024-10-29",
+      "description": "Robotic lawn mower for effortless lawn maintenance, designed for both small and large yards.",
       "images": [
         "https://example.com/lawn_mower1.png",
         "https://example.com/lawn_mower2.png",
         "https://example.com/lawn_mower3.png"
-      ]
-    },
-    {
-      "id": 9,
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
-      "title": "Smart Home Thermostat",
-      "price": "10 000 ₽",
-      "category": "home_appliance",
-      "city": "Москва",
-      "images": [
-        "https://example.com/thermostat1.png",
-        "https://example.com/thermostat2.png",
-        "https://example.com/thermostat3.png"
       ]
     }
   ]

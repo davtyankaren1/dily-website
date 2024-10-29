@@ -11,7 +11,16 @@ export interface IProduct {
   price: string;
   category?: string;
   city?: string;
+  isFavorite: boolean;
   images?: string[];
+  description: string;
+
+  guarantee?: string;
+  quantity: number;
+  date: string;
+  diagonal?: string;
+  memory?: string;
+  targetGender?: string;
 }
 
 export interface IBorderedButtonProps {
@@ -29,6 +38,7 @@ export interface Phone {
   price: string;
   category?: string;
   city?: string;
+  isFavorite: boolean;
   images?: string[];
 }
 
@@ -39,6 +49,7 @@ export interface Notebook {
   price: string;
   category?: string;
   city?: string;
+  isFavorite: boolean;
   images?: string[];
 }
 
@@ -49,6 +60,18 @@ export interface Technique {
   price: string;
   category?: string;
   city?: string;
+  isFavorite: boolean;
+  images?: string[];
+}
+
+export interface Toys {
+  id: string;
+  imageUrl: string;
+  title: string;
+  price: string;
+  category?: string;
+  city?: string;
+  isFavorite: boolean;
   images?: string[];
 }
 
@@ -59,6 +82,7 @@ export interface Homeandyard {
   price: string;
   category?: string;
   city?: string;
+  isFavorite: boolean;
   images?: string[];
 }
 
@@ -71,6 +95,7 @@ export interface ProductsState {
   notebooks: Notebook[];
   techniques: Technique[];
   homeandyard: Homeandyard[];
+  toys: Toys[];
   selectedProduct: Product | null;
 }
 
@@ -102,6 +127,10 @@ export interface ISeeAllProps {
 
 export interface ITeqhniques {
   techniques: IProduct[];
+}
+
+export interface IToys {
+  toys: IProduct[];
 }
 
 export interface IHomeandYard {
@@ -189,6 +218,7 @@ export interface ICardItemProps {
     price: string;
     category?: string;
     city?: string;
+    isFavorite: boolean;
     images?: string[];
   };
 }

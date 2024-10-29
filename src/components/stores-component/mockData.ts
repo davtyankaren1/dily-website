@@ -8,6 +8,9 @@ import Volt from "../../assets/images/popular-stores/222-volt.png";
 import Ekolayf from "../../assets/images/popular-stores/ekolayf.png";
 import Velomir from "../../assets/images/popular-stores/Velomir.png";
 import Avrora from "../../assets/images/popular-stores/avtora.png";
+import Igrolend from "../../assets/images/popular-stores/igrolend.png";
+import SuperBike from "../../assets/images/popular-stores/super-bike.png";
+import OrganicShop from "../../assets/images/popular-stores/organic-shop.png";
 
 const mockData = [
   {
@@ -99,6 +102,48 @@ const mockData = [
     rating: 5,
     bgColor: "#01C1FB",
     textColor: "#fff"
+  },
+  {
+    id: 6,
+    title: "ИГРОЛЕНД",
+    storeLogo: Igrolend,
+    city: "Москва",
+    rating: 4,
+    bgColor: "#00c65e"
+  },
+  {
+    id: 7,
+    title: "СУПЕР БАЙК",
+    storeLogo: SuperBike,
+    city: "Москва",
+    rating: 3,
+    bgColor: "#1eae8b"
+  },
+  {
+    id: 8,
+    title: "ОРГАНИК ШОП",
+    storeLogo: OrganicShop,
+    city: "Москва",
+    rating: 5,
+    bgColor: "#01c1fb"
+  },
+  {
+    id: 6,
+    title: "АВТОМИР",
+    storeLogo: AvtoMir,
+    city: "Москва",
+    rating: 5,
+    bgColor: "gray",
+    textColor: "black"
+  },
+  {
+    id: 7,
+    title: "222 ВОЛТ",
+    storeLogo: Volt,
+    city: "Москва",
+    rating: 5,
+    bgColor: "orange",
+    textColor: "black"
   }
 ];
 

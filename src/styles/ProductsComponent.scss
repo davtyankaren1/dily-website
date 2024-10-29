@@ -7,8 +7,9 @@
   display: flex;
   .filter-component {
     width: 270px;
-    flex-shrink: 0;
     border: 1px solid saddlebrown;
+    height: 500px;
+    z-index: 5555;
   }
 }
 

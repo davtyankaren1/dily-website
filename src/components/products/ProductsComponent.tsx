@@ -15,25 +15,30 @@ import ListSvg from "../../assets/svgs/ListSvg";
 import CardItem from "../card/CardItem";
 import ProductsTopProducts from "./components/ProductsTopProducts";
 import { IProduct } from "../../types/types";
+import Loading from "../loading/Loading";
 
 const ProductsComponent = () => {
   const [isListView, setIsListView] = useState(false);
   const [isListView2, setIsListView2] = useState(false);
 
-  const { phones, notebooks, techniques, homeandyard } = useAppSelector(
-    (state: {
-      products: {
-        phones: IProduct[];
-        notebooks: IProduct[];
-        techniques: IProduct[];
-        homeandyard: IProduct[];
-      };
-    }) => state.products
-  );
+  const { phones, notebooks, techniques, homeandyard, toys, isLoading } =
+    useAppSelector(
+      (state: {
+        products: {
+          phones: IProduct[];
+          notebooks: IProduct[];
+          techniques: IProduct[];
+          homeandyard: IProduct[];
+          toys: IProduct[];
+        };
+      }) => state.products
+    );
 
   const dispatch = useAppDispatch();
   const location = useLocation();
   const path = location.pathname;
+
+  console.log(isLoading, "isLoading");
 
   useEffect(() => {
     if (path.includes("/phones")) {
@@ -48,6 +53,9 @@ const ProductsComponent = () => {
     if (path.includes("/home-and-yard")) {
       dispatch(fetchHomeAndYard());
     }
+    if (path.includes("/toys")) {
+      dispatch(fetchHomeAndYard());
+    }
   }, [dispatch, path]);
 
   const currentData: IProduct[] = path.includes("/phones")
@@ -58,6 +66,8 @@ const ProductsComponent = () => {
     ? techniques
     : path.includes("/home-and-yard")
     ? homeandyard
+    : path.includes("/toys")
+    ? toys
     : [];
 
   const getHeaderText = () => {
@@ -71,7 +81,10 @@ const ProductsComponent = () => {
       return { text: "Техника", path: "/techniques" };
     }
     if (path.includes("/home-and-yard")) {
-      return { text: "Homeandyard", path: "/home-and-yard" };
+      return { text: "Дом и Сард", path: "/home-and-yard" };
+    }
+    if (path.includes("/toys")) {
+      return { text: "Игрушки", path: "/toys" };
     }
     return { text: "", path: "" };
   };
@@ -84,54 +97,59 @@ const ProductsComponent = () => {
         <div className='phones_inner'>
           <div className='phone-filter'>
             <div className='filter-component'></div>
-            <div className='phone-content-container'>
-              <div className='recent-added'>
-                <div>
-                  <TextFieldHeader text={text} />
-                  <TextFieldTitle text='Недавние объявления' />
-                </div>
-                <div className='phones-content'>
-                  <div className='phones-content-header'>
-                    <span>{currentData.length} объявлений</span>
-                    <div className='phones-content-header-card-structures'>
-                      <div className='phones-content-header-sorting'>
-                        <span>Сортировать по</span>
-                        <div className='phones-sorting-dropdown'>
-                          <span>Новизне</span>
-                          <ArrowDownSvg />
+
+            {isLoading ? (
+              <Loading />
+            ) : (
+              <div className='phone-content-container'>
+                <div className='recent-added'>
+                  <div>
+                    <TextFieldHeader text={text} />
+                    <TextFieldTitle text='Недавние объявления' />
+                  </div>
+                  <div className='phones-content'>
+                    <div className='phones-content-header'>
+                      <span>{currentData.length} объявлений</span>
+                      <div className='phones-content-header-card-structures'>
+                        <div className='phones-content-header-sorting'>
+                          <span>Сортировать по</span>
+                          <div className='phones-sorting-dropdown'>
+                            <span>Новизне</span>
+                            <ArrowDownSvg />
+                          </div>
                         </div>
-                      </div>
-                      <div className='card-structure-variants'>
-                        <div onClick={() => setIsListView(false)}>
-                          <GridSvg selected={!isListView} />
-                        </div>
-                        <div onClick={() => setIsListView(true)}>
-                          <ListSvg selected={isListView} />
+                        <div className='card-structure-variants'>
+                          <div onClick={() => setIsListView(false)}>
+                            <GridSvg selected={!isListView} />
+                          </div>
+                          <div onClick={() => setIsListView(true)}>
+                            <ListSvg selected={isListView} />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div
-                    className={`phones-list ${
-                      isListView ? "list-variant" : ""
-                    }`}
-                  >
-                    {currentData.slice(0, 4).map((item) => (
-                      <div key={item.id} className='phones-list-item'>
-                        <CardItem item={item} />
-                      </div>
-                    ))}
+                    <div
+                      className={`phones-list ${
+                        isListView ? "list-variant" : ""
+                      }`}
+                    >
+                      {currentData.slice(0, 4).map((item) => (
+                        <div key={item.id} className='phones-list-item'>
+                          <CardItem item={item} />
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <ProductsTopProducts
-                currentData={currentData}
-                isListView2={isListView2}
-                setIsListView2={setIsListView2}
-              />
-            </div>
+                <ProductsTopProducts
+                  currentData={currentData}
+                  isListView2={isListView2}
+                  setIsListView2={setIsListView2}
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

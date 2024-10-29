@@ -29,11 +29,11 @@ const menuItems = [
   { label: "Нотбуки", icon: <ElectronicsSvg />, path: "/notebooks" },
   { label: "Бытовая техника", icon: <HouseholdSvg />, path: "/techniques" },
   { label: "Дом и сад", icon: <HomeAndYard />, path: "/home-and-yard" },
-  // {
-  //   label: "Товары для детей",
-  //   icon: <ThingsForChilds />,
-  //   path: "/child-products"
-  // },
+  {
+    label: "Игрушки",
+    icon: <ThingsForChilds />,
+    path: "/toys"
+  },
   // { label: "Животные", icon: <AnimalsSvg />, path: "/animals" },
   // { label: "Хобби и отдых", icon: <HobbiesSvg />, path: "/hobbies" },
   // { label: "Транспорт", icon: <TransportSvg />, path: "/transport" },

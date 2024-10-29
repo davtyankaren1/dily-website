@@ -15,6 +15,7 @@ const initialState: ProductsState = {
   notebooks: [],
   techniques: [],
   homeandyard: [],
+  toys: [],
   selectedProduct: null
 };
 
@@ -61,7 +62,20 @@ export const fetchHomeAndYard = createAsyncThunk<Technique[]>(
   "products/fetchHomeAndYard",
   async () => {
     try {
-      const res = await axios.get("http://localhost:5050/homeYardItems");
+      const res = await axios.get("http://localhost:5050/home-and-yard");
+      return res.data;
+    } catch (error) {
+      console.error(error);
+      throw new Error("Failed to fetch techniques");
+    }
+  }
+);
+
+export const fetchToys = createAsyncThunk<Technique[]>(
+  "products/fetchToys",
+  async () => {
+    try {
+      const res = await axios.get("http://localhost:5050/toys");
       return res.data;
     } catch (error) {
       console.error(error);
@@ -142,6 +156,21 @@ const ProductsSlice = createSlice({
         }
       )
       .addCase(fetchHomeAndYard.rejected, (state, action) => {
+        state.isLoading = false;
+        state.isError = action.error.message || "Failed to fetch techniques";
+      })
+
+      .addCase(fetchToys.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(
+        fetchToys.fulfilled,
+        (state, action: PayloadAction<Technique[]>) => {
+          state.isLoading = false;
+          state.toys = action.payload;
+        }
+      )
+      .addCase(fetchToys.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = action.error.message || "Failed to fetch techniques";
       })

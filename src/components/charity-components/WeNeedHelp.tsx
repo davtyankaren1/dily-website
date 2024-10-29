@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, AnimatePresence, useInView } from "framer-motion";
 import { Button } from "../customs";
 import TextFieldHeader from "../texts/TextFieldHeader";
 import Avatar1 from "../../assets/images/avatar1.jpg";
@@ -71,55 +71,76 @@ const additionalHelpRequests = [
   }
 ];
 
-const HelpItem = ({ avatar, name, city, issue, helpNeeded }: any) => (
-  <motion.div
-    className='we-need-help__inner-items-item'
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: 20 }}
-    transition={{ duration: 0.4 }}
-  >
-    <div className='help-item-header'>
-      <img src={avatar} alt={`${name}'s avatar`} />
-      <div className='help-item-header-info'>
-        <span className='help-item-header-name'>{name}</span>
-        <span className='help-item-header-city'>{city}</span>
+const HelpItem = ({ avatar, name, city, issue, helpNeeded, index }: any) => {
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.1
+      }
+    }),
+    exit: { opacity: 0, y: 20, transition: { duration: 0.1 } }
+  };
+
+  return (
+    <motion.div
+      className='we-need-help__inner-items-item'
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+      variants={itemVariants}
+      custom={index}
+    >
+      <div className='help-item-header'>
+        <img src={avatar} alt={`${name}'s avatar`} />
+        <div className='help-item-header-info'>
+          <span className='help-item-header-name'>{name}</span>
+          <span className='help-item-header-city'>{city}</span>
+        </div>
       </div>
-    </div>
-    <div className='help-item-body-1'>
-      <p className='help-item-body-1-question'>Что случилось?</p>
-      <p className='help-item-body-1-reply'>{issue}</p>
-    </div>
-    <div className='help-item-body-2'>
-      <p className='help-item-body-2-question'>Какая помощь нужна?</p>
-      <p className='help-item-body-2-reply'>{helpNeeded}</p>
-    </div>
-    <Button>Подробнее</Button>
-  </motion.div>
-);
+      <div className='help-item-body-1'>
+        <p className='help-item-body-1-question'>Что случилось?</p>
+        <p className='help-item-body-1-reply'>{issue}</p>
+      </div>
+      <div className='help-item-body-2'>
+        <p className='help-item-body-2-question'>Какая помощь нужна?</p>
+        <p className='help-item-body-2-reply'>{helpNeeded}</p>
+      </div>
+      <Button children='Подробнее' />
+    </motion.div>
+  );
+};
 
 const WeNeedHelp = () => {
   const [showMore, setShowMore] = useState(false);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
 
   return (
-    <div className='we-need-help'>
+    <motion.div
+      className='we-need-help'
+      ref={ref}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isInView ? 1 : 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className='container'>
         <div className='we-need-help__inner'>
           <div className='we-need-help__inner-header'>
             <TextFieldHeader text='Нам нужна помощь' />
           </div>
           <div className='we-need-help__inner-items'>
-            {/* Initially visible help requests */}
             {initialHelpRequests.map((request, index) => (
-              <HelpItem key={index} {...request} />
+              <HelpItem key={index} {...request} index={index} />
             ))}
           </div>
 
-          {/* Additional help requests shown with animation */}
           <AnimatePresence>
             {showMore && (
               <motion.div
@@ -134,6 +155,7 @@ const WeNeedHelp = () => {
                     <HelpItem
                       key={index + initialHelpRequests.length}
                       {...request}
+                      index={index + initialHelpRequests.length}
                     />
                   ))}
                 </div>
@@ -143,13 +165,13 @@ const WeNeedHelp = () => {
 
           <div className='see-all-helps' onClick={toggleShowMore}>
             <p style={{ cursor: "pointer" }}>
-              {showMore ? "Скрыть" : "Показать еще"}
+              {showMore ? <span>Скрыть</span> : <span>Показать еще</span>}
             </p>
             <ArrowDownSvg />
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

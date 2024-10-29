@@ -1,0 +1,36 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: var(--bright-green);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    &.active {
+      color: #6c757d;
+      pointer-events: none;
+      cursor: default;
+    }
+
+    &::after {
+      content: "/";
+      padding: 0 0.5em;
+      color: #6c757d;
+    }
+
+    &:last-child::after {
+      content: "";
+    }
+  }
+}

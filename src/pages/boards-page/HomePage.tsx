@@ -15,7 +15,8 @@ import {
   fetchHomeAndYard,
   fetchNotebooks,
   fetchPhones,
-  fetchTechniques
+  fetchTechniques,
+  fetchToys
 } from "../../redux/feature/ProductsSlice";
 import Notebooks from "../../components/sections/notebooks-section/Notebooks";
 import Technique from "../../components/sections/technique/Technique";
@@ -23,9 +24,10 @@ import { mockData } from "../../components/popular-stores/mockData";
 import SalesImg1 from "../../assets/images/image.png";
 import SalesImg2 from "../../assets/images/A0r95y5Q598.jpg";
 import HomeAndYard from "../../components/sections/home-and-yard/HomeAndYard";
+import Toys from "../../components/sections/toys/Toys";
 
 const BoardsPage = () => {
-  const { phones, notebooks, techniques, homeandyard } = useAppSelector(
+  const { phones, notebooks, techniques, homeandyard, toys } = useAppSelector(
     (state) => state.products
   );
   const dispath = useAppDispatch();
@@ -35,6 +37,7 @@ const BoardsPage = () => {
     dispath(fetchNotebooks());
     dispath(fetchTechniques());
     dispath(fetchHomeAndYard());
+    dispath(fetchToys());
   }, []);
 
   return (
@@ -46,6 +49,7 @@ const BoardsPage = () => {
       <HomeAndYard homeandyard={homeandyard} />
       <DontMiss />
       <Technique techniques={techniques} />
+      <Toys toys={toys} />
       <WillGiveFree />
       <SalesSection
         firstBannerFirstText='Магазины'
