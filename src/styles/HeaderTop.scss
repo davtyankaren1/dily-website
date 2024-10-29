@@ -1,9 +1,90 @@
+// .header-top {
+//   .container {
+//     .header-content {
+//       position: relative;
+//       display: flex;
+//       justify-content: space-between;
+//       &::after {
+//         content: "";
+//         position: absolute;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         width: 100vw;
+//         height: 2px;
+//         bottom: -2px;
+//         background: var(--bright-green);
+//         z-index: 0;
+//       }
+
+//       .header-left {
+//         display: flex;
+//         align-items: center;
+
+//         .nav-menu {
+//           display: flex;
+//           margin-left: 20px;
+
+//           .nav-item {
+//             padding: 27px 20px;
+//             position: relative;
+//             z-index: 5;
+//             list-style: none;
+//             text-decoration: none;
+
+//             &.active {
+//               background-color: #b3eecf;
+//               z-index: 0;
+//             }
+
+//             span {
+//               text-decoration: none;
+//               font-family: var(--font-family);
+//               font-weight: 700;
+//               font-size: 14px;
+//               line-height: 120%;
+//               color: var(--dark-grey);
+//               text-decoration: none;
+//             }
+//           }
+//         }
+
+//         .header-logo-svg {
+//           cursor: pointer;
+//         }
+//       }
+
+//       .header-right {
+//         display: flex;
+//         gap: 30px;
+//         align-items: center;
+
+//         .location-selector {
+//           color: #363a45;
+//           opacity: 0.6;
+//           display: flex;
+//           align-items: center;
+//           gap: 10px;
+//         }
+
+//         .login {
+//           color: #363a45;
+//           display: flex;
+//           align-items: center;
+//           gap: 10px;
+//           text-decoration: none;
+//         }
+//       }
+//     }
+//   }
+// }
+
 .header-top {
   .container {
     .header-content {
       position: relative;
       display: flex;
       justify-content: space-between;
+
       &::after {
         content: "";
         position: absolute;
@@ -29,19 +110,30 @@
             position: relative;
             z-index: 5;
             list-style: none;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
 
             &.active {
               background-color: #b3eecf;
+              color: #000;
               z-index: 0;
+              transition: background-color 0.3s ease, color 0.3s ease;
             }
 
-            a {
+            &:hover {
+              background-color: rgba(179, 238, 207, 0.4);
+              color: #000;
+              transition: background-color 0.5s ease, color 0.5s ease;
+            }
+
+            span {
               text-decoration: none;
               font-family: var(--font-family);
               font-weight: 700;
               font-size: 14px;
               line-height: 120%;
               color: var(--dark-grey);
+              transition: color 0.3s ease; // Smooth color transition for text
             }
           }
         }

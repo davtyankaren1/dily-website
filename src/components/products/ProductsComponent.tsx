@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { useLocation } from "react-router-dom";
 import {
+  fetchHomeAndYard,
   fetchNotebooks,
   fetchPhones,
   fetchTechniques
@@ -19,12 +20,13 @@ const ProductsComponent = () => {
   const [isListView, setIsListView] = useState(false);
   const [isListView2, setIsListView2] = useState(false);
 
-  const { phones, notebooks, techniques } = useAppSelector(
+  const { phones, notebooks, techniques, homeandyard } = useAppSelector(
     (state: {
       products: {
         phones: IProduct[];
         notebooks: IProduct[];
         techniques: IProduct[];
+        homeandyard: IProduct[];
       };
     }) => state.products
   );
@@ -43,6 +45,9 @@ const ProductsComponent = () => {
     if (path.includes("/techniques")) {
       dispatch(fetchTechniques());
     }
+    if (path.includes("/home-and-yard")) {
+      dispatch(fetchHomeAndYard());
+    }
   }, [dispatch, path]);
 
   const currentData: IProduct[] = path.includes("/phones")
@@ -51,6 +56,8 @@ const ProductsComponent = () => {
     ? notebooks
     : path.includes("/techniques")
     ? techniques
+    : path.includes("/home-and-yard")
+    ? homeandyard
     : [];
 
   const getHeaderText = () => {
@@ -62,6 +69,9 @@ const ProductsComponent = () => {
     }
     if (path.includes("/techniques")) {
       return { text: "Техника", path: "/techniques" };
+    }
+    if (path.includes("/home-and-yard")) {
+      return { text: "Homeandyard", path: "/home-and-yard" };
     }
     return { text: "", path: "" };
   };

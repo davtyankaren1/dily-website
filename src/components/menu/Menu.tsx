@@ -16,21 +16,33 @@ import WillGiveFreeSvg from "../../assets/svgs/WillGiveFreeSvg";
 import "../../styles/Menu.scss";
 
 const menuItems = [
-  { label: "Личные вещи", icon: <PersonalThingsSvg /> },
-  { label: "Телефоны и аксессуары", icon: <PhonesAccessories /> },
-  { label: "Электроника", icon: <ElectronicsSvg /> },
-  { label: "Бытовая техника", icon: <HouseholdSvg /> },
-  { label: "Дом и сад", icon: <HomeAndYard /> },
-  { label: "Товары для детей", icon: <ThingsForChilds /> },
-  { label: "Животные", icon: <AnimalsSvg /> },
-  { label: "Хобби и отдых", icon: <HobbiesSvg /> },
-  { label: "Транспорт", icon: <TransportSvg /> },
-  { label: "Автотовары", icon: <AutomativeSvg /> },
-  { label: "Недвижимость", icon: <RealEstateSvg /> },
-  { label: "Работа", icon: <WorkSvg /> },
-  { label: "Услуги", icon: <ServicesSvg /> },
-  { label: "Для бизнеса", icon: <ForBusinessSvg /> },
-  { label: "Отдам даром", icon: <WillGiveFreeSvg /> }
+  // {
+  //   label: "Личные вещи",
+  //   icon: <PersonalThingsSvg />,
+  //   path: "/personal-things"
+  // },
+  {
+    label: "Телефоны",
+    icon: <PhonesAccessories />,
+    path: "/phones"
+  },
+  { label: "Нотбуки", icon: <ElectronicsSvg />, path: "/notebooks" },
+  { label: "Бытовая техника", icon: <HouseholdSvg />, path: "/techniques" },
+  { label: "Дом и сад", icon: <HomeAndYard />, path: "/home-and-yard" },
+  // {
+  //   label: "Товары для детей",
+  //   icon: <ThingsForChilds />,
+  //   path: "/child-products"
+  // },
+  // { label: "Животные", icon: <AnimalsSvg />, path: "/animals" },
+  // { label: "Хобби и отдых", icon: <HobbiesSvg />, path: "/hobbies" },
+  // { label: "Транспорт", icon: <TransportSvg />, path: "/transport" },
+  // { label: "Автотовары", icon: <AutomativeSvg />, path: "/automotive" },
+  // { label: "Недвижимость", icon: <RealEstateSvg />, path: "/real-estate" },
+  // { label: "Работа", icon: <WorkSvg />, path: "/work" },
+  // { label: "Услуги", icon: <ServicesSvg />, path: "/services" },
+  // { label: "Для бизнеса", icon: <ForBusinessSvg />, path: "/for-business" },
+  { label: "Отдам даром", icon: <WillGiveFreeSvg />, path: "/will-give-free" }
 ];
 
 const Menu = () => {
@@ -41,7 +53,7 @@ const Menu = () => {
           <ul>
             {menuItems.map((item, index) => (
               <li key={index} className='menu-item'>
-                <a href='#'>
+                <a href={item.path}>
                   {item.icon}
                   {item.label}
                 </a>

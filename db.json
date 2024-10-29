@@ -386,7 +386,14 @@
       "title": "Panasonic Split Air Conditioner",
       "price": "55 000 ₽",
       "category": "techniques",
-      "city": "Москва"
+      "city": "Москва",
+      "images": [
+        "https://gd-mart.com/storage/2024/01/SKU-2134535000018_AIRE-SPLIT_PANASONIC-1200-X-1200-6-600x600.jpg",
+        "https://www.maxi-trade.nl/wp-content/uploads/2022/07/Panasonic-BZ-buitenunit-R32.jpg",
+        "https://cdn.mafrservices.com/pim-content/KWT/media/product/889996/1725530405/889996_main.jpg?im=Resize=1700",
+        "https://cdn.electronyat.qa/_next/image?url=https%3A%2F%2Fbackend.electronyat.qa%2Fmedia%2Fcatalog%2Fproduct%2F0%2F0%2F0018357_panasonic-25-ton-split-ac-cu-uv30xkf-6_1.jpeg&w=3840&q=90",
+        "https://www.condizionati.nl/7587-large_default/panasonic-2025-kw-duo-split-cu-2z41tbe-cs-xz20zkew-h-cs-xz25zkew-h-air-conditioner-xz-h-etherea-grafiet-70009000-btu-wifi.jpg"
+      ]
     },
     {
       "id": 7,
@@ -394,7 +401,14 @@
       "title": "Philips 43-Inch LED TV",
       "price": "35 000 ₽",
       "category": "techniques",
-      "city": "Москва"
+      "city": "Москва",
+      "images": [
+        "https://images.philips.com/is/image/philipsconsumer/a2bee98466304a038e23afbf00779ab7?wid=700&hei=700&$pnglarge$",
+        "https://cdn.webshopapp.com/shops/308127/files/428260061/image.jpg",
+        "https://cdn.webshopapp.com/shops/300598/files/457730959/image.jpg",
+        "https://www.proshop.nl/Images/915x900/3247337_fed5b0cfdc72.jpg",
+        "https://i0.wp.com/mrspeazy.nl/wp-content/uploads/2023/01/55PUS7607_12-Angle-2.png?fit=1400%2C760&ssl=1"
+      ]
     },
     {
       "id": 8,
@@ -402,7 +416,14 @@
       "title": "Haier Bottom-Freezer Refrigerator",
       "price": "60 000 ₽",
       "category": "techniques",
-      "city": "Москва"
+      "city": "Москва",
+      "images": [
+        "https://www.kab-fam.com/web/image/product.template/13455/image_1024?unique=e907a9f",
+        "https://www.heathcotes.co.nz/spree/products/65908/large/HRF420BHC_-_Haier_Bottom_Mount_Fridge_Freezer_431L_With_Non-Plumbed_Water_Dispenser_Black_%284%29.png?1691725493",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk7oQR7pzmHt4hlhDsq8Kw0sLRozqS6EZwEw&s",
+        "https://www.khoslaonline.com/wp-content/uploads/2023/07/41cyi4i7ciS.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI6peoSB7G7x_1Mw97UaOHHZs5w7uHh7PIKQ&s"
+      ]
     },
     {
       "id": 9,
@@ -410,7 +431,14 @@
       "title": "Hitachi Inverter Air Conditioner",
       "price": "65 000 ₽",
       "category": "techniques",
-      "city": "Москва"
+      "city": "Москва",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGgatvH4bcp9aar4stjVcNvTDIxwkKAceZnw&s",
+        "https://www.hitachiaircon.com/in/storage/images/product_header_images/thumbs_952x743/product_header_image_image_8d50dc368346a2936500a33ca26df1c9.jpg",
+        "https://www.climamarket.eu/18581-large_default/wall-split-ac-hitachi-lorai-25-white.jpg",
+        "https://www.matyco.com/33018-large_default/hitachi-dodai-35kw-12000btu-inverter-air-conditioner.jpg",
+        "https://5.imimg.com/data5/NZ/XC/AN/GLADMIN-53464781/1-500x500.png"
+      ]
     },
     {
       "id": 10,
@@ -418,7 +446,143 @@
       "title": "Toshiba 4K Smart TV",
       "price": "45 000 ₽",
       "category": "techniques",
-      "city": "Москва"
+      "city": "Москва",
+      "images": [
+        "https://media.s-bol.com/m9OVvo02XB2r/R6LMDmY/550x349.jpg",
+        "https://tvoutlet.tv/wp-content/uploads/2023/11/smart-tv-toshiba-55uv3363dg-4k-ultra-hd-55-led_719194.jpg",
+        "https://www.lidl.nl/assets/22afb28e35360764e9d1e96ca15c1541.jpeg",
+        "https://www.bargainsonline.co.za/wp-content/uploads/2024/01/Toshiba-75-UHD-Smart-TV-75C350MN.webp",
+        "https://images.tcdn.com.br/img/img_prod/777993/smart_tv_toshiba_dled_43_full_hd_43tb021m_com_conversor_digital_integrado_wi_fi_hdmi_usb_preto_129717_1_ac7e9ce7acffc2afaf9a23b818c2da90.jpg"
+      ]
+    }
+  ],
+  "homeYardItems": [
+    {
+      "id": 1,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Oak Wood Dining Table",
+      "price": "25 000 ₽",
+      "category": "home_furniture",
+      "city": "Москва",
+      "images": [
+        "https://cdn.webshopapp.com/shops/336719/files/444447195/450x450x1/julma-oak.jpg",
+        "https://qualityfurniturenwt.com/wp-content/uploads/2024/04/DAL010_1800x1800.webp",
+        "https://assets.weimgs.com/weimgs/rk/images/wcm/products/202443/0010/extra-deep-anton-solid-wood-dining-table-86-q.jpg",
+        "https://cdn.1stopbedrooms.com/media/i/catalog/catalog/product/n/o/north-side-light-gray-extendable-rectangular-dining-table_qb13419949_4.jpg",
+        "https://imageresizer4.furnituredealer.net/img/remote/images.furnituredealer.net/b/p/a329f9aded578773eb05994fe7dde44b/assets/85f0b2d702c44898b9f08bbb975435fb.jpg?width=2000&height=2000&scale=both"
+      ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Solar Lantern Outdoor",
+      "price": "45 000 ₽",
+      "category": "yard_furniture",
+      "city": "Москва",
+      "images": [
+        "https://m.media-amazon.com/images/I/81A0XR7XltL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71NpPAmritL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/81n+JFv6DkL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/813abYj7d4L._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71NpPAmritL._AC_SX679_.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "INDUSTRIEEL METALEN PLANTENBAK",
+      "price": "15 000 ₽",
+      "category": "yard_decor",
+      "city": "Москва",
+      "images": [
+        "https://barrelkings.com/wp-content/uploads/2023/11/barrelkings-industrieel-metalen-plantenbak-60-lite-3.webp",
+        "https://barrelkings.com/wp-content/uploads/2023/11/barrelkings-industrieel-metalen-plantenbak-60-lite-2.webp",
+        "https://barrelkings.com/wp-content/uploads/2023/11/barrelkings-industrieel-metalen-plantenbak-60-lite-1.webp",
+        "https://barrelkings.com/wp-content/uploads/2023/11/barrelkings-industrieel-metalen-plantenbak-60-lite.webp",
+        "https://barrelkings.com/wp-content/smush-webp/2023/11/IMG_1491.jpg.webp"
+      ]
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Plant Rack, Wooden Corner",
+      "price": "5 000 ₽",
+      "category": "yard_lighting",
+      "city": "Москва",
+      "images": [
+        "https://m.media-amazon.com/images/I/71EarOYxDIL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71iJ2SMRenL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/71VwgSupOVL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/716wTjiVcrL._AC_SL1500_.jpg",
+        "https://m.media-amazon.com/images/I/716wTjiVcrL._AC_SL1500_.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Indoor Fly Zapper Plug",
+      "price": "30 000 ₽",
+      "category": "home_furniture",
+      "city": "Москва",
+      "images": [
+        "https://m.media-amazon.com/images/I/711jeVBB8ZL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71yUxSw-VNL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71a-LuHJRHL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/613BL+tChfL._AC_SX679_.jpg",
+        "https://m.media-amazon.com/images/I/71ggqoC6hrL._AC_SX679_.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Outdoor Fire Pit",
+      "price": "20 000 ₽",
+      "category": "yard_decor",
+      "city": "Москва",
+      "images": [
+        "https://example.com/fire_pit1.png",
+        "https://example.com/fire_pit2.png",
+        "https://example.com/fire_pit3.png"
+      ]
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Modern Sofa Set",
+      "price": "55 000 ₽",
+      "category": "home_furniture",
+      "city": "Москва",
+      "images": [
+        "https://example.com/sofa_set1.png",
+        "https://example.com/sofa_set2.png",
+        "https://example.com/sofa_set3.png"
+      ]
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Automatic Lawn Mower",
+      "price": "35 000 ₽",
+      "category": "yard_tools",
+      "city": "Москва",
+      "images": [
+        "https://example.com/lawn_mower1.png",
+        "https://example.com/lawn_mower2.png",
+        "https://example.com/lawn_mower3.png"
+      ]
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/800px-No_image_available.svg.png",
+      "title": "Smart Home Thermostat",
+      "price": "10 000 ₽",
+      "category": "home_appliance",
+      "city": "Москва",
+      "images": [
+        "https://example.com/thermostat1.png",
+        "https://example.com/thermostat2.png",
+        "https://example.com/thermostat3.png"
+      ]
     }
   ]
 }

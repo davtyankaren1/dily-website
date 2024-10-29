@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import UpdatesSvg from "../../../assets/svgs/UpdatesSvg";
 import MenuSvg from "../../../assets/svgs/MenuIconSvg";
 import CharitySvg from "../../../assets/svgs/CharitySvg";
@@ -6,12 +8,56 @@ import SearchIconSvg from "../../../assets/svgs/SearchIconSvg";
 import PlusIconSvg from "../../../assets/svgs/PlusIconSvg";
 import CloseSvg from "../../../assets/svgs/CloseSvg";
 import Menu from "../../menu/Menu";
-import { IHeaderBottomProps } from "../../../types/types";
-import { NavLink } from "react-router-dom";
-
 import "../../../styles/HeaderBottom.scss";
 
-const HeaderBottom = ({ toggleModal, isModalOpen }: IHeaderBottomProps) => {
+const subMenuItems = [
+  [
+    { name: "Объявления", path: "/board/ads", icon: UpdatesSvg },
+    { name: "Магазины", path: "/board/stores", icon: StoreSvg },
+    { name: "Благотворительность", path: "/board/charity", icon: CharitySvg }
+  ],
+  [
+    { name: "Услуги", path: "/service/services", icon: UpdatesSvg },
+    { name: "Запчасти", path: "/service/parts", icon: StoreSvg }
+  ],
+  [
+    { name: "Каталог Товаров", path: "/website/catalog", icon: UpdatesSvg },
+    { name: "Доставка и оплата", path: "/website/promotions", icon: StoreSvg },
+    { name: "Контакты", path: "/website/contacts", icon: StoreSvg },
+    { name: "Вакансии", path: "/website/vacancy", icon: StoreSvg }
+  ],
+  [
+    { name: "Продать", path: "/buyout/sell", icon: UpdatesSvg },
+    { name: "Оценка", path: "/buyout/estimate", icon: StoreSvg }
+  ]
+];
+
+const HeaderBottom = ({
+  toggleModal,
+  isModalOpen,
+  activeTopIndex,
+  activeSubIndex,
+  setActiveSubIndex
+}) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const currentSubIndex = subMenuItems[activeTopIndex].findIndex(
+      (item) => item.path === location.pathname
+    );
+    if (currentSubIndex !== -1 && currentSubIndex !== activeSubIndex) {
+      setActiveSubIndex(currentSubIndex);
+    } else if (currentSubIndex === -1) {
+      setActiveSubIndex(0);
+    }
+  }, [activeTopIndex, location.pathname, navigate, setActiveSubIndex]);
+
+  const handleSubItemClick = (index) => {
+    setActiveSubIndex(index);
+    navigate(subMenuItems[activeTopIndex][index].path);
+  };
+
   return (
     <div className='header-bottom'>
       <div className='container'>
@@ -20,38 +66,44 @@ const HeaderBottom = ({ toggleModal, isModalOpen }: IHeaderBottomProps) => {
             <div onClick={toggleModal} className='modal-controller'>
               {isModalOpen ? <CloseSvg /> : <MenuSvg />}
             </div>
-            <ul className='header-bottom__menu-list'>
-              <li activeClassName='active' className='header-bottom__menu-item'>
-                <UpdatesSvg />
-                <NavLink to={""}>Объявления</NavLink>
-              </li>
-              <li activeClassName='active' className='header-bottom__menu-item'>
-                <StoreSvg />
-                <NavLink to={"/stores"}>Магазины</NavLink>
-              </li>
-              <li activeClassName='active' className='header-bottom__menu-item'>
-                <CharitySvg />
-                <NavLink to={"/charity"}>Благотворительность</NavLink>
-              </li>
-            </ul>
+            <nav className='header-bottom__menu-list'>
+              {subMenuItems[activeTopIndex].map((item, index) => (
+                <NavLink
+                  key={index}
+                  to={item.path}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "header-bottom__menu-item active"
+                      : "header-bottom__menu-item"
+                  }
+                  onClick={() => handleSubItemClick(index)}
+                >
+                  <item.icon />
+                  <span className={activeSubIndex === index ? "active" : ""}>
+                    {item.name}
+                  </span>
+                </NavLink>
+              ))}
+            </nav>
           </div>
 
-          <div className='header-bottom__search'>
-            <div className='header-bottom__search-icon'>
-              <SearchIconSvg />
+          <div style={{ display: "flex", gap: "50px" }}>
+            <div className='header-bottom__search'>
+              <div className='header-bottom__search-icon'>
+                <SearchIconSvg />
+              </div>
+              <input
+                className='header-bottom__search-input'
+                type='text'
+                placeholder='Я хочу купить'
+              />
+              <div className='header-bottom__search-btn'>Найти</div>
             </div>
-            <input
-              className='header-bottom__search-input'
-              type='text'
-              placeholder='Я хочу купить'
-            />
-            <div className='header-bottom__search-btn'>Найти</div>
-          </div>
-
-          <div className='header-bottom__post-ad'>
-            <span>Подать объявление</span>
-            <div className='header-bottom__post-ad-icon'>
-              <PlusIconSvg />
+            <div className='header-bottom__post-ad'>
+              <span>Подать объявление</span>
+              <div className='header-bottom__post-ad-icon'>
+                <PlusIconSvg />
+              </div>
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ import Phones from "../../components/sections/phones-section/Phones";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { useEffect } from "react";
 import {
+  fetchHomeAndYard,
   fetchNotebooks,
   fetchPhones,
   fetchTechniques
@@ -21,9 +22,10 @@ import Technique from "../../components/sections/technique/Technique";
 import { mockData } from "../../components/popular-stores/mockData";
 import SalesImg1 from "../../assets/images/image.png";
 import SalesImg2 from "../../assets/images/A0r95y5Q598.jpg";
+import HomeAndYard from "../../components/sections/home-and-yard/HomeAndYard";
 
-const HomePage = () => {
-  const { phones, notebooks, techniques } = useAppSelector(
+const BoardsPage = () => {
+  const { phones, notebooks, techniques, homeandyard } = useAppSelector(
     (state) => state.products
   );
   const dispath = useAppDispatch();
@@ -32,6 +34,7 @@ const HomePage = () => {
     dispath(fetchPhones());
     dispath(fetchNotebooks());
     dispath(fetchTechniques());
+    dispath(fetchHomeAndYard());
   }, []);
 
   return (
@@ -40,6 +43,7 @@ const HomePage = () => {
       <FindSlider />
       <Phones phones={phones} />
       <Notebooks notebooks={notebooks} />
+      <HomeAndYard homeandyard={homeandyard} />
       <DontMiss />
       <Technique techniques={techniques} />
       <WillGiveFree />
@@ -58,4 +62,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default BoardsPage;

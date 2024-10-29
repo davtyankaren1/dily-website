@@ -52,6 +52,16 @@ export interface Technique {
   images?: string[];
 }
 
+export interface Homeandyard {
+  id: string;
+  imageUrl: string;
+  title: string;
+  price: string;
+  category?: string;
+  city?: string;
+  images?: string[];
+}
+
 export type Product = Phone | Notebook | Technique;
 
 export interface ProductsState {
@@ -60,6 +70,7 @@ export interface ProductsState {
   phones: Phone[];
   notebooks: Notebook[];
   techniques: Technique[];
+  homeandyard: Homeandyard[];
   selectedProduct: Product | null;
 }
 
@@ -91,6 +102,10 @@ export interface ISeeAllProps {
 
 export interface ITeqhniques {
   techniques: IProduct[];
+}
+
+export interface IHomeandYard {
+  homeandyard: IProduct[];
 }
 
 export interface ISliderItem {

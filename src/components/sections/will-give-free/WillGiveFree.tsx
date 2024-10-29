@@ -51,7 +51,7 @@ const WillGiveFree = () => {
       <div className='container'>
         <div className='give-free-cards-title'>
           <h2 className='give-free-cards-text'>Отдам даром</h2>
-          <SeeAll />
+          <SeeAll path='/will-give-free' />
         </div>
         <Cards mockData={mockData} />
       </div>

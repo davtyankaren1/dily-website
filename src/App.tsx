@@ -1,8 +1,8 @@
 import React from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import HomePage from "./pages/home-page/HomePage";
+import HomePage from "./pages/boards-page/HomePage";
 import ProductsPage from "./pages/products-page/ProductsPage";
 import ProductSinglePage from "./pages/product-single-page/ProductSinglePage";
 import ScrollToTop from "./components/scroll-top/ScrollToTop";
@@ -15,6 +15,9 @@ import ConfirmCodePage from "./pages/confirm-code-page/ConfirmCodePage";
 import FormLayout from "./components/form-layout/FormLayout";
 import StoresPage from "./pages/stores-page/StoresPage";
 import CharityPage from "./pages/charity-page/CharityPage";
+import ServicesServicePage from "./pages/services-pages/ServicesServicePage";
+import ServicesPartsPage from "./pages/services-pages/ServicesPartsPage";
+import BoardsPage from "./pages/boards-page/HomePage";
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -35,17 +38,31 @@ const App: React.FC = () => {
       {!hideHeaderFooter && <Header />}
       <ScrollToTop />
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/' element={<Navigate to='/board' replace />} />
+
+        <Route path='/board' element={<BoardsPage />} />
+        <Route path='/board/ads' element={<HomePage />} />
+        <Route path='/board/stores' element={<StoresPage />} />
+        <Route path='/board/charity' element={<CharityPage />} />
+
+        <Route path='/service' element={<ServicesServicePage />} />
+        <Route path='/service/services' element={<ServicesServicePage />} />
+        <Route path='/service/parts' element={<ServicesPartsPage />} />
+
         <Route path='/phones' element={<ProductsPage />} />
         <Route path='/notebooks' element={<ProductsPage />} />
         <Route path='/techniques' element={<ProductsPage />} />
+        <Route path='/home-and-yard' element={<ProductsPage />} />
 
         <Route path='/phones/:id' element={<ProductSinglePage />} />
         <Route path='/notebooks/:id' element={<ProductSinglePage />} />
         <Route path='/techniques/:id' element={<ProductSinglePage />} />
 
-        <Route path='/stores' element={<StoresPage />} />
-        <Route path='/charity' element={<CharityPage />} />
+        <Route path='/what-we-repair' element={<h1>What we repair</h1>} />
+        <Route
+          path='/services-addresses'
+          element={<h1>Services Addresses</h1>}
+        />
 
         <Route element={<FormLayout />}>
           <Route path='/auth' element={<UserAuthPage />} />

@@ -2,15 +2,18 @@
   background: var(--light-grey);
   border-top: 2px solid var(--medium-grey);
   border-bottom: 2px solid var(--medium-grey);
+
   .header-bottom__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 0;
+
     .header-bottom__menu {
       display: flex;
       align-items: center;
       gap: 40px;
+
       .modal-controller {
         cursor: pointer;
       }
@@ -22,12 +25,14 @@
         list-style: none;
         margin: 0;
         padding: 0;
+
         .header-bottom__menu-item {
           display: flex;
           align-items: center;
           gap: 10px;
-          a {
-            text-decoration: none;
+          text-decoration: none; // Removed text decoration
+
+          span {
             font-family: var(--font-family);
             font-weight: 500;
             font-size: 14px;
@@ -35,8 +40,12 @@
             color: var(--dark-grey);
 
             &.active {
-              color: var(--bright-green);
+              color: var(--bright-green); // Highlight for active item
             }
+          }
+
+          &.active {
+            // Additional styles for active menu item if needed
           }
         }
       }
@@ -47,6 +56,7 @@
     display: flex;
     position: relative;
     align-items: center;
+
     .header-bottom__search-icon {
       position: absolute;
       left: 15px;
@@ -95,6 +105,7 @@
     line-height: 120%;
     color: var(--standart-white);
     cursor: pointer;
+
     .header-bottom__post-ad-icon {
       display: flex;
       align-items: center;

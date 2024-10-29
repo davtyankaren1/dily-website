@@ -24,7 +24,7 @@ const CharityHero = () => {
         className='charity-hero__inner'
         initial='hidden'
         animate={isInView ? "visible" : "hidden"}
-        transition={{ duration: 0.5, delayChildren: 0.3, staggerChildren: 0.2 }}
+        transition={{ duration: 0.1, delayChildren: 0.1, staggerChildren: 0.1 }}
       >
         <motion.div
           className='charity-hero__inner-texts'

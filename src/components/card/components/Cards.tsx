@@ -1,13 +1,13 @@
 import CardItem from "../CardItem";
-import "../../../styles/Cards.scss";
 import { ICards } from "../../../types/types";
+import "../../../styles/Cards.scss";
 
 const Cards = ({ mockData }: ICards) => {
   return (
     <div className='cards-items'>
       <div className=''>
         <div className='cards-list_inner'>
-          {mockData.map((item) => {
+          {mockData.slice(0, 5).map((item) => {
             return <CardItem key={item.id} item={item} />;
           })}
         </div>
