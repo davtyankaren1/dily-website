@@ -1,0 +1,22 @@
+.know-more-info__inner {
+  height: 521px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin-top: -100px;
+  padding-top: 10px;
+  justify-content: center;
+  z-index: 1;
+  border: 2px solid red;
+  img {
+    position: absolute;
+    left: 0;
+    width: 80%;
+    left: 150px;
+  }
+
+  .know-more-info_btn {
+    width: 250px;
+  }
+}

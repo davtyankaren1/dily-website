@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "TTNorms";
+  src: url("https://helix-dot-com-next-staging.vercel.app/_next/static/media/df24eec94c5e9db2-s.p.woff2")
+    format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 100 900;
+  font-style: oblique 0deg 10deg;
+}
 
 :root {
   --bright-green: #00c65e;
@@ -12,7 +20,7 @@
   --light-green: #ccefdb;
   --dark-green: #1e7836;
   --error-color: rgba(255, 0, 0, 0.73);
-  --font-family: "Montserrat";
+  --font-family: "TTNorms";
 }
 
 * {
