@@ -1,0 +1,93 @@
+.slider-container {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+
+  img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .hero-slider {
+    height: 100%;
+
+    .swiper-pagination {
+      bottom: 20px;
+      z-index: 10;
+      text-align: center;
+    }
+
+    .swiper-pagination-bullet {
+      background: #dadcdc;
+      opacity: 1;
+      width: 12px;
+      height: 12px;
+      margin: 0 20px;
+      border-radius: 50%;
+      z-index: 555;
+
+      &.swiper-pagination-bullet-active {
+        background: var(--bright-green);
+      }
+    }
+
+    .slide {
+      height: 100%;
+      position: relative;
+      padding: 40px 201px;
+
+      .services-service-slider-title {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: var(--dark-grey);
+        margin-bottom: 45px;
+      }
+
+      p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: var(--dark-grey);
+        width: 493px;
+      }
+
+      .slider-services-btns {
+        display: flex;
+        gap: 30px;
+        margin-top: 134px;
+        &-request {
+          cursor: pointer;
+          border: none;
+          border-radius: 10px;
+          padding: 12px 56px;
+          height: 41px;
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 120%;
+          color: var(--standart-white);
+          background-color: var(--bright-green);
+        }
+        &-more {
+          cursor: pointer;
+          border-radius: 10px;
+          padding: 12px 56px;
+          height: 41px;
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 120%;
+          color: var(--bright-green);
+          background-color: whitesmoke;
+          border: none;
+        }
+      }
+    }
+  }
+}

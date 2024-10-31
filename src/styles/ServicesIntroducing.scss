@@ -1,0 +1,19 @@
+.services-introducing {
+  .services-introducing-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--dark-grey);
+      }
+    }
+  }
+}
