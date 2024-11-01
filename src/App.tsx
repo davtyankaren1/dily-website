@@ -18,6 +18,9 @@ import CharityPage from "./pages/charity-page/CharityPage";
 import ServicesServicePage from "./pages/services-pages/ServicesServicePage";
 import ServicesPartsPage from "./pages/services-pages/ServicesPartsPage";
 import BoardsPage from "./pages/boards-page/HomePage";
+import { ToastContainer } from "react-toastify";
+import ProfilePage from "./pages/profile-page/ProfilePage";
+import BasketPage from "./pages/basket-page/BasketPage";
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -35,12 +38,15 @@ const App: React.FC = () => {
 
   return (
     <div className='App'>
+      <ToastContainer autoClose={1000} />
       {!hideHeaderFooter && <Header />}
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<Navigate to='/board' replace />} />
 
         <Route path='/board' element={<BoardsPage />} />
+        <Route path='/basket' element={<BasketPage />} />
+        <Route path='/profile' element={<ProfilePage />} />
         <Route path='/board/ads' element={<HomePage />} />
         <Route path='/board/stores' element={<StoresPage />} />
         <Route path='/board/charity' element={<CharityPage />} />

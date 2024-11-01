@@ -45,10 +45,7 @@ const Header = () => {
 
   return (
     <div className={`header ${isScrolled ? "scrolled" : ""}`}>
-      <HeaderTop
-        activeIndex={activeTopIndex}
-        setActiveIndex={handleTopItemClick}
-      />
+      <HeaderTop setActiveIndex={handleTopItemClick} />
       <HeaderBottom
         toggleModal={handleToggleModal}
         isModalOpen={openModal}

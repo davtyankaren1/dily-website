@@ -19,18 +19,42 @@ const initialState: ProductsState = {
   selectedProduct: null
 };
 
-export const fetchPhones = createAsyncThunk<Phone[]>(
-  "products/fetchPhones",
-  async () => {
-    try {
-      const res = await axios.get("http://localhost:5050/phones");
-      return res.data;
-    } catch (error) {
-      console.error(error);
-      throw new Error("Failed to fetch phones");
-    }
+// export const fetchPhones = createAsyncThunk<Phone[]>(
+//   "products/fetchPhones",
+//   async () => {
+//     try {
+//       const res = await axios.get(`http://localhost:8081/phones`);
+//       const parsedphones = res.data.map((phone: any) => ({
+//         ...phone,
+//         images: JSON.parse(phone.images || "[]")
+//       }));
+//       const data = parsedphones;
+//       return data;
+//     } catch (error) {
+//       console.error(error);
+//       throw new Error("Failed to fetch phones");
+//     }
+//   }
+// );
+
+export const fetchPhones = createAsyncThunk<
+  Phone[],
+  { limit?: number; offset?: number } | undefined
+>("products/fetchPhones", async (params) => {
+  try {
+    const res = await axios.get(`http://localhost:8081/phones`, {
+      params
+    });
+    const parsedPhones = res.data.map((phone: any) => ({
+      ...phone,
+      images: JSON.parse(phone.images || "[]")
+    }));
+    return parsedPhones;
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to fetch phones");
   }
-);
+});
 
 export const fetchNotebooks = createAsyncThunk<Notebook[]>(
   "products/fetchNotebooks",
@@ -45,18 +69,37 @@ export const fetchNotebooks = createAsyncThunk<Notebook[]>(
   }
 );
 
-export const fetchTechniques = createAsyncThunk<Technique[]>(
-  "products/fetchTechniques",
-  async () => {
-    try {
-      const res = await axios.get("http://localhost:5050/techniques");
-      return res.data;
-    } catch (error) {
-      console.error(error);
-      throw new Error("Failed to fetch techniques");
-    }
+// export const fetchTechniques = createAsyncThunk<Technique[]>(
+//   "products/fetchTechniques",
+//   async () => {
+//     try {
+//       const res = await axios.get("http://localhost:5050/techniques");
+//       return res.data;
+//     } catch (error) {
+//       console.error(error);
+//       throw new Error("Failed to fetch techniques");
+//     }
+//   }
+// );
+
+export const fetchTechniques = createAsyncThunk<
+  Technique[],
+  { limit?: number; offset?: number } | undefined
+>("products/fetchTechniques", async (params) => {
+  try {
+    const res = await axios.get(`http://localhost:8081/techniques`, {
+      params
+    });
+    const parsedTechniques = res.data.map((technique: any) => ({
+      ...technique,
+      images: JSON.parse(technique.images || "[]")
+    }));
+    return parsedTechniques;
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to fetch techniques");
   }
-);
+});
 
 export const fetchHomeAndYard = createAsyncThunk<Technique[]>(
   "products/fetchHomeAndYard",
@@ -89,7 +132,7 @@ export const fetchProductById = createAsyncThunk<
   { id: number | string; category: string }
 >("products/fetchProductById", async ({ id, category }) => {
   try {
-    const res = await axios.get(`http://localhost:5050/${category}/${id}`);
+    const res = await axios.get(`http://localhost:8081/${category}/${id}`);
     return res.data;
   } catch (error) {
     console.error(error);
