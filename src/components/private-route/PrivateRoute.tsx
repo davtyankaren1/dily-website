@@ -1,14 +1,20 @@
-import { ReactNode } from "react";
+import React from "react";
 import { Navigate } from "react-router-dom";
 
 interface PrivateRouteProps {
-  children: ReactNode;
+  element: React.ReactNode;
+  isAuthenticated: boolean;
 }
 
-const PrivateRoute = ({ children }: PrivateRouteProps) => {
-  const isAuthenticated = localStorage.getItem("userName") !== null;
-
-  return isAuthenticated ? <>{children}</> : <Navigate to='/auth' replace />;
+const PrivateRoute: React.FC<PrivateRouteProps> = ({
+  element,
+  isAuthenticated
+}) => {
+  return isAuthenticated ? (
+    <>{element}</>
+  ) : (
+    <Navigate to='/login-with-pass' replace />
+  );
 };
 
 export default PrivateRoute;

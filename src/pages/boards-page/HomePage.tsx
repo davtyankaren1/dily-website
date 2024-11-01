@@ -33,9 +33,9 @@ const BoardsPage = () => {
   const dispath = useAppDispatch();
 
   useEffect(() => {
-    dispath(fetchPhones());
+    dispath(fetchPhones({ limit: 5, offset: 0 }));
+    dispath(fetchTechniques({ limit: 5, offset: 0 }));
     dispath(fetchNotebooks());
-    dispath(fetchTechniques());
     dispath(fetchHomeAndYard());
     dispath(fetchToys());
   }, []);

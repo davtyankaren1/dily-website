@@ -39,7 +39,7 @@ const CardItem = ({ item }: ICardItemProps) => {
       onClick={handleCardClick}
     >
       <img
-        src={item?.images ? item?.images[1] : item.imageUrl}
+        src={item?.images ? item?.images[0] : item.imageUrl}
         className='card-item-image'
         alt={item?.title}
       />
