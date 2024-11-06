@@ -3,6 +3,7 @@ import { useParams, useLocation } from "react-router-dom";
 import ProductSingleComponent from "../../components/product-single-component/ProductSingleComponent";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { fetchProductById } from "../../redux/feature/ProductsSlice";
+import "../../styles/ProductSinglePage.scss"; // Import the CSS file
 
 const ProductSinglePage = () => {
   const dispatch = useAppDispatch();
@@ -34,13 +35,23 @@ const ProductSinglePage = () => {
     }
   }, [dispatch, id, path]);
 
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading)
+    return (
+      <div className='loading-container'>
+        <div className='loading-text'>
+          <img
+            src='https://upload.wikimedia.org/wikipedia/commons/a/ad/YouTube_loading_symbol_3_%28transparent%29.gif'
+            width={80}
+            height={80}
+          />
+        </div>
+      </div>
+    );
   if (isError) return <div>Error loading product: {isError}</div>;
-  if (!selectedProduct) return <div>Product not found</div>;
 
   return (
-    <div>
-      <ProductSingleComponent product={selectedProduct} />
+    <div className='single-product-page'>
+      {selectedProduct && <ProductSingleComponent product={selectedProduct} />}
     </div>
   );
 };

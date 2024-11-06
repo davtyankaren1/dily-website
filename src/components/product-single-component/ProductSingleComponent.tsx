@@ -7,6 +7,7 @@ import Avatar from "../../assets/images/Avatar.png";
 import RecomentProducts from "../sections/recoment-products/RecomentProducts";
 import StarFilled from "../../assets/svgs/StarFilled";
 import { IsingleProductProps, IProduct } from "../../types/types";
+import { useNavigate } from "react-router-dom";
 import "../../styles/SinglePhone.scss";
 
 const defaultImages = [
@@ -76,6 +77,8 @@ const ProductCharacteristics: React.FC<IProductCharacteristicsProps> = ({
 };
 
 const ProductSingleComponent: React.FC<IsingleProductProps> = ({ product }) => {
+  const navigate = useNavigate("/");
+
   return (
     <div className='single-page'>
       <div className='container'>
@@ -113,7 +116,9 @@ const ProductSingleComponent: React.FC<IsingleProductProps> = ({ product }) => {
                 </div>
 
                 <div className='single-page-inner-content-right-delivery'>
-                  <Button>Купить</Button>
+                  <Button onClick={() => navigate("/login-with-pass")}>
+                    Купить
+                  </Button>
                   <div className='single-page-delivery-icon'>
                     <DeliveryCar />
                     <span>Доставка</span>
