@@ -55,3 +55,16 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--dark-green);
 }
+
+.loading-text {
+  border: 2px solid red;
+  z-index: 5555;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: var(--bright-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

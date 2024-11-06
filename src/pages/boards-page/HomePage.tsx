@@ -1,7 +1,10 @@
-import OfferFromDily from "../../components/sections/notebooks-section/Notebooks";
 import DontMiss from "../../components/sections/dont-miss/DontMiss";
+import OfferFromDily from "../../components/sections/notebooks-section/Notebooks";
 import ActualOffers from "../../components/sections/technique/Technique";
 import WillGiveFree from "../../components/sections/will-give-free/WillGiveFree";
+import Notebooks from "../../components/sections/notebooks-section/Notebooks";
+import HomeAndYard from "../../components/sections/home-and-yard/HomeAndYard";
+import Toys from "../../components/sections/toys/Toys";
 import SalesSection from "../../components/sections/sales-section/SalesSection";
 import PopularStores from "../../components/popular-stores/PopularStores";
 import SellToUs from "../../components/sections/sell-to-us/SellToUs";
@@ -18,13 +21,10 @@ import {
   fetchTechniques,
   fetchToys
 } from "../../redux/feature/ProductsSlice";
-import Notebooks from "../../components/sections/notebooks-section/Notebooks";
 import Technique from "../../components/sections/technique/Technique";
 import { mockData } from "../../components/popular-stores/mockData";
 import SalesImg1 from "../../assets/images/image.png";
 import SalesImg2 from "../../assets/images/A0r95y5Q598.jpg";
-import HomeAndYard from "../../components/sections/home-and-yard/HomeAndYard";
-import Toys from "../../components/sections/toys/Toys";
 
 const BoardsPage = () => {
   const { phones, notebooks, techniques, homeandyard, toys } = useAppSelector(
@@ -45,12 +45,12 @@ const BoardsPage = () => {
       <ServiceSlider />
       <FindSlider />
       <Phones phones={phones} />
-      <Notebooks notebooks={notebooks} />
-      <HomeAndYard homeandyard={homeandyard} />
-      <DontMiss />
+      {/* <Notebooks notebooks={notebooks} /> */}
+      {/* <HomeAndYard homeandyard={homeandyard} /> */}
       <Technique techniques={techniques} />
-      <Toys toys={toys} />
-      <WillGiveFree />
+      <DontMiss />
+      {/* <Toys toys={toys} /> */}
+      {/* <WillGiveFree /> */}
       <SalesSection
         firstBannerFirstText='Магазины'
         firstBannerSecondText='Легко откройте свой интернет-магазин'
