@@ -19,24 +19,6 @@ const initialState: ProductsState = {
   selectedProduct: null
 };
 
-// export const fetchPhones = createAsyncThunk<Phone[]>(
-//   "products/fetchPhones",
-//   async () => {
-//     try {
-//       const res = await axios.get(`http://localhost:8081/phones`);
-//       const parsedphones = res.data.map((phone: any) => ({
-//         ...phone,
-//         images: JSON.parse(phone.images || "[]")
-//       }));
-//       const data = parsedphones;
-//       return data;
-//     } catch (error) {
-//       console.error(error);
-//       throw new Error("Failed to fetch phones");
-//     }
-//   }
-// );
-
 export const fetchPhones = createAsyncThunk<
   Phone[],
   { limit?: number; offset?: number } | undefined
@@ -64,23 +46,10 @@ export const fetchNotebooks = createAsyncThunk<Notebook[]>(
       return res.data;
     } catch (error) {
       console.error(error);
-      throw new Error("Failed to fetch notebooks");
+      // throw new Error("Failed to fetch notebooks");
     }
   }
 );
-
-// export const fetchTechniques = createAsyncThunk<Technique[]>(
-//   "products/fetchTechniques",
-//   async () => {
-//     try {
-//       const res = await axios.get("http://localhost:5050/techniques");
-//       return res.data;
-//     } catch (error) {
-//       console.error(error);
-//       throw new Error("Failed to fetch techniques");
-//     }
-//   }
-// );
 
 export const fetchTechniques = createAsyncThunk<
   Technique[],
@@ -96,8 +65,7 @@ export const fetchTechniques = createAsyncThunk<
     }));
     return parsedTechniques;
   } catch (error) {
-    console.error(error);
-    throw new Error("Failed to fetch techniques");
+    // throw new Error("Failed to fetch techniques");
   }
 });
 
@@ -109,7 +77,7 @@ export const fetchHomeAndYard = createAsyncThunk<Technique[]>(
       return res.data;
     } catch (error) {
       console.error(error);
-      throw new Error("Failed to fetch techniques");
+      // throw new Error("Failed to fetch techniques");
     }
   }
 );
@@ -122,7 +90,7 @@ export const fetchToys = createAsyncThunk<Technique[]>(
       return res.data;
     } catch (error) {
       console.error(error);
-      throw new Error("Failed to fetch techniques");
+      // throw new Error("Failed to fetch techniques");
     }
   }
 );
@@ -186,7 +154,7 @@ const ProductsSlice = createSlice({
       )
       .addCase(fetchTechniques.rejected, (state, action) => {
         state.isLoading = false;
-        state.isError = action.error.message || "Failed to fetch techniques";
+        state.isError = action.error.message || "ERROR";
       })
       .addCase(fetchHomeAndYard.pending, (state) => {
         state.isLoading = true;
@@ -200,7 +168,7 @@ const ProductsSlice = createSlice({
       )
       .addCase(fetchHomeAndYard.rejected, (state, action) => {
         state.isLoading = false;
-        state.isError = action.error.message || "Failed to fetch techniques";
+        state.isError = action.error.message || "ERROR";
       })
 
       .addCase(fetchToys.pending, (state) => {
@@ -215,7 +183,7 @@ const ProductsSlice = createSlice({
       )
       .addCase(fetchToys.rejected, (state, action) => {
         state.isLoading = false;
-        state.isError = action.error.message || "Failed to fetch techniques";
+        state.isError = action.error.message || "ERROR";
       })
 
       .addCase(fetchProductById.pending, (state) => {

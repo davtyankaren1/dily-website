@@ -162,6 +162,7 @@ export interface IProductsTopProducts {
   currentData: IProduct[];
   isListView2: boolean;
   setIsListView2: React.Dispatch<React.SetStateAction<boolean>>;
+  text: string;
 }
 
 export interface HeaderProps {

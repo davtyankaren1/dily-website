@@ -1,21 +1,20 @@
-import TextFieldTitle from "../../texts/TextFieldTitle";
 import ArrowDownSvg from "../../../assets/svgs/ArrowDownSvg";
 import GridSvg from "../../../assets/svgs/GridSvg";
 import ListSvg from "../../../assets/svgs/ListSvg";
 import CardItem from "../../card/CardItem";
 import { HeaderProps, IProductsTopProducts } from "../../../types/types";
+import TextFieldHeader from "../../texts/TextFieldHeader";
 import "../../../styles/ProductsComponent.scss";
 
 const ProductsTopProducts = ({
   currentData,
   isListView2,
-  setIsListView2
+  setIsListView2,
+  text
 }: IProductsTopProducts) => {
   return (
     <div className='top-products'>
-      <div>
-        <TextFieldTitle text='Топ товаров' />
-      </div>
+      <TextFieldHeader text={text} />
       <div className='phones-content'>
         <Header
           currentData={currentData}

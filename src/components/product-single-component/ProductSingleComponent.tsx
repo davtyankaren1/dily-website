@@ -164,7 +164,7 @@ const ProductSingleComponent: React.FC<IsingleProductProps> = ({ product }) => {
             </div>
           </div>
         </div>
-        <RecomentProducts />
+        {/* <RecomentProducts /> */}
       </div>
     </div>
   );
