@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import HeaderLogoSvg from "../../../assets/svgs/HeaderLogoSvg";
 import LocationSvg from "../../../assets/svgs/LocationSvg";
@@ -7,20 +7,9 @@ import AvatarSvg from "../../../assets/svgs/AvatarSvg";
 import { useAppSelector } from "../../../redux/hooks";
 import "../../../styles/HeaderTop.scss";
 
-const menuItems = [
-  { name: "Доска объявлений", path: "/board" },
-  { name: "Сервисный центр", path: "/service" },
-  { name: "Интернет-магазин Dily.ru", path: "/shop" },
-  { name: "Скупка", path: "/buyout" }
-];
-
-const HeaderTop = ({ setActiveIndex }: any) => {
+const HeaderTop = () => {
   const navigate = useNavigate();
   const { user } = useAppSelector((state) => state.users);
-
-  const handleMenuItemClick = (index: number) => {
-    setActiveIndex(index);
-  };
 
   const handleLogin = () => {
     navigate("/auth");
@@ -58,26 +47,6 @@ const HeaderTop = ({ setActiveIndex }: any) => {
             <div className='header-logo-svg' onClick={() => navigate("/board")}>
               <HeaderLogoSvg />
             </div>
-            <nav className='nav-menu'>
-              {menuItems.map((item, index) => (
-                <NavLink
-                  key={index}
-                  to={item.path}
-                  className={({ isActive }) =>
-                    isActive ? "nav-item active" : "nav-item"
-                  }
-                  onClick={() => handleMenuItemClick(index)}
-                >
-                  <motion.span
-                    initial={{ y: 10, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                  >
-                    {item.name}
-                  </motion.span>
-                </NavLink>
-              ))}
-            </nav>
           </div>
 
           <div className='header-right'>

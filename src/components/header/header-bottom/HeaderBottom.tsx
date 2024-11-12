@@ -14,12 +14,10 @@ const subMenuItems = [
   [
     { name: "Объявления", path: "/board/ads", icon: UpdatesSvg },
     { name: "Магазины", path: "/board/stores", icon: StoreSvg },
-    { name: "Благотворительность", path: "/board/charity", icon: CharitySvg }
+    { name: "Благотворительность", path: "/board/charity", icon: CharitySvg },
+    { name: "Услуги", path: "/board/services", icon: UpdatesSvg }
   ],
-  [
-    { name: "Услуги", path: "/service/services", icon: UpdatesSvg },
-    { name: "Запчасти", path: "/service/parts", icon: StoreSvg }
-  ],
+  [{ name: "Запчасти", path: "/service/parts", icon: StoreSvg }],
   [
     { name: "Каталог Товаров", path: "/website/catalog", icon: UpdatesSvg },
     { name: "Доставка и оплата", path: "/website/promotions", icon: StoreSvg },
@@ -111,12 +109,12 @@ const HeaderBottom = ({
                 Найти
               </div>
             </div>
-            <div className='header-bottom__post-ad'>
+            {/* <div className='header-bottom__post-ad'>
               <span>Подать объявление</span>
               <div className='header-bottom__post-ad-icon'>
                 <PlusIconSvg />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {isModalOpen && <Menu />}

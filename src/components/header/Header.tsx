@@ -5,10 +5,10 @@ import HeaderBottom from "./header-bottom/HeaderBottom";
 import "../../styles/Header.scss";
 
 const menuItems = [
-  { name: "Доска объявлений", path: "/board" },
-  { name: "Сервисный центр", path: "/service" },
-  { name: "Интернет-магазин Dily.ru", path: "/shop" },
-  { name: "Скупка", path: "/buyout" }
+  { name: "Доска объявлений", path: "/board" }
+  // { name: "Сервисный центр", path: "/service" }
+  // { name: "Интернет-магазин Dily.ru", path: "/shop" },
+  // { name: "Скупка", path: "/buyout" }
 ];
 
 const Header = () => {

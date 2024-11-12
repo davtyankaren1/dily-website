@@ -81,21 +81,11 @@
 .header-top {
   .container {
     .header-content {
+      padding-top: 18px;
+      padding-bottom: 12px;
       position: relative;
       display: flex;
       justify-content: space-between;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100vw;
-        height: 2px;
-        bottom: -2px;
-        background: var(--bright-green);
-        z-index: 0;
-      }
 
       .header-left {
         display: flex;
