@@ -5,16 +5,16 @@ import {
   fetchPhones,
   fetchNotebooks,
   fetchTechniques,
-  fetchHomeAndYard,
   fetchToys
 } from "../../redux/feature/ProductsSlice";
 import { useDebounce } from "./components/useDebounce";
 import ProductsTopProducts from "./components/ProductsTopProducts";
-import { IProduct } from "../../types/types";
 import Loading from "../loading/Loading";
 import { Range, getTrackBackground } from "react-range";
 import { Button } from "../customs";
 import TextFieldAlternative from "../texts/TextFieldAlternative";
+import { FaFemale, FaGenderless, FaMale } from "react-icons/fa";
+import "../../styles/ProductsComponent.scss";
 
 const MIN_PRICE = 0;
 const MAX_PRICE = 50000;
@@ -23,7 +23,7 @@ const ITEMS_PER_PAGE = 7;
 const ProductsComponent = () => {
   const [isListView2, setIsListView2] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedGender, setSelectedGender] = useState<string | null>(null); // Added gender state for toys only
+  const [selectedGender, setSelectedGender] = useState<string | null>(null);
 
   const [priceRange, setPriceRange] = useState<number[]>([
     MIN_PRICE,
@@ -32,18 +32,11 @@ const ProductsComponent = () => {
   const [isFiltersApplied, setIsFiltersApplied] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const { phones, notebooks, techniques, homeandyard, toys, isLoading } =
-    useAppSelector(
-      (state: {
-        products: {
-          phones: IProduct[];
-          notebooks: IProduct[];
-          techniques: IProduct[];
-          homeandyard: IProduct[];
-          toys: IProduct[];
-        };
-      }) => state.products
-    );
+  const phones = useAppSelector((state) => state.products.phones);
+  const notebooks = useAppSelector((state) => state.products.notebooks);
+  const techniques = useAppSelector((state) => state.products.techniques);
+  const toys = useAppSelector((state) => state.products.toys);
+  const isLoading = useAppSelector((state) => state.products.isLoading);
 
   const dispatch = useAppDispatch();
   const location = useLocation();
@@ -58,15 +51,14 @@ const ProductsComponent = () => {
       const params = {
         search: debouncedSearchQuery,
         limit: ITEMS_PER_PAGE,
-        offset: (currentPage - 1) * ITEMS_PER_PAGE
+        offset: (currentPage - 1) * ITEMS_PER_PAGE,
+        gender: ""
       };
 
       if (path.includes("/phones")) {
         dispatch(fetchPhones(params));
       }
       if (path.includes("/toys")) {
-        // dispatch(fetchToys(params));
-        // Only add gender filter for toys
         if (selectedGender) {
           params.gender = selectedGender;
         }
@@ -101,9 +93,6 @@ const ProductsComponent = () => {
       if (path.includes("/techniques")) {
         dispatch(fetchTechniques(params));
       }
-      if (path.includes("/home-and-yard")) {
-        dispatch(fetchHomeAndYard(params));
-      }
       if (path.includes("/toys")) {
         dispatch(fetchToys(params));
       }
@@ -118,14 +107,12 @@ const ProductsComponent = () => {
     currentPage
   ]);
 
-  const currentData: IProduct[] = path.includes("/phones")
+  const currentData: any = path.includes("/phones")
     ? phones
     : path.includes("/notebooks")
     ? notebooks
     : path.includes("/techniques")
     ? techniques
-    : path.includes("/home-and-yard")
-    ? homeandyard
     : path.includes("/toys")
     ? toys
     : [];
@@ -268,19 +255,57 @@ const ProductsComponent = () => {
 
               <Button onClick={handleSearchSubmit}>Apply Filters</Button>
 
-              {/* Gender Filter UI for Toys only */}
               {path.includes("/toys") && (
                 <div className='gender-filter'>
-                  <label>Gender</label>
-                  <select
-                    value={selectedGender || ""}
-                    onChange={(e) => setSelectedGender(e.target.value || null)}
-                  >
-                    <option value=''>All Genders</option>
-                    <option value='male'>Male</option>
-                    <option value='female'>Female</option>
-                    <option value='unisex'>Unisex</option>
-                  </select>
+                  <div className='gender-options'>
+                    <div
+                      className={`gender-option male ${
+                        selectedGender === "male" ? "active" : ""
+                      }`}
+                      onClick={() => setSelectedGender("male")}
+                    >
+                      <FaMale className='gender-icon' />
+                      <span>Male</span>
+                      {selectedGender === "male" && (
+                        <span className='checked-icon'>✔</span>
+                      )}
+                    </div>
+                    <div
+                      className={`gender-option female ${
+                        selectedGender === "female" ? "active" : ""
+                      }`}
+                      onClick={() => setSelectedGender("female")}
+                    >
+                      <FaFemale className='gender-icon' />
+                      <span>Female</span>
+                      {selectedGender === "female" && (
+                        <span className='checked-icon'>✔</span>
+                      )}
+                    </div>
+                    <div
+                      className={`gender-option unisex ${
+                        selectedGender === "unisex" ? "active" : ""
+                      }`}
+                      onClick={() => setSelectedGender("unisex")}
+                    >
+                      <FaGenderless className='gender-icon' />
+                      <span>Unisex</span>
+                      {selectedGender === "unisex" && (
+                        <span className='checked-icon'>✔</span>
+                      )}
+                    </div>
+                    <div
+                      className={`gender-option all ${
+                        selectedGender === null ? "active" : ""
+                      }`}
+                      onClick={() => setSelectedGender(null)}
+                    >
+                      <span>All</span>
+                      {selectedGender === null && (
+                        <span className='checked-icon'>✔</span>
+                      )}
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
@@ -288,7 +313,7 @@ const ProductsComponent = () => {
             {isLoading ? (
               <Loading />
             ) : currentData.length === 0 ? (
-              <div>No Items Found</div> // This line shows when no products match
+              <div>No Items Found</div>
             ) : (
               <div className='phone-content-container'>
                 <ProductsTopProducts

@@ -4,7 +4,6 @@ import DeliveryCar from "../../assets/svgs/DeliveryCar";
 import ImageSlider from "../image-slider/ImageSlider";
 import BreadCrumbs from "../breadcrumb/BreadCrumbs";
 import Avatar from "../../assets/images/Avatar.png";
-// import RecomentProducts from "../sections/recoment-products/RecomentProducts";
 import StarFilled from "../../assets/svgs/StarFilled";
 import { IsingleProductProps, IProduct } from "../../types/types";
 import { useNavigate } from "react-router-dom";
@@ -77,7 +76,7 @@ const ProductCharacteristics: React.FC<IProductCharacteristicsProps> = ({
 };
 
 const ProductSingleComponent: React.FC<IsingleProductProps> = ({ product }) => {
-  const navigate = useNavigate("/");
+  const navigate = useNavigate();
 
   return (
     <div className='single-page'>
