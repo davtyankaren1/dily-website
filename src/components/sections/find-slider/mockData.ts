@@ -15,16 +15,16 @@ import EstateSvg from "../../../assets/svgs/EstateSvg";
 import TshirtSvg from "../../../assets/svgs/TshirtSvg";
 
 export const mockData = [
+  { id: 2, title: "Телефоны, аксессуары", svg: PhoneSvg, path: "/phones" },
+  { id: 4, title: "Бытовая техника", svg: TexnikaSvg, path: "/techniques" },
+  { id: 7, title: "Животные", svg: AcuariumSvg, path: "/animals" },
+  { id: 8, title: "Игрушки", svg: SoskaSvg, path: "/toys" },
+  { id: 10, title: "Нотбуки", svg: JobSvg, path: "/notebooks" },
+  // { id: 3, title: "Электроника", svg: ElectronicSvg },
   { id: 1, title: "Личные вещи", svg: TshirtSvg },
-  { id: 2, title: "Телефоны, аксессуары", svg: PhoneSvg },
-  { id: 3, title: "Электроника", svg: ElectronicSvg },
-  { id: 4, title: "Бытовая техника", svg: TexnikaSvg },
-  { id: 5, title: "Авто Товары", svg: AvtoThings },
+  // { id: 5, title: "Авто Товары", svg: AvtoThings },
   { id: 6, title: "Дом и сад", svg: GrossHome },
-  { id: 7, title: "Животные", svg: AcuariumSvg },
-  { id: 8, title: "Товары для детей", svg: SoskaSvg },
   { id: 9, title: "Транспорт", svg: CarSvg },
-  { id: 10, title: "Работа", svg: JobSvg },
   { id: 11, title: "Для бизнеса", svg: BusinessFor },
   { id: 12, title: "Отдам даром", svg: FromHeartSvg },
   { id: 13, title: "Хобби и отдых", svg: SneackersSvg },

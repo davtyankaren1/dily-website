@@ -9,8 +9,10 @@ import SliderItem from "./components/SliderItem";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../../../styles/FindSlider.scss";
+import { useNavigate } from "react-router-dom";
 
 const Slider = () => {
+  const navigate = useNavigate();
   return (
     <motion.div
       className='find-slider'
@@ -32,7 +34,9 @@ const Slider = () => {
           >
             {mockData.map((item) => (
               <SwiperSlide key={item.id}>
-                <SliderItem item={item} />
+                <div onClick={() => navigate(`${item.path}`)}>
+                  <SliderItem item={item} />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>

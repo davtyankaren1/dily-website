@@ -5,7 +5,8 @@ import {
   fetchPhones,
   fetchNotebooks,
   fetchTechniques,
-  fetchToys
+  fetchToys,
+  fetchAnimals
 } from "../../redux/feature/ProductsSlice";
 import { useDebounce } from "./components/useDebounce";
 import ProductsTopProducts from "./components/ProductsTopProducts";
@@ -36,6 +37,7 @@ const ProductsComponent = () => {
   const notebooks = useAppSelector((state) => state.products.notebooks);
   const techniques = useAppSelector((state) => state.products.techniques);
   const toys = useAppSelector((state) => state.products.toys);
+  const animals = useAppSelector((state) => state.products.animals);
   const isLoading = useAppSelector((state) => state.products.isLoading);
 
   const dispatch = useAppDispatch();
@@ -66,6 +68,9 @@ const ProductsComponent = () => {
       }
       if (path.includes("/notebooks")) {
         dispatch(fetchNotebooks(params));
+      }
+      if (path.includes("/animals")) {
+        dispatch(fetchAnimals(params));
       } else if (path.includes("/techniques")) {
         dispatch(fetchTechniques(params));
       }
@@ -93,6 +98,9 @@ const ProductsComponent = () => {
       if (path.includes("/techniques")) {
         dispatch(fetchTechniques(params));
       }
+      if (path.includes("/animals")) {
+        dispatch(fetchAnimals(params));
+      }
       if (path.includes("/toys")) {
         dispatch(fetchToys(params));
       }
@@ -113,6 +121,8 @@ const ProductsComponent = () => {
     ? notebooks
     : path.includes("/techniques")
     ? techniques
+    : path.includes("/animals")
+    ? animals
     : path.includes("/toys")
     ? toys
     : [];
@@ -132,6 +142,9 @@ const ProductsComponent = () => {
     }
     if (path.includes("/toys")) {
       return { text: "Игрушки", path: "/toys" };
+    }
+    if (path.includes("/animals")) {
+      return { text: "Животные", path: "/animals" };
     }
     return { text: "", path: "" };
   };

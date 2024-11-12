@@ -45,4 +45,14 @@
   .find-slider-item-title {
     margin-top: 15px;
   }
+
+  // Add hover effect on SwiperSlide items
+  .swiper-slide {
+    transition: transform 0.2s ease; // Smooth scaling transition
+    cursor: pointer;
+  }
+
+  .swiper-slide:hover {
+    transform: scale(1.05); // Slightly scale up on hover
+  }
 }

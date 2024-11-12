@@ -27,6 +27,8 @@ const ProductSinglePage = () => {
         ? "toys"
         : path.includes("home-and-yard")
         ? "home-and-yard"
+        : path.includes("animals")
+        ? "animals"
         : null;
 
       if (category) {

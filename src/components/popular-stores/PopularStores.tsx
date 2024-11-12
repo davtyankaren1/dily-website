@@ -26,9 +26,9 @@ const PopularStores = ({ mockData }) => {
             animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.5 }}
           >
-            Популярные магазины
+            Магазины-партнеры
           </motion.h2>
-          <SeeAll path='/' />
+          <SeeAll path='/board/stores' />
         </div>
         <div className='popular-stores__inner'>
           {mockData.map((item, index) => (

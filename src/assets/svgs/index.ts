@@ -2,7 +2,7 @@ import DocumentSvg from "./DocumentSvg";
 import GavelSvg from "./GavelSvg";
 import InputEyeSvg from "./InputEyeSvg";
 import LogoSvg from "./LogoSvg";
-import StorefrontSvg from "./StorefrontSvg";
+import StorefrontSvg from "../../components/card/StorefrontSvg";
 import WrenchSvg from "./WrenchSvg";
 import HandsSvg from "./HandsSvg";
 

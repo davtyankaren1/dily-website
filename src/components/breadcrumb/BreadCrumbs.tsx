@@ -15,6 +15,7 @@ const BreadCrumbs: React.FC = () => {
     "services-addresses": "Service Addresses",
     "what-we-repair": "What We Repair",
     phones: "Phones",
+    animals: "Animals",
     notebooks: "Notebooks",
     techniques: "Techniques",
     "home-and-yard": "Home & Yard",

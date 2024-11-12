@@ -5,7 +5,6 @@ import MenuSvg from "../../../assets/svgs/MenuIconSvg";
 import CharitySvg from "../../../assets/svgs/CharitySvg";
 import StoreSvg from "../../../assets/svgs/StoreSvg";
 import SearchIconSvg from "../../../assets/svgs/SearchIconSvg";
-import PlusIconSvg from "../../../assets/svgs/PlusIconSvg";
 import CloseSvg from "../../../assets/svgs/CloseSvg";
 import Menu from "../../menu/Menu";
 import "../../../styles/HeaderBottom.scss";
@@ -16,17 +15,6 @@ const subMenuItems = [
     { name: "Магазины", path: "/board/stores", icon: StoreSvg },
     { name: "Благотворительность", path: "/board/charity", icon: CharitySvg },
     { name: "Услуги", path: "/board/services", icon: UpdatesSvg }
-  ],
-  [{ name: "Запчасти", path: "/service/parts", icon: StoreSvg }],
-  [
-    { name: "Каталог Товаров", path: "/website/catalog", icon: UpdatesSvg },
-    { name: "Доставка и оплата", path: "/website/promotions", icon: StoreSvg },
-    { name: "Контакты", path: "/website/contacts", icon: StoreSvg },
-    { name: "Вакансии", path: "/website/vacancy", icon: StoreSvg }
-  ],
-  [
-    { name: "Продать", path: "/buyout/sell", icon: UpdatesSvg },
-    { name: "Оценка", path: "/buyout/estimate", icon: StoreSvg }
   ]
 ];
 

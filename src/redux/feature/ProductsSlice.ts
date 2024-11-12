@@ -16,6 +16,7 @@ const initialState: ProductsState = {
   techniques: [],
   homeandyard: [],
   toys: [],
+  animals: [],
   selectedProduct: null
 };
 
@@ -106,6 +107,24 @@ export const fetchToys = createAsyncThunk<
   }
 });
 
+export const fetchAnimals = createAsyncThunk<
+  Technique[],
+  { limit?: number; offset?: number } | undefined
+>("products/fetchAnimals", async (params) => {
+  try {
+    const res = await axios.get(`http://localhost:8081/animals`, {
+      params
+    });
+    const parsedToys = res.data.map((animal: any) => ({
+      ...animal,
+      images: JSON.parse(animal.images || "[]")
+    }));
+    return parsedToys;
+  } catch (error) {
+    // throw new Error("Failed to fetch techniques");
+  }
+});
+
 export const fetchProductById = createAsyncThunk<
   Product,
   { id: number | string; category: string }
@@ -136,6 +155,20 @@ const ProductsSlice = createSlice({
         }
       )
       .addCase(fetchPhones.rejected, (state, action) => {
+        state.isLoading = false;
+        state.isError = action.error.message || "Failed to fetch phones";
+      })
+      .addCase(fetchAnimals.pending, (state) => {
+        state.isLoading = true;
+      })
+      .addCase(
+        fetchAnimals.fulfilled,
+        (state, action: PayloadAction<Phone[]>) => {
+          state.isLoading = false;
+          state.animals = action.payload;
+        }
+      )
+      .addCase(fetchAnimals.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = action.error.message || "Failed to fetch phones";
       })

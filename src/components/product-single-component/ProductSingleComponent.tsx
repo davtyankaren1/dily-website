@@ -9,13 +9,7 @@ import { IsingleProductProps, IProduct } from "../../types/types";
 import { useNavigate } from "react-router-dom";
 import "../../styles/SinglePhone.scss";
 
-const defaultImages = [
-  "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg",
-  "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg",
-  "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
-  "https://www.shutterstock.com/image-photo/chameleon-close-eye-portrait-reptile-600nw-2466925375.jpg",
-  "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg"
-];
+const defaultImages = [];
 
 interface IProductCharacteristicsProps {
   product: IProduct;
@@ -26,7 +20,7 @@ const ProductCharacteristics: React.FC<IProductCharacteristicsProps> = ({
 }) => {
   const characteristics = {
     toys: [
-      { label: "Целевая аудитория:", value: product.targetGender },
+      { label: "Целевая аудитория:", value: product.gender },
       { label: "Количество:", value: product.quantity },
       { label: "Размещено:", value: product.date },
       { label: "Категория:", value: product.category },
@@ -54,6 +48,12 @@ const ProductCharacteristics: React.FC<IProductCharacteristicsProps> = ({
       { label: "Категория:", value: product.category },
       { label: "Количество:", value: product.quantity },
       { label: "Создан:", value: product.city }
+    ],
+    animals: [
+      { label: "Возрасть:", value: product.date },
+      { label: "Категория:", value: product.category },
+      { label: "Количество:", value: product.quantity },
+      { label: "Родился:", value: product.city }
     ],
     "home-and-yard": [
       { label: "Количество:", value: product.quantity },

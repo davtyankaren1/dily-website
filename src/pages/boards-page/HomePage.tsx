@@ -15,6 +15,7 @@ import Phones from "../../components/sections/phones-section/Phones";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { useEffect } from "react";
 import {
+  fetchAnimals,
   fetchHomeAndYard,
   fetchNotebooks,
   fetchPhones,
@@ -25,11 +26,11 @@ import Technique from "../../components/sections/technique/Technique";
 import { mockData } from "../../components/popular-stores/mockData";
 import SalesImg1 from "../../assets/images/image.png";
 import SalesImg2 from "../../assets/images/A0r95y5Q598.jpg";
+import Animals from "../../components/sections/animals-section/Animals";
 
 const BoardsPage = () => {
-  const { phones, notebooks, techniques, toys, homeandyard } = useAppSelector(
-    (state) => state.products
-  );
+  const { phones, notebooks, techniques, toys, animals, homeandyard } =
+    useAppSelector((state) => state.products);
   const dispath = useAppDispatch();
 
   useEffect(() => {
@@ -37,6 +38,7 @@ const BoardsPage = () => {
     dispath(fetchTechniques({ limit: 5, offset: 0 }));
     dispath(fetchNotebooks({ limit: 5, offset: 0 }));
     dispath(fetchToys({ limit: 5, offset: 0 }));
+    dispath(fetchAnimals({ limit: 5, offset: 0 }));
     dispath(fetchHomeAndYard());
   }, []);
 
@@ -45,6 +47,7 @@ const BoardsPage = () => {
       <ServiceSlider />
       <FindSlider />
       <Toys toys={toys} />
+      <Animals animals={animals} />
       <Phones phones={phones} />
       <Notebooks notebooks={notebooks} />
       {/* <HomeAndYard homeandyard={homeandyard} /> */}

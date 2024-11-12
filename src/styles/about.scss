@@ -1,0 +1,12 @@
+.about-us {
+  border: 2px solid red;
+  margin-top: 50px;
+  .about-us-content {
+    border: 2px solid red;
+    padding: 30px 70px;
+    text-align: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}

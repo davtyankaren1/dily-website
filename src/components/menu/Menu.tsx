@@ -34,7 +34,7 @@ const menuItems = [
     icon: <ThingsForChilds />,
     path: "/toys"
   },
-  // { label: "Животные", icon: <AnimalsSvg />, path: "/animals" },
+  { label: "Животные", icon: <AnimalsSvg />, path: "/animals" },
   // { label: "Хобби и отдых", icon: <HobbiesSvg />, path: "/hobbies" },
   // { label: "Транспорт", icon: <TransportSvg />, path: "/transport" },
   // { label: "Автотовары", icon: <AutomativeSvg />, path: "/automotive" },

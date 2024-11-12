@@ -42,6 +42,17 @@ export interface Phone {
   images?: string[];
 }
 
+export interface Animal {
+  id: string;
+  imageUrl: string;
+  title: string;
+  price: string;
+  category?: string;
+  city?: string;
+  isFavorite: boolean;
+  images?: string[];
+}
+
 export interface Notebook {
   id: string;
   imageUrl: string;
@@ -86,12 +97,13 @@ export interface Homeandyard {
   images?: string[];
 }
 
-export type Product = Phone | Notebook | Technique;
+export type Product = Phone | Notebook | Technique | Animals;
 
 export interface ProductsState {
   isLoading: boolean;
   isError: string | null;
   phones: Phone[];
+  animals: Animal[];
   notebooks: Notebook[];
   techniques: Technique[];
   homeandyard: Homeandyard[];
@@ -152,6 +164,10 @@ export interface ISliderItemProps {
 
 export interface IPhoneProps {
   phones: IProduct[];
+}
+
+export interface IAnimalProps {
+  animals: IProduct[];
 }
 
 export interface IOfferFromDilyProps {
