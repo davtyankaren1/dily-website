@@ -27,7 +27,7 @@ import SalesImg1 from "../../assets/images/image.png";
 import SalesImg2 from "../../assets/images/A0r95y5Q598.jpg";
 
 const BoardsPage = () => {
-  const { phones, notebooks, techniques, homeandyard, toys } = useAppSelector(
+  const { phones, notebooks, techniques, toys, homeandyard } = useAppSelector(
     (state) => state.products
   );
   const dispath = useAppDispatch();
@@ -35,21 +35,21 @@ const BoardsPage = () => {
   useEffect(() => {
     dispath(fetchPhones({ limit: 5, offset: 0 }));
     dispath(fetchTechniques({ limit: 5, offset: 0 }));
-    dispath(fetchNotebooks());
+    dispath(fetchNotebooks({ limit: 5, offset: 0 }));
+    dispath(fetchToys({ limit: 5, offset: 0 }));
     dispath(fetchHomeAndYard());
-    dispath(fetchToys());
   }, []);
 
   return (
     <div>
       <ServiceSlider />
       <FindSlider />
+      <Toys toys={toys} />
       <Phones phones={phones} />
-      {/* <Notebooks notebooks={notebooks} /> */}
+      <Notebooks notebooks={notebooks} />
       {/* <HomeAndYard homeandyard={homeandyard} /> */}
       <Technique techniques={techniques} />
       <DontMiss />
-      {/* <Toys toys={toys} /> */}
       {/* <WillGiveFree /> */}
       <SalesSection
         firstBannerFirstText='Магазины'
