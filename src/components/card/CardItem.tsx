@@ -11,6 +11,8 @@ const CardItem = ({ item }: ICardItemProps) => {
   const isInView = useInView(ref, { once: true });
   const navigate = useNavigate();
 
+  console.log(item, "item+++");
+
   const scaleVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: {

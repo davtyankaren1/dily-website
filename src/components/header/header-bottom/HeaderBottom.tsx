@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import UpdatesSvg from "../../../assets/svgs/UpdatesSvg";
 import MenuSvg from "../../../assets/svgs/MenuIconSvg";
@@ -39,6 +39,7 @@ const HeaderBottom = ({
   activeSubIndex,
   setActiveSubIndex
 }) => {
+  const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -56,6 +57,13 @@ const HeaderBottom = ({
   const handleSubItemClick = (index) => {
     setActiveSubIndex(index);
     navigate(subMenuItems[activeTopIndex][index].path);
+  };
+
+  const handleSearch = () => {
+    if (searchTerm.trim()) {
+      navigate(`/search-results?searchquery=${searchTerm}`);
+      setSearchTerm("");
+    }
   };
 
   return (
@@ -96,8 +104,12 @@ const HeaderBottom = ({
                 className='header-bottom__search-input'
                 type='text'
                 placeholder='Я хочу купить'
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
               />
-              <div className='header-bottom__search-btn'>Найти</div>
+              <div className='header-bottom__search-btn' onClick={handleSearch}>
+                Найти
+              </div>
             </div>
             <div className='header-bottom__post-ad'>
               <span>Подать объявление</span>

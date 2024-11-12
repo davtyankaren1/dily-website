@@ -21,6 +21,7 @@ import BoardsPage from "./pages/boards-page/HomePage";
 import { ToastContainer } from "react-toastify";
 import ProfilePage from "./pages/profile-page/ProfilePage";
 import BasketPage from "./pages/basket-page/BasketPage";
+import SearchResults from "./pages/search/SearchResults";
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -66,6 +67,8 @@ const App: React.FC = () => {
         <Route path='/techniques/:id' element={<ProductSinglePage />} />
         <Route path='/home-and-yard/:id' element={<ProductSinglePage />} />
         <Route path='/toys/:id' element={<ProductSinglePage />} />
+
+        <Route path='/search-results' element={<SearchResults />} />
 
         <Route path='/what-we-repair' element={<h1>What we repair</h1>} />
         <Route

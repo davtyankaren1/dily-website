@@ -3,7 +3,7 @@ import { useParams, useLocation } from "react-router-dom";
 import ProductSingleComponent from "../../components/product-single-component/ProductSingleComponent";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { fetchProductById } from "../../redux/feature/ProductsSlice";
-import "../../styles/ProductSinglePage.scss"; // Import the CSS file
+import "../../styles/ProductSinglePage.scss";
 
 const ProductSinglePage = () => {
   const dispatch = useAppDispatch();

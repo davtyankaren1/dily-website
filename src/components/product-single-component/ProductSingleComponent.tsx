@@ -4,7 +4,7 @@ import DeliveryCar from "../../assets/svgs/DeliveryCar";
 import ImageSlider from "../image-slider/ImageSlider";
 import BreadCrumbs from "../breadcrumb/BreadCrumbs";
 import Avatar from "../../assets/images/Avatar.png";
-import RecomentProducts from "../sections/recoment-products/RecomentProducts";
+// import RecomentProducts from "../sections/recoment-products/RecomentProducts";
 import StarFilled from "../../assets/svgs/StarFilled";
 import { IsingleProductProps, IProduct } from "../../types/types";
 import { useNavigate } from "react-router-dom";
