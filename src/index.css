@@ -57,7 +57,6 @@ body {
 }
 
 .loading-text {
-  border: 2px solid red;
   z-index: 5555;
   height: 100vh;
   position: absolute;
