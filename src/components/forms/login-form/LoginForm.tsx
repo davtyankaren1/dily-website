@@ -58,7 +58,7 @@ const LoginForm = () => {
                   component={InputWithLabel}
                 />
               ))}
-              <Button type='submit' disabled={loading || isSubmitting}>
+              <Button type='submit' disabled={isSubmitting}>
                 Регистрация
               </Button>
             </Form>
