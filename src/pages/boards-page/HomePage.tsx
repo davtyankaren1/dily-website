@@ -34,7 +34,6 @@ const BoardsPage = () => {
   const dispath = useAppDispatch();
 
   useEffect(() => {
-    dispath(fetchPhones({ limit: 5, offset: 0 }));
     dispath(fetchTechniques({ limit: 5, offset: 0 }));
     dispath(fetchNotebooks({ limit: 5, offset: 0 }));
     dispath(fetchToys({ limit: 5, offset: 0 }));
@@ -48,9 +47,7 @@ const BoardsPage = () => {
       <FindSlider />
       <Toys toys={toys} />
       <Animals animals={animals} />
-      <Phones phones={phones} />
       <Notebooks notebooks={notebooks} />
-      {/* <HomeAndYard homeandyard={homeandyard} /> */}
       <Technique techniques={techniques} />
       <DontMiss />
       {/* <WillGiveFree /> */}

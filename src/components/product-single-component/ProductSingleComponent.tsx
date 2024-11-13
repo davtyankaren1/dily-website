@@ -9,8 +9,6 @@ import { IsingleProductProps, IProduct } from "../../types/types";
 import { useNavigate } from "react-router-dom";
 import "../../styles/SinglePhone.scss";
 
-const defaultImages = [];
-
 interface IProductCharacteristicsProps {
   product: IProduct;
 }
@@ -86,7 +84,7 @@ const ProductSingleComponent: React.FC<IsingleProductProps> = ({ product }) => {
           <h2 className='single-page-inner-name'>{product.title}</h2>
           <div className='single-page-inner-content'>
             <div className='single-page-inner-content-left'>
-              <ImageSlider images={product.images || defaultImages} />
+              <ImageSlider images={product.images} />
               <div className='product-title'>
                 <span className='product-title-sub'>Описание товара</span>
                 <span className='product-title-desc'>

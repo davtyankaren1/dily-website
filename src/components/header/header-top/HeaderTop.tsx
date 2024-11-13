@@ -4,39 +4,13 @@ import HeaderLogoSvg from "../../../assets/svgs/HeaderLogoSvg";
 import LocationSvg from "../../../assets/svgs/LocationSvg";
 import ArrowDownSvg from "../../../assets/svgs/ArrowDownSvg";
 import AvatarSvg from "../../../assets/svgs/AvatarSvg";
-import { useAppSelector } from "../../../redux/hooks";
 import "../../../styles/HeaderTop.scss";
 
 const HeaderTop = () => {
   const navigate = useNavigate();
-  const { user } = useAppSelector((state) => state.users);
 
   const handleLogin = () => {
     navigate("/auth");
-  };
-
-  const fetchBasketData = async (userId: number) => {
-    try {
-      const response = await fetch(
-        `http://localhost:8081/users/${userId}/basket`
-      );
-      if (!response.ok) {
-        throw new Error("Failed to fetch basket data");
-      }
-      const data = await response.json();
-      navigate("/basket", { state: { items: data.items } });
-    } catch (error) {
-      console.error("Error fetching basket data:", error);
-    }
-  };
-
-  const handleBasketClick = () => {
-    if (user) {
-      const userId = user.id;
-      fetchBasketData(userId);
-    } else {
-      handleLogin();
-    }
   };
 
   return (
@@ -66,29 +40,15 @@ const HeaderTop = () => {
             </div>
 
             <div className='login'>
-              <AvatarSvg />
-              {user ? (
-                <motion.div
-                  initial={{ y: 10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.5 }}
-                  style={{ cursor: "pointer", display: "flex", gap: "10px" }}
-                  onClick={handleBasketClick}
-                >
-                  <div>{user.name}</div>
-                  <div>{user.basket ? JSON.parse(user.basket).length : 0}</div>
-                </motion.div>
-              ) : (
-                <motion.div
-                  style={{ cursor: "pointer" }}
-                  onClick={handleLogin}
-                  initial={{ y: 10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.5 }}
-                >
-                  Вход/ регистрация
-                </motion.div>
-              )}
+              <motion.div
+                style={{ cursor: "pointer" }}
+                onClick={handleLogin}
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
+                Вход/ регистрация
+              </motion.div>
             </div>
           </div>
         </div>
