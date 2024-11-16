@@ -4,18 +4,18 @@ import LogoTextSvg from "../../../assets/svgs/LogoTextSvg";
 import { IPhoneProps } from "../../../types/types";
 import "../../../styles/animals-section.scss";
 
-const Animals = ({ animals }: IPhoneProps) => {
+const Animals = ({ animals, language }: IPhoneProps) => {
   return (
     <div className='selection'>
       <div className='container'>
         <div className='selection-cards-title'>
           <div className='selection-cards-title-with-text'>
-            <h2 className='selection-cards-text'>Животные от</h2>
-            <LogoTextSvg />
+            {/* <h2 className='selection-cards-text'>Животные от</h2> */}
+            {/* <LogoTextSvg /> */}
           </div>
           <SeeAll path='/animals' />
         </div>
-        <Cards mockData={animals} />
+        <Cards mockData={animals} language={language} />
       </div>
     </div>
   );

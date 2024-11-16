@@ -28,27 +28,27 @@ import SalesImg1 from "../../assets/images/image.png";
 import SalesImg2 from "../../assets/images/A0r95y5Q598.jpg";
 import Animals from "../../components/sections/animals-section/Animals";
 
-const BoardsPage = () => {
+const BoardsPage = ({ language }) => {
   const { phones, notebooks, techniques, toys, animals, homeandyard } =
     useAppSelector((state) => state.products);
   const dispath = useAppDispatch();
 
   useEffect(() => {
     dispath(fetchTechniques({ limit: 5, offset: 0 }));
-    dispath(fetchNotebooks({ limit: 5, offset: 0 }));
+    // dispath(fetchNotebooks({ limit: 5, offset: 0 }));
     dispath(fetchToys({ limit: 5, offset: 0 }));
-    dispath(fetchAnimals({ limit: 5, offset: 0 }));
+    dispath(fetchAnimals({ limit: 5, offset: 0, language: language }));
     dispath(fetchHomeAndYard());
-  }, []);
+  }, [language]);
 
   return (
     <div>
       <ServiceSlider />
-      <FindSlider />
-      <Toys toys={toys} />
-      <Animals animals={animals} />
-      <Notebooks notebooks={notebooks} />
-      <Technique techniques={techniques} />
+      {/* <FindSlider /> */}
+      {/* <Toys toys={toys} /> */}
+      <Animals animals={animals} language={language} />
+      {/* <Notebooks notebooks={notebooks} /> */}
+      {/* <Technique techniques={techniques} /> */}
       <DontMiss />
       {/* <WillGiveFree /> */}
       <SalesSection

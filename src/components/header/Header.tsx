@@ -11,7 +11,7 @@ const menuItems = [
   // { name: "Скупка", path: "/buyout" }
 ];
 
-const Header = () => {
+const Header = ({ onLanguageChange }) => {
   const [openModal, setOpenModal] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeTopIndex, setActiveTopIndex] = useState(0);
@@ -45,7 +45,10 @@ const Header = () => {
 
   return (
     <div className={`header ${isScrolled ? "scrolled" : ""}`}>
-      <HeaderTop setActiveIndex={handleTopItemClick} />
+      <HeaderTop
+        setActiveIndex={handleTopItemClick}
+        onLanguageChange={onLanguageChange}
+      />
       <HeaderBottom
         toggleModal={handleToggleModal}
         isModalOpen={openModal}

@@ -7,6 +7,7 @@ import Avatar from "../../assets/images/Avatar.png";
 import StarFilled from "../../assets/svgs/StarFilled";
 import { IsingleProductProps, IProduct } from "../../types/types";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../../styles/SinglePhone.scss";
 
 interface IProductCharacteristicsProps {
@@ -73,27 +74,36 @@ const ProductCharacteristics: React.FC<IProductCharacteristicsProps> = ({
   );
 };
 
-const ProductSingleComponent: React.FC<IsingleProductProps> = ({ product }) => {
+const ProductSingleComponent: React.FC<IsingleProductProps> = ({
+  product,
+  language
+}) => {
   const navigate = useNavigate();
+
+  const { t } = useTranslation();
 
   return (
     <div className='single-page'>
       <div className='container'>
         <BreadCrumbs />
         <div className='single-page-inner'>
-          <h2 className='single-page-inner-name'>{product.title}</h2>
+          <h2 className='single-page-inner-name'>
+            {language ? product[`title_${language}`] : product.title}
+          </h2>
           <div className='single-page-inner-content'>
             <div className='single-page-inner-content-left'>
               <ImageSlider images={product.images} />
               <div className='product-title'>
-                <span className='product-title-sub'>Описание товара</span>
+                <span className='product-title-sub'>{t("product_desc")}</span>
                 <span className='product-title-desc'>
-                  {product.description || "Никогда не было"}
+                  {language
+                    ? product[`description_${language}`]
+                    : product.description}
                 </span>
               </div>
               <div className='product-character'>
                 <h3 className='product-character__title'>
-                  Основные характеристики
+                  {t("basic_characteristics")}
                 </h3>
                 <ProductCharacteristics product={product} />
               </div>
@@ -103,11 +113,11 @@ const ProductSingleComponent: React.FC<IsingleProductProps> = ({ product }) => {
               <div className='single-page-inner-content-right-price'>
                 <div className='right-content-price'>
                   <div className='right-content-price-texts'>
-                    <span>Цена</span>
+                    <span>{t("price")}</span>
                     <span className='single-item-price'>{product.price}</span>
                   </div>
                   <div className='right-content-price-add-fav'>
-                    <span>Добавить в избранное</span>
+                    <span>{t("add_to_favorites")}</span>
                     <HeartIconSvg />
                   </div>
                 </div>
