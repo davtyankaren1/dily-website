@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { fetchProductById } from "../../redux/feature/ProductsSlice";
 import "../../styles/ProductSinglePage.scss";
 
-const ProductSinglePage = () => {
+const ProductSinglePage = ({ language }) => {
   const dispatch = useAppDispatch();
   const { id } = useParams();
   const { selectedProduct, isLoading, isError } = useAppSelector(
@@ -32,10 +32,10 @@ const ProductSinglePage = () => {
         : null;
 
       if (category) {
-        dispatch(fetchProductById({ id, category }));
+        dispatch(fetchProductById({ id, category, language }));
       }
     }
-  }, [dispatch, id, path]);
+  }, [dispatch, id, path, language]);
 
   if (isLoading)
     return (
@@ -53,7 +53,9 @@ const ProductSinglePage = () => {
 
   return (
     <div className='single-product-page'>
-      {selectedProduct && <ProductSingleComponent product={selectedProduct} />}
+      {selectedProduct && (
+        <ProductSingleComponent language={language} product={selectedProduct} />
+      )}
     </div>
   );
 };

@@ -10,7 +10,8 @@ const ProductsTopProducts = ({
   currentData,
   isListView2,
   setIsListView2,
-  text
+  text,
+  language
 }: IProductsTopProducts) => {
   return (
     <div className='top-products'>
@@ -27,7 +28,7 @@ const ProductsTopProducts = ({
           }`}
         >
           {currentData.map((item) => (
-            <CardItem key={item.id} item={item} />
+            <CardItem language={language} key={item.id} item={item} />
           ))}
         </div>
       </div>

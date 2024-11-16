@@ -35,7 +35,7 @@ export const fetchPhones = createAsyncThunk<
     return parsedPhones;
   } catch (error) {
     console.error(error);
-    throw new Error("Failed to fetch phones");
+    // throw new Error("Failed to fetch phones");
   }
 });
 
@@ -54,7 +54,7 @@ export const fetchNotebooks = createAsyncThunk<
     return parsedNotebooks;
   } catch (error) {
     console.error(error);
-    throw new Error("Failed to fetch notebook");
+    // throw new Error("Failed to fetch notebook");
   }
 });
 
@@ -91,7 +91,7 @@ export const fetchHomeAndYard = createAsyncThunk<Technique[]>(
 
 export const fetchToys = createAsyncThunk<
   Technique[],
-  { limit?: number; offset?: number } | undefined
+  { limit?: number; offset?: number; language: string } | undefined
 >("products/fetchToys", async (params) => {
   try {
     const res = await axios.get(`http://localhost:8081/toys`, {
@@ -125,12 +125,28 @@ export const fetchAnimals = createAsyncThunk<
   }
 });
 
+// export const fetchProductById = createAsyncThunk<
+//   Product,
+//   { id: number | string; category: string; language }
+// >("products/fetchProductById", async ({ id, category, language }) => {
+//   try {
+//     const res = await axios.get(`http://localhost:8081/${category}/${id}`);
+//     return res.data;
+//   } catch (error) {
+//     console.error(error);
+//     throw new Error("Failed to fetch product by ID");
+//   }
+// });
+
 export const fetchProductById = createAsyncThunk<
   Product,
-  { id: number | string; category: string }
->("products/fetchProductById", async ({ id, category }) => {
+  { id: number | string; category: string; language?: string } // language is now optional
+>("products/fetchProductById", async ({ id, category, language = "en" }) => {
   try {
-    const res = await axios.get(`http://localhost:8081/${category}/${id}`);
+    // Append the language query parameter if it's provided
+    const url = `http://localhost:8081/${category}/${id}?language=${language}`;
+
+    const res = await axios.get(url);
     return res.data;
   } catch (error) {
     console.error(error);

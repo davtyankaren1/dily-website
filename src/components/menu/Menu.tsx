@@ -1,51 +1,54 @@
+import { useTranslation } from "react-i18next";
 import PhonesAccessories from "../../assets/svgs/PhonesAccessories";
-import PersonalThingsSvg from "../../assets/svgs/PersonalThingsSvg";
 import ElectronicsSvg from "../../assets/svgs/ElectronicsSvg";
 import HouseholdSvg from "../../assets/svgs/HouseholdSvg";
 import HomeAndYard from "../../assets/svgs/HomeAndYard";
 import ThingsForChilds from "../../assets/svgs/ThingsForChilds";
-import HobbiesSvg from "../../assets/svgs/HobbiesSvg";
-import TransportSvg from "../../assets/svgs/TransportSvg";
 import AnimalsSvg from "../../assets/svgs/AnimalsSvg";
-import AutomativeSvg from "../../assets/svgs/AutomativeSvg";
-import RealEstateSvg from "../../assets/svgs/RealEstateSvg";
-import WorkSvg from "../../assets/svgs/WorkSvg";
-import ServicesSvg from "../../assets/svgs/ServicesSvg";
-import ForBusinessSvg from "../../assets/svgs/ForBusinessSvg";
 import WillGiveFreeSvg from "../../assets/svgs/WillGiveFreeSvg";
 import "../../styles/Menu.scss";
 
-const menuItems = [
-  // {
-  //   label: "Личные вещи",
-  //   icon: <PersonalThingsSvg />,
-  //   path: "/personal-things"
-  // },
-  {
-    label: "Телефоны",
-    icon: <PhonesAccessories />,
-    path: "/phones"
-  },
-  { label: "Нотбуки", icon: <ElectronicsSvg />, path: "/notebooks" },
-  { label: "Бытовая техника", icon: <HouseholdSvg />, path: "/techniques" },
-  { label: "Дом и сад", icon: <HomeAndYard />, path: "/home-and-yard" },
-  {
-    label: "Игрушки",
-    icon: <ThingsForChilds />,
-    path: "/toys"
-  },
-  { label: "Животные", icon: <AnimalsSvg />, path: "/animals" },
-  // { label: "Хобби и отдых", icon: <HobbiesSvg />, path: "/hobbies" },
-  // { label: "Транспорт", icon: <TransportSvg />, path: "/transport" },
-  // { label: "Автотовары", icon: <AutomativeSvg />, path: "/automotive" },
-  // { label: "Недвижимость", icon: <RealEstateSvg />, path: "/real-estate" },
-  // { label: "Работа", icon: <WorkSvg />, path: "/work" },
-  // { label: "Услуги", icon: <ServicesSvg />, path: "/services" },
-  // { label: "Для бизнеса", icon: <ForBusinessSvg />, path: "/for-business" },
-  { label: "Отдам даром", icon: <WillGiveFreeSvg />, path: "/will-give-free" }
-];
-
 const Menu = () => {
+  const { t } = useTranslation(); // Use translation hook
+
+  const menuItems = [
+    {
+      label: t("phones"), // Translated text for "Phones"
+      icon: <PhonesAccessories />,
+      path: "/phones"
+    },
+    {
+      label: t("laptops"), // Translated text for "Laptops"
+      icon: <ElectronicsSvg />,
+      path: "/notebooks"
+    },
+    {
+      label: t("home_appliances"), // Translated text for "Home Appliances"
+      icon: <HouseholdSvg />,
+      path: "/techniques"
+    },
+    {
+      label: t("home_garden"), // Translated text for "Home & Garden"
+      icon: <HomeAndYard />,
+      path: "/home-and-yard"
+    },
+    {
+      label: t("toys"), // Translated text for "Toys"
+      icon: <ThingsForChilds />,
+      path: "/toys"
+    },
+    {
+      label: t("animals"), // Translated text for "Animals"
+      icon: <AnimalsSvg />,
+      path: "/animals"
+    },
+    {
+      label: t("free_to_give"), // Translated text for "Free to Give"
+      icon: <WillGiveFreeSvg />,
+      path: "/will-give-free"
+    }
+  ];
+
   return (
     <div className='menu'>
       <div className='container'>

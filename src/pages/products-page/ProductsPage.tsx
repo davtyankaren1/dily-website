@@ -1,9 +1,9 @@
 import ProductsComponent from "../../components/products/ProductsComponent";
 
-const ProductsPage = () => {
+const ProductsPage = ({ language }) => {
   return (
     <div>
-      <ProductsComponent />
+      <ProductsComponent language={language} />
     </div>
   );
 };

@@ -6,12 +6,10 @@ import Img1 from "../../assets/images/Avatar.png";
 import { ICardItemProps } from "../../types/types";
 import "../../styles/CardItem.scss";
 
-const CardItem = ({ item }: ICardItemProps) => {
+const CardItem = ({ item, language }: ICardItemProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const navigate = useNavigate();
-
-  console.log(item, "item+++");
 
   const scaleVariants = {
     hidden: { opacity: 0, scale: 0.8 },
@@ -49,7 +47,9 @@ const CardItem = ({ item }: ICardItemProps) => {
         <HeartIconSvg />
       </div>
       <div className='card-item-info'>
-        <span className='card-item-title'>{item?.title}</span>
+        <span className='card-item-title'>
+          <h4>{language ? item[`title_${language}`] : item?.title}</h4>
+        </span>
         <div className='card-item-footer'>
           <div className='card-item-details'>
             <div className='card-item-details-texts'>

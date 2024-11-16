@@ -21,7 +21,7 @@ const MIN_PRICE = 0;
 const MAX_PRICE = 50000;
 const ITEMS_PER_PAGE = 7;
 
-const ProductsComponent = () => {
+const ProductsComponent = ({ language }) => {
   const [isListView2, setIsListView2] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedGender, setSelectedGender] = useState<string | null>(null);
@@ -54,7 +54,8 @@ const ProductsComponent = () => {
         search: debouncedSearchQuery,
         limit: ITEMS_PER_PAGE,
         offset: (currentPage - 1) * ITEMS_PER_PAGE,
-        gender: ""
+        gender: "",
+        language: language
       };
 
       if (path.includes("/phones")) {
@@ -77,7 +78,14 @@ const ProductsComponent = () => {
     };
 
     fetchData();
-  }, [debouncedSearchQuery, dispatch, path, currentPage, selectedGender]);
+  }, [
+    debouncedSearchQuery,
+    dispatch,
+    path,
+    currentPage,
+    selectedGender,
+    language
+  ]);
 
   useEffect(() => {
     if (isFiltersApplied) {
@@ -86,7 +94,8 @@ const ProductsComponent = () => {
         minPrice: debouncedMinPrice,
         maxPrice: debouncedMaxPrice,
         limit: ITEMS_PER_PAGE,
-        offset: (currentPage - 1) * ITEMS_PER_PAGE
+        offset: (currentPage - 1) * ITEMS_PER_PAGE,
+        language: language
       };
 
       if (path.includes("/phones")) {
@@ -112,7 +121,8 @@ const ProductsComponent = () => {
     debouncedMaxPrice,
     dispatch,
     path,
-    currentPage
+    currentPage,
+    language
   ]);
 
   const currentData: any = path.includes("/phones")
@@ -330,6 +340,7 @@ const ProductsComponent = () => {
             ) : (
               <div className='phone-content-container'>
                 <ProductsTopProducts
+                  language={language}
                   setIsListView2={setIsListView2}
                   isListView2={isListView2}
                   currentData={currentData}
