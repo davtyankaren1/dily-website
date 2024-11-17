@@ -5,11 +5,11 @@ import Malfunctions from "./components/Malfunctions";
 import KnowMoreInfo from "./components/KnowMoreInfo";
 import "../../styles/ServicesServiceComponent.scss";
 
-const ServicesServiceComponent = () => {
+const ServicesServiceComponent = ({ language }) => {
   return (
     <div className='services-service-component'>
       <div className='services-service-component__inner'>
-        <SliderService />
+        <SliderService language={language} />
         <ServicesIntroducing />
         <WeRecomment />
         <Malfunctions />
