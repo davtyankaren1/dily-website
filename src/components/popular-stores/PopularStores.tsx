@@ -4,6 +4,7 @@ import EmptyStar from "../../assets/svgs/EmptyStar";
 import { motion, useInView } from "framer-motion";
 import SeeAll from "../see-all/SeeAll";
 import "../../styles/PopularStores.scss";
+import { useTranslation } from "react-i18next";
 
 const PopularStores = ({ mockData }) => {
   const renderStars = (rating: number) => {
@@ -14,6 +15,7 @@ const PopularStores = ({ mockData }) => {
     return stars;
   };
 
+  const { t } = useTranslation();
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
 
@@ -26,7 +28,7 @@ const PopularStores = ({ mockData }) => {
             animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.5 }}
           >
-            Магазины-партнеры
+            {t("store_partners")}
           </motion.h2>
           <SeeAll path='/board/stores' />
         </div>

@@ -2,16 +2,19 @@ import dontmiss from "../../../assets/images/dontmiss.png";
 import "../../../styles/DontMiss.scss";
 import DailySale from "./componets/daily-sale/DailySale";
 import { Button } from "../../customs";
+import { useTranslation } from "react-i18next";
 
 const DontMiss = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='dont-miss-cards'>
       <div className='container'>
         <div className='dont-miss_inner'>
           <div className='dont-miss-card'>
             <div className='dont-miss-card-texts'>
-              <h2>НЕ УПУСТИ!</h2>
-              <span>Самые выгодные предложения для вашего дома и сада</span>
+              <h2>{t("dontmiss")}</h2>
+              <span>{t("the_cheapest_for_your_home")}</span>
               <div className='details_btn'>
                 <Button
                   color={"#fff"}

@@ -1,18 +1,34 @@
+// .animals-section {
+//   display: flex;
+//   margin-top: 80px;
+//   margin-bottom: 80px;
+//   border: 1px solid red;
+//   &-cards-title {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: end;
+//     margin-bottom: 30px;
+//     .animals-section-cards-text {
+//       font-family: var(--font-family);
+//       font-weight: 700;
+//       font-size: 32px;
+//       line-height: 120%;
+//       color: var(--dark-grey);
+//     }
+//   }
+// }
+
 .animals-section {
-  display: flex;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  &-cards-title {
-    display: flex;
+  margin-top: 60px;
+  .selection-cards-title {
     justify-content: space-between;
-    align-items: end;
-    margin-bottom: 30px;
-    .animals-section-cards-text {
-      font-family: var(--font-family);
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 120%;
-      color: var(--dark-grey);
+    align-items: baseline;
+    display: flex;
+    margin-bottom: 20px;
+    .selection-cards-title-with-text {
+      display: flex;
+      gap: 10px;
+      align-items: center;
     }
   }
 }

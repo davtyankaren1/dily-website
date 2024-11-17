@@ -27,11 +27,14 @@ import { mockData } from "../../components/popular-stores/mockData";
 import SalesImg1 from "../../assets/images/image.png";
 import SalesImg2 from "../../assets/images/A0r95y5Q598.jpg";
 import Animals from "../../components/sections/animals-section/Animals";
+import { useTranslation } from "react-i18next";
 
 const BoardsPage = ({ language }) => {
   const { phones, notebooks, techniques, toys, animals, homeandyard } =
     useAppSelector((state) => state.products);
   const dispath = useAppDispatch();
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     dispath(fetchTechniques({ limit: 5, offset: 0 }));
@@ -52,10 +55,10 @@ const BoardsPage = ({ language }) => {
       <DontMiss />
       {/* <WillGiveFree /> */}
       <SalesSection
-        firstBannerFirstText='Магазины'
-        firstBannerSecondText='Легко откройте свой интернет-магазин'
-        secondBannerFirstText='Подключить тариф'
-        secondBannerSecondText='Разнообразные опции для вашего бизнеса'
+        firstBannerFirstText={t("stores")} // Translated text
+        firstBannerSecondText={t("easyly_open_your_store")} // Translated text
+        secondBannerFirstText={t("turn_tarif")} // Translated text
+        secondBannerSecondText={t("some_otpions_for_your_business")} // Translated text
         salesBannerImg1={SalesImg1}
         salesBannerImg2={SalesImg2}
       />
