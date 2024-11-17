@@ -5,9 +5,34 @@ import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../../../styles/Slider.scss";
-import { mockData } from "./mockData";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-const Slider = () => {
+const Slider = ({ language }) => {
+  const [slides, setSlides] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchSlides = async () => {
+    try {
+      const response = await axios.get(
+        `http://localhost:8081/service-slider?language=${language}`
+      );
+      setSlides(response.data);
+    } catch (error) {
+      console.error("Error fetching slides:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchSlides();
+  }, [language]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className='services-slider'>
       <div className='container'>
@@ -23,14 +48,14 @@ const Slider = () => {
             clickable: true
           }}
         >
-          {mockData.map((item) => (
+          {slides.map((item) => (
             <SwiperSlide key={item.id}>
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <SliderItem item={item} />
+                <SliderItem language={language} item={item} />
               </motion.div>
             </SwiperSlide>
           ))}

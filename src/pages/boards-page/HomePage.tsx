@@ -46,7 +46,7 @@ const BoardsPage = ({ language }) => {
 
   return (
     <div>
-      <ServiceSlider />
+      <ServiceSlider language={language} />
       {/* <FindSlider /> */}
       {/* <Toys toys={toys} /> */}
       <Animals animals={animals} language={language} />

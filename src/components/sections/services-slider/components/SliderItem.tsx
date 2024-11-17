@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ISliderItemProps } from "../../../../types/types";
 import "../../../../styles/SliderItem.scss";
 
-const SliderItem = ({ item }: ISliderItemProps) => {
+const SliderItem = ({ item, language }: ISliderItemProps) => {
   return (
     <motion.div
       className='slider-item'
@@ -12,8 +12,8 @@ const SliderItem = ({ item }: ISliderItemProps) => {
       transition={{ duration: 0.5 }}
     >
       <div className='slider-item-info'>
-        <p className='slider-item-title'>{item.title}</p>
-        <p className='slider-item-desc'>{item.desc}</p>
+        <p className='slider-item-title'>{item[`title_${language}`]}</p>
+        <p className='slider-item-desc'>{item[`description_${language}`]}</p>
       </div>
       <div className='service-item'>
         <img src={item.imageUrl} alt='' />
